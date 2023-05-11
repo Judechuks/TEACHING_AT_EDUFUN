@@ -1,0 +1,36 @@
+/* What is CSS
+Ways of Adding CSS to your HTML document
+1. External CSS > link tag
+2. Internal CSS style tag
+3. Inline CSS style attribute  */ 
+/* comment */
+
+/* selector {
+  property: value;
+  property: value;
+} */
+
+h3{
+  color:turquoise;
+}
+h3{
+  color: red;
+}
+.title {
+  color: blue;
+  text-align: center;
+  font-family: Geneva, Verdana, sans-serif;
+  font-size: 2em;
+}
+section {
+  background-color: gray;
+  height: 500px;
+}
+body{
+ background: black;
+ font-size: 20px;
+}
+
+h4{
+  background-color: white;
+}

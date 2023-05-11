@@ -1,0 +1,14 @@
+body{
+  background: gray;
+}
+.container{
+  background-color: aquamarine;
+  width: 50%;
+  text-align: center;
+  border: 2px solid blue;
+  outline: 2px solid red;
+  outline-offset: 2px;
+  /* margin: top right bottom left; */
+  margin: auto; 
+  padding: 10px 10px 10px 10px;
+}

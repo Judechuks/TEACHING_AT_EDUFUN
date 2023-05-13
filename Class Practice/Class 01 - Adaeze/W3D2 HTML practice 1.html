@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+    <h2>REGISTRATION PAGE</h2>
+
+    <fieldset>
+    <legend>Login Information</legend>
+      <label for="user">Username</label>
+      <input type="text" id="user" placeholder="Enter your username"> <br> <br>
+      <label for="pass">Password</label>
+      <input type="password" id="pass" required> <br> <br>
+      <input type="submit" value="LOGIN">
+      <input type="reset" value="RESET">
+    </fieldset>
+    <br>
+    <fieldset>
+    <legend>Personal Information</legend>
+      <label for="user">Full Name</label>
+      <input type="text" id="fullname" placeholder="Enter your full name"> <br> <br>
+      <label for="gender">Gender <br>
+      
+      <label for="m">Male</label>
+      <input type="radio" id="m" value="Male" name="gender" checked>
+      
+      <label for="f">Female</label>
+      <input type="radio" id="f" name="gender" value="Female">
+      </label>
+     <br> <br>
+      <label for="">Favorite Food</label> <br>
+      <label><input type="checkbox" checked>Rice </label> 
+      <label> <input type="checkbox">Beans</label> 
+      <label> <input type="checkbox" checked> Plantain</label> 
+      <label><input type="checkbox">Bread </label> 
+      <label> <input type="checkbox">Indomie</label> 
+      <br> <br>
+      <label for="">Phone Number</label>
+      <input type="tel" name="" id="">
+      <br> <br>
+
+      <label for="">List of Subjects</label>
+      <select name="" id="">
+      <option value="maths" >Mathematics</option>
+      <option value="Eng" selected>English</option>
+      <option value="SOS">Social studies</option>
+      <option value="Chem" disabled>Chemistry</option>
+      </select>
+
+      <br> <br>
+      <label for="">Class</label>
+      <select name="" id="">
+      <optgroup label="Junior"></optgroup>
+      <option value="">JSS1</option>
+      <option value="">JSS2</option>
+      <option value="">JSS3</option>
+      <optgroup label="Senior"></optgroup>
+      <option value="">SSS1</option>
+      <option value="">SSS2</option>
+      <option value="">SSS3</option>
+      </select>
+      
+      <br> <br>
+      <label for="">Complexion</label>
+      <input list="skin">
+      <datalist id="skin">
+      <option value="fair"></option>
+      <option value="chocolate"></option>
+      <option value="dark"></option>
+      </datalist>
+     
+      <br> <br>
+      <label for="">Date of Birth</label>
+      <input type="date"> <br> <br>
+      <label for="web">Website</label>
+      <input type="url" id="web" value="https://">
+      <br> <br>
+      <label for="color">Favorite Color</label>
+       <input type="color" id="color"> <br> <br>
+       <label for="">Click me to Submit</label>
+       <input type="image" src="C:\Users\user\Desktop\JAY CEE\MY WORK\WEB\PROJECT\assets\icon/icons8-go-48.png"> <br> <br>
+       <label for="find">Search</label>
+       <input type="search"> <br> <br>
+
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+       <legend>Travelling Information</legend>
+       <label for="">Month of Traveling</label>
+       <input type="month" name="" id=""> <br> <br>
+       <label for="">Week of Travelling</label>
+       <input type="week" name="" id=""> <br> <br>
+        <label for="">Time of Travelling</label>
+       <input type="time" name="" id=""> <br> <br>
+        <label for="">Returning Date & Time</label>
+       <input type="datetime-local" name="" id=""> <br> <br>
+       <label for="">Number of Days For Leave</label>
+       <input type="number" min="5" max="10">
+       </fieldset>
+    
+    <label>Comment <br> <textarea cols="50" rows="10" ></textarea></label> <br>
+    
+    </form>
+</body>
+</html>

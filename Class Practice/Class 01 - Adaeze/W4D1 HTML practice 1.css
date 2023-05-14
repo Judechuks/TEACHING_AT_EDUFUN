@@ -1,0 +1,27 @@
+ul{
+  background-color: #c0c0c0;
+  margin: 10px;
+  list-style-type: none; /* disc, decimal, upper-roman */
+  list-style-position: outside; /*inside*/
+  /* list-style-image: url(icons8.png); */
+  /* list-style: disc url(icons8.png) outside; */
+}
+li{
+  padding: 5px;
+}
+a{
+  color:antiquewhite; 
+  padding: 5px 20px; 
+  text-decoration: none;
+}
+a:visited{
+  color: chocolate; 
+}
+a:hover, a:focus     {
+  color:  #a0a0a0;
+  background: #fff;  
+  font-size: 20px;
+}
+a:active {
+  color:aquamarine
+}

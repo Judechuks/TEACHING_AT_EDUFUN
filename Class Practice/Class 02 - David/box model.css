@@ -1,0 +1,36 @@
+
+div {
+  height: 100px; 
+  background: blue;
+  width: 100px;
+  color: beige;
+  font-size: 1.5em;
+  text-align: center;
+
+  margin-top: 50px;
+  margin-right: 60px;
+  margin-bottom: 70px;
+  margin-left: 80px;
+
+  /* padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 40px; */
+
+  /* padding: top right bottom left   */
+  padding: 30px 40px 10px 40px;
+
+  /* border-width: 2px;
+  border-style: dashed;
+  border-color: red; */
+
+  /* border: 8px dashed red; */
+  border-top: 8px dashed red;
+  border-right: 8px solid green;
+  border-left: 8px ridge yellow;
+  border-bottom: 8px dotted aqua;
+
+  outline: 9px solid black;
+  outline-offset: 8px;
+
+}

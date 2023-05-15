@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+  <h2>LOGIN PAGE</h2>
+    <form>
+      <label for="user">Username</label>
+      <input type="text" id="user" size="20" maxlength="15" required autofocus placeholder="your Username"> <br> <br>
+      <label for="pass">Password</label>
+      <input type="password" id="pass" required> <br> <br>
+      <!-- <input type="button" value="LOGIN"> -->
+      <input type="submit" value="LOGIN">
+      <input type="reset" value="CLEAR"> <br> <br>
+      <label for="feed">Comment:</label><br>
+      <textarea name="" id="feed" cols="30" rows="10"></textarea>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label> Gender: <br>
+        <label for="m">Male</label>
+        <input type="radio" id="m" name="gender">
+        <label for="f">Female</label> 
+        <input type="radio" name="gender" id="f"></label> <br> <br>
+        
+        <label>Favorite Food </label> <br>
+        <label for="a">Rice</label> 
+        <input type="checkbox" name="" id="a">
+        <label for="b">Beans</label> 
+        <input type="checkbox" name="" id="b">
+        <label for="c">Plantain</label> 
+        <input type="checkbox" name="" id="c">
+        <label for="d">Egg</label> 
+        <input type="checkbox" name="" id="d">
+        <label for="e">Spaghetti</label> 
+        <input type="checkbox" name="" id="e"> <br> <br>
+        <label for="tel">Phone Number </label> 
+        <input type="tel" name="" id="tel"> <br> <br>
+        <label for="class">Class</label>
+        <select id="class">
+          <optgroup label="JUNIOR CLASS"></optgroup>
+            <option value="jss1">JSS1</option>
+            <option value="jss1">JSS2</option>
+            <option value="jss1">JSS3</option>
+          <optgroup label="SENIOR CLASS"></optgroup>
+            <option value="j1">SSS1</option>
+            <option value="jss1">SSS2</option>
+            <option value="jss1">SSS3</option>
+        </select> <br> <br>
+        <label for="email">Email</label> 
+        <input type="email" id="email"> <br> <br>
+        <label for="web">Website</label>
+        <input type="url" id="web"> <br> <br>
+        <label for="fav">Favorite Color</label>
+        <input type="color" id="fav">
+        <input type="image" src="../icons8.png" width="40px" height="40px">
+        <label for="skin">Complexion</label>
+        <input list="skin-color">
+        <datalist id="skin-color">
+          <option value="Dark"></option>
+          <option value="Light Skin"></option>
+          <option value="Fair"></option>
+            <br> <br>
+        
+        <fieldset>
+          <legend>Traveling Info</legend>
+          <label for="Search">Search</label>
+          <input type="search" placeholder="Search for Available Agency"> <br>
+          <label>Traveling Month</label>
+          <input type="month"> <br>
+          <label for="">Traveling Week</label>
+          <input type="week"> <br>
+          <label for="">Traveling Time</label>
+          <input type="time"> <br>
+          <label for="">Traving Time</label>
+          <input type="datetime-local"> <br>
+          <label for="">Number of Days</label>
+          <input type="number" max="10" min="1"> <br>
+          <label for="">Traveling Progress</label>
+          <input type="range" min="0" max="100" value="10"> <br>
+          <label for="">Success Rate</label>
+          <progress value="60" max="100"></progress>
+          <details>
+           <summary>Hidden Information</summary>
+           <label for="Search">Search</label>
+          <input type="search" placeholder="Search for Available Agency"> <br>
+          <label>Traveling Month</label>
+          <input type="month"> <br>
+          <label for="">Traveling Week</label>
+          <input type="week"> <br>
+          <label for="">Traveling Time</label>
+          <input type="time"> <br>
+          <label for="">Traving Time</label>
+          <input type="datetime-local"> <br>
+          <label for="">Number of Days</label>o
+          <input type="number" max="10" min="1"> <br>
+          <label for="">Traveling Progress</label>
+          <input type="range" min="0" max="100" value="10"> <br>
+          <label for="">Success Rate</label>
+          <progress value="60" max="100"></progress>
+          </details>
+          <label for="">Upload Credentials</label>
+          <input type="file">
+          <button type="button">BUTTON</button>
+          <button type="submit=">LOGIN</button>
+          <button type="reset">CLEAR</button>
+        </fieldset>
+      </fieldset>
+    </form>
+</body>
+</html>

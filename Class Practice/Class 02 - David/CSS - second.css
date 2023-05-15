@@ -1,0 +1,12 @@
+table {
+  background-color: rgb(125, 125, 125);
+  font-size: xx-large;
+  width: 100%;
+}
+th {
+  color: #000099;
+  background-color: aliceblue;
+}
+td {
+   color: rgb(255, 255, 255);
+}

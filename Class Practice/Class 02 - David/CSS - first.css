@@ -1,0 +1,18 @@
+h1, h3 {
+ text-align: center;
+ color: green;
+ background-color: aqua;
+}
+p{
+   text-align: justify;
+}
+h3{
+   background-color: blue;
+}
+p span {
+  background-color: yellow;
+  color: aqua;
+}
+* {
+   color: red !important;
+}

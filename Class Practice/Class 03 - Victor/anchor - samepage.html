@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="first css.css"> -->
+    
+</head>
+<style>
+    h3 {
+   font-size: 30px;
+   color: aqua;
+   background-color: limegreen;
+   /* border: 2px solid black; */
+   }
+   a:link{
+     color: bisque;
+   }
+   a:visited{
+     color: green;
+   }
+   /* a:link, a:visited{
+     color: bisque
+   } */
+   /* a:any-link{
+     color: bisque
+   } */
+   a:active{
+     color: yellow
+   }
+   a:hover{
+     color: aqua;
+     font-size: 23px;
+     background-color: black;
+     text-decoration: none;
+   }
+   a:focus{
+     color: darkorchid;
+   }
+   ol li{
+     list-style-type: lower-alpha;
+     list-style-position: inside;
+   }
+   li::marker{
+     color: aqua;
+     font-size: 30px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   li{
+     list-style: lower-roman;
+   }
+   div{
+      height: 90px;
+      width: 90px;
+      background-color: aqua;
+      /* border-radius: 50%; */
+      box-shadow: -5px -5px 5px 0 black;
+   }
+   /* p, h4{
+       color: red
+   } */
+
+   :is(p, h4){
+       color: green
+   }
+   :where(p, h4){
+       color: blue
+   }
+   :target{
+       border: 3px solid yellow;
+   }
+   #top-link::after{
+      content: " ^^"
+   }
+   #top-link::before{
+      content: url(../up.png)
+   }
+   p::first-line{
+     font-size: 20px;
+   }
+   p::first-letter{
+     font-size: 60px;
+     background-color: black;
+   }
+   p:not(#different){
+      background-color: black;
+   }
+   li:only-child{
+     font-size: 20px;
+   }
+
+  
+    </style>
+<body>
+    <h2 id="top"><center>Avengers Superheros </center></h2>
+    <ol type="A">
+   <li><a href="#first">  Thor  </a></li>
+    <li>  <a href="#second">Iron Man </a>  </li>
+    <li><a href="#third"> Hulk </a></li> </ol>
+    <ol type="A">
+   <li> Thor </li>
+    <li>Iron Man </li>
+    <li>Hulk</li> <li>Ant Man</li></ol>
+<br>
+    <form action=""></form>
+    <h3 id="first">Thor</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ullam maxime in assumenda beatae magni totam dicta soluta, consectetur ipsa, vitae reprehenderit rerum est sit sequi! Magnam debitis provident officiis.</p>
+    <br> <br> <br> <br><br> <br><br><br><br> <br> <br> <br>
+    <h3 id="second" style="color: red;">Iron Man</h3>
+    <p id="different">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ullam maxime in assumenda beatae magni totam dicta soluta, consectetur ipsa, vitae reprehenderit rerum est sit sequi! Magnam debitis provident officiis.</p>
+    <br> <br> <br> <br><br> <br><br><br><br> <br> <br> <br>
+    <h3 id="third">Hulk</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ullam maxime in assumenda beatae magni totam dicta soluta, consectetur ipsa, vitae reprehenderit rerum est sit sequi! Magnam debitis provident officiis.</p>
+
+    <a href="#top" id="top-link">GO TO THE TOP</a>
+    <div>
+      
+    </div>
+    <h4>Example</h4>
+    abbr stands for abbreviation
+    <abbr title="Hypertext Markup Language">HTML</abbr>
+</body>
+</html>

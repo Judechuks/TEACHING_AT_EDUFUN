@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="first css.css"> -->
+    
+</head>
+<style>
+    h3 {
+   font-size: 30px;
+   color: aqua;
+   background-color: limegreen;
+   /* border: 2px solid black; */
+   }
+   a:link, a:visited{
+     color:burlywood;
+   }
+   a:active{
+     color: green;
+   }
+   a:hover{
+     color: limegreen;
+     background-color: black;
+     font-size: 28px;
+   }
+   a:focus{
+     color: red;
+   }
+   
+   li{
+     list-style-type: decimal-leading-zero;
+     /* list-style-image: url(../icons8.png); */
+     list-style-position: outside;
+   }
+   li::marker{
+    font-size: 20px;
+    color: aqua;
+    /* content: ">>"; */
+   }
+   :target{
+     border: 2px solid red;
+   }
+   p:not(#different){
+     color: aquamarine;
+   }
+   li:last-child{
+     background-color: grey;
+   }
+   li:nth-child(even){
+     color: crimson;
+   }
+   #top-link::after{
+     content: " ^";
+   }
+    </style>
+<body>
+    <h2 id="top"><center>Avengers Superheros </center></h2>
+    <ol>
+   <li><a href="#first">  Thor  </a></li>
+    <li>  <a href="#second">Iron Man </a>  </li>
+    <li><a href="#third"> Hulk </a></li> </ol>
+    <ol start="4" reversed>
+   <li> Thor </li>
+    <li value="6">Iron Man </li>
+    <li>Hulk</li> <li>Ant Man</li></ol>
+<br>
+    <form action=""></form>
+    <h3 id="first">Thor</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ullam maxime in assumenda beatae magni totam dicta soluta, consectetur ipsa, vitae reprehenderit rerum est sit sequi! Magnam debitis provident officiis.</p>
+    <br> <br> <br> <br><br> <br><br><br><br> <br> <br> <br>
+    <h3>Iron Man</h3>
+    <p id="different">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ullam maxime in assumenda beatae magni totam dicta soluta, consectetur ipsa, vitae reprehenderit rerum est sit sequi! Magnam debitis provident officiis.</p>
+    <br> <br> <br> <br><br> <br><br><br><br> <br> <br> <br>
+    <h3 id="third">Hulk</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ullam maxime in assumenda beatae magni totam dicta soluta, consectetur ipsa, vitae reprehenderit rerum est sit sequi! Magnam debitis provident officiis.</p>
+
+
+    <a href="#top" id="top-link">GO TO THE TOP</a>
+    <div>
+      
+    </div>
+</body>
+</html>

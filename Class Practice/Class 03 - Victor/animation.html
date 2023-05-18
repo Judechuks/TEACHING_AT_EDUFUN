@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Animation</title>
+</head>
+<style>
+div{
+   width: 100px;
+   height: 100px;
+}
+   .box1{
+      background: aqua;
+      animation-name: movement;
+      animation-delay: 0.1s;
+      animation-duration: 3s;
+      animation-duration: ease;
+      animation-iteration-count: 1;
+      animation-direction: alternate;
+   }
+   @keyframes movement{
+      from{
+          transform: translateX(0px);
+      }
+      to{
+          transform: translateX(100px);
+      }
+   }
+
+   /* for fill mode example */
+   .box2{
+      background: blue;
+      animation-name: paint;
+      animation-delay: 0.1s;
+      animation-duration: 2s;
+      animation-duration: ease-in-out;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: backwards;
+   }
+   @keyframes paint{
+      0%{
+          font-size: 5px;
+          background-color: purple;
+      }
+      50%{
+          font-size: 30px;
+          background-color: green;
+      }
+      100%{
+          font-size: 50px;
+          background-color: pink;
+      }
+   }
+</style>
+<body>
+   <div class="box1"></div>
+   <div class="box2">Text</div>
+</body>
+</html>

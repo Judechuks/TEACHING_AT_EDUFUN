@@ -1,0 +1,29 @@
+.container {
+   display: flex;
+   width: 90%;
+   background-color: #c0c0c0;
+   justify-content: space-around;
+   align-items: stretch;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+.a{
+   background-color: aqua;
+   height: 90px;
+   width: 120px;
+}
+.b{
+   background-color: yellow;
+}
+.c{
+   background-color: blue;
+   width: 1200px;
+   align-self: end;
+
+}
+.d{
+   background-color: red;
+}
+.e{
+   background-color:  green;
+}

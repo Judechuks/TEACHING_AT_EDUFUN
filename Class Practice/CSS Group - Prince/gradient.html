@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+</head>
+<style>
+  div{
+     width: 40vh;
+     height: 40vh;
+     display: inline-block;
+     text-align: center;
+     font: 180% bold;
+     margin-bottom: 5px;
+  }
+  .one{
+     background: linear-gradient(blue, red, yellow, green);
+  }
+  .two{
+     background: linear-gradient(blue 10%, red 10%,yellow 30%, green);
+  }
+  .three{
+    background: radial-gradient( circle closest-corner at center, blue 10%, red 10%,yellow 30%, green);
+  }
+  .four{
+    background: radial-gradient( circle closest-side at center, blue 10%, red 10%,yellow 30%, green);
+  }
+  .five{
+     background: conic-gradient(red, yellow, blue, green, purple);
+  }
+  .six{
+     background: conic-gradient(red 40deg, purple 70deg, blue 100deg, green, yellow, indigo);
+  }
+  .seven{
+     border-radius: 50%;
+     background: conic-gradient(red 0deg, red 90deg, blue 90deg, blue 180deg, green 180deg, green 270deg, yellow 270deg, yellow);
+  }
+  .eight{
+     border-radius: 50%;
+     background: conic-gradient(from 180deg, red, purple, blue, green, yellow, indigo);
+  }
+  .nine{
+     border-radius: 50%;
+     background: conic-gradient(at center, red 59deg, purple, blue 80deg, green, yellow, indigo);
+  }
+  .ten{
+     border-radius: 50%;
+     background: conic-gradient(at 60% 45%, red, purple, blue, green, yellow, indigo);
+  }
+  .eleven{
+     border-radius: 50%;
+     background: conic-gradient(from 40deg at 80%, red 59deg, purple, blue, green, yellow, indigo);
+  }
+  .twelve{
+     border-radius: 50%;
+     background: repeating-conic-gradient(red 10%, yellow 20%);
+  }
+  .thirteen{
+     border-radius: 50%;
+     background: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, indigo 20deg 30deg);
+  }
+  .fourteen{
+     border-radius: 50%;
+     background: conic-gradient(red 0deg 90deg, yellow 90deg 180deg, green 180deg 270deg, indigo 270deg);
+  }
+  .inner{
+     width: 30vh;
+     height: 30vh;
+     background: white;
+     border-radius: 50%;
+  }
+</style>
+<body>
+    <div class="one">1 - linear-gradient</div>
+    <div class="two">2 - linear-gradient</div>
+    <div class="three">3 - radial-gradient</div>
+    <div class="four">4 - radial-gradient</div>
+    <div class="five">5 - conic-gradient</div>
+    <div class="six">6 - conic-gradient</div>
+    <div class="seven">7 - conic-gradient</div>
+    <div class="eight">8 - conic-gradient</div>
+    <div class="nine">9 - conic-gradient</div>
+    <div class="ten">10 - conic-gradient</div>
+    <div class="eleven">11 - conic-gradient</div>
+    <div class="twelve">12 - conic-gradient</div>
+    <div class="thirteen">13 - conic-gradient</div>
+    <div class="fourteen">14 - conic-gradient<div class="inner">15</div></div>
+    <style>
+     rat{
+     color: red;
+     display: block;
+     font-size: 40px;
+     width: 400px;
+     height: 566px;
+     background-color: aquamarine;
+     }
+    </style>
+    <!-- i just created a custom tag which functions as a container -->
+    <rat></rat>
+    <e>1</e>
+    <e>2</e>
+    <e>3</e>
+    <e>4</e>
+    
+</body>
+</html>

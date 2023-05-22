@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+</head>
+<style>
+main{
+  display: grid;
+  /* height: 90vh; */
+  background-color: gray;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+header{
+   height: 60px;
+   background-color: aquamarine;
+   grid-column: 1 / 4;
+}
+aside{
+  background-color: aquamarine;
+  grid-row: 2 / 4;
+}
+section{
+  background-color: aquamarine;
+}
+article{
+   background-color: darkgray;
+   height: 300px;
+}
+.article-2{
+   grid-column: 2 / 3;
+}
+footer{
+   background: aquamarine;
+   grid-column: 1 / 4;
+   height: 60px;
+}
+
+
+</style>
+<body>
+    <main>
+       <header>Header</header>
+       <aside>Aside</aside>
+       <section class="box-1">box 1</section>
+       <article class="article-1">article 1</article>
+       <article class="article-2">article 2</article>
+       <section class="box-2">box 2</section>
+       <footer>footer</footer>
+    </main>
+</body>
+</html>

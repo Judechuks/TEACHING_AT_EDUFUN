@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+</head>
+<style>
+*{
+   margin: 0%;
+   padding: 0em;
+}
+   .main-header, .main-footer{
+       min-height: 80px;
+       width: 100%;
+       background-color: bisque;
+   }
+   .main-header p{
+       font: 30px bold;
+       text-align: center;
+       padding-top: 20px;
+   }
+   nav{
+      width: 100%;
+      height: 50px;
+      background-color: blue;
+   }
+   a{
+      font-size: 30px;
+      color: white;
+      display: inline-block;
+      margin-right: 15px;
+      padding-top: 5px;
+      border-right: 2px solid black;
+      height: 45px;
+      padding-right: 10px;
+   }
+   main{
+      background-color: darkcyan;
+      width: 100%;
+      height: 100vh;
+   }
+   article{
+      width: 67%;
+      height: 30vh;
+      background: coral;
+      border: 2px solid blue;
+      margin: 15px 0;
+      padding-top: 15px;
+   }
+   .article-foot{
+        margin-top: 30px;
+   }
+   article p{
+      margin-top: 20px;
+   }
+   aside{
+       margin: 15px 10px;
+       float: right;
+       background-color: coral;
+       width: 29%;
+       height: 40vh;
+       border: 2px solid blue;
+   }
+   aside header{
+      margin-top: 20px;
+      text-align: center;
+   }
+   aside p{
+      text-align: center;
+      margin: auto 20px;
+   }
+   .main-footer p{
+      padding-top: 20px;
+      text-align: center;
+   }
+
+</style>
+<body>
+    
+    <main>
+    <header class="main-header"><p>Our Header</p></header>
+    <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+    </nav>
+    <!-- aside -->
+    <aside>
+       <header>
+       <h1>News</h1>
+       <h3>Sub Title</h3>
+       </header>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore obcaecati tempora laudantium minus praesentium totam dolores inventore hic, optio maxime accusantium dignissimos magni nemo facere quos a excepturi. Labore, illo.</p>
+    </aside>
+    <!-- article -->
+    <article>
+       <header>
+       <h1>Main Title</h1>
+       <h3>Sub Title</h3>
+       </header>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore obcaecati tempora laudantium minus praesentium totam dolores inventore hic, optio maxime accusantium dignissimos magni nemo facere quos a excepturi. Labore, illo.</p>
+       <footer class="article-foot">Compiled by Justice</footer>
+    </article>
+    <article>
+       <header>
+       <h1>Main Title</h1>
+       <h3>Sub Title</h3>
+       </header>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore obcaecati tempora laudantium minus praesentium totam dolores inventore hic, optio maxime accusantium dignissimos magni nemo facere quos a excepturi. Labore, illo.</p>
+       <footer class="article-foot">Compiled by Victor</footer>
+    </article>
+    <!-- footer -->
+    <footer class="main-footer">
+      <p>copyright &copy; by Chigozie</p>
+      <p>09876467573465786</p>
+      <p>Email@gmail.com</p>
+    </footer>
+    </main>
+</body>
+</html>

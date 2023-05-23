@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+</head>
+<style>
+   section{
+       width: 90%;
+       height: 40vh;
+       background-color: aquamarine;
+       border-radius: 20px;
+       margin: 10px auto;
+       display: grid;
+       grid-template-columns: auto auto;
+       align-items: center;
+       z-index: -2;
+   }
+   div{
+      width: 90%;
+      height: 30vh;
+      background-color: transparent;
+   }
+   div:nth-child(1){
+       margin-left: 60px;
+       z-index: 2;
+       border: 2px solid red;
+   }
+   div:nth-child(2){
+       background-color: grey;
+       margin-left: -160px;
+       z-index: 3;
+   }
+</style>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    div{
+      /* height: 80px; */
+      /* width: 100px; */
+    }
+    .box1{
+      background-color: red;
+    }
+    .box2{
+      background-color: blue;
+    }
+    .box3{
+      background-color: aqua;
+    }
+    section{
+      width: 1000px;
+      height: 420px;
+      background-color: gray;
+      display: grid;
+      /* grid-auto-flow: column; */
+      grid-template-columns: auto auto auto;
+      /* grid-template-rows: 200px 300px; */
+      /* row-gap: 20px;
+      column-gap: 40px; */
+      /* gap: 40px; */
+      justify-content: space-between;
+      /* align-items: ; */
+      align-content: space-around ;
+    }
+    img{
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }.box2{
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-column: 1 / 4;
+      grid-column: 1 / span 3;
+      grid-column: span 3;
+
+      /* grid-row-start: 2;
+      grid-row-end: 5; */
+      /* margin-top: 10px; */
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>Company Name</h1>
+    <img src="../icons8.png" alt="">
+    <div class="box1">BOX</div>
+    <div class="box2">BOX1</div>
+    <div class="box3">BOX2</div>
+  </section>
+</body>
+</html>

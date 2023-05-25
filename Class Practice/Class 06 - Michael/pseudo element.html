@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<style>
+  h1::after{
+    content: 'Hello';
+  }
+  h1::before{
+    content: url(../facebook.png);
+  }
+  p::first-letter{
+    font-size: 40px;
+    color: red;
+  }
+  p::first-line{
+    color: green;
+  }
+  /* li::marker{
+     content: url(../icons8.png);
+  } */
+  li{
+     list-style-type: disc;
+     list-style-image: url(../icons8.png);
+     list-style-position: inside;
+     list-style: disc url(../go-icon.png) inside;
+  }
+  
+</style>
+<body>
+   <h1>Title</h1>
+   <p class="first">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae repellat, magnam dignissimos, rem minima a quos dolores temporibus officia impedit atque, quas suscipit provident ipsam aliquam sunt reprehenderit? Corporis quidem aliquam cum quod explicabo dolores numquam iusto provident. Quo doloremque voluptates beatae est cupiditate, voluptatem exercitationem dolore dignissimos, laboriosam, laudantium asperiores! Aut porro dolorem neque. 
+   </p>
+   <p>Commodi possimus velit aperiam quidem quaerat ex rerum facere veniam incidunt voluptate necessitatibus, officiis esse nihil sequi temporibus exercitationem ipsum, amet aliquam atque. Ratione animi in dolor, voluptate consequuntur repellendus
+   </p> 
+   <p>perspiciatis expedita voluptas quos eius distinctio. Inventore provident eaque assumenda vero, sunt ullam architecto voluptas ab libero aliquam blanditiis quis eveniet dolore nulla nemo animi, repudiandae modi veniam suscipit? Dolor accusamus accusantium numquam sit illo!
+   </p>
+    <p class="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae repellat, magnam dignissimos, rem minima a quos dolores temporibus officia impedit atque, quas suscipit provident ipsam aliquam sunt reprehenderit? Corporis quidem aliquam cum quod explicabo dolores numquam iusto provident. Quo doloremque voluptates beatae est cupiditate, voluptatem exercitationem dolore dignissimos, laboriosam, 
+    </p>
+    <p>laudantium asperiores! Aut porro dolorem neque. Commodi possimus velit aperiam quidem quaerat ex rerum facere veniam incidunt voluptate necessitatibus, officiis esse nihil sequi temporibus exercitationem ipsum, amet aliquam atque. Ratione animi in dolor, 
+    </p>
+    <p>voluptate consequuntur repellendus perspiciatis expedita voluptas quos eius distinctio. Inventore provident eaque assumenda vero, sunt ullam architecto voluptas ab libero aliquam blanditiis quis eveniet dolore nulla nemo animi, repudiandae modi veniam suscipit? Dolor accusamus accusantium numquam sit illo!</p>
+    <ul>
+      <h2>Fruits</h2>
+      <li>Mango</li>
+      <li>Apple</li>
+      <li>Orange</li>
+      <li>Banana</li>
+      <li>Guava</li>
+    </ul>
+</body>
+</html>

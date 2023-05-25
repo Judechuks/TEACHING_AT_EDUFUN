@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- <link rel="stylesheet" href="first css.css"> -->
+    <!-- <style>
+        label {
+color: blue;
+}
+p{
+color: red;
+font-size: 30px;
+ }
+    </style> -->
+</head>
+<body>
+    <form action="">
+      <label style="color:blue; font-size: 30px;" for="a">Football</label><input type="checkbox" id="a"checked>
+      <label for="b">basketball</label><input type="checkbox" id="b">
+      <label for="c">Wrestling</label><input type="checkbox" id="c">
+      <label for="d" title="Tennis">Tennis</label><input type="checkbox" id="d">
+      <label for="tel">Phone Number</label><input type="tel" name="" id="tel" pattern="[0-9]{11}" title="Numbers only don't include letters more than 10 characters">
+      <input type="submit" value="SUBMIT">
+      <label for="class">Class</label>
+      <select name="" id="class" multiple>
+      <optgroup label="Juniors">
+         <option value="jss1">JSS1</option>
+         <option value="">JSS2</option>
+         <option value="">JSS3</option>
+         </optgroup>
+         <optgroup label="Seniors">
+         <option value="ss1" selected>SS1</option>
+         <option value="ss2">SS2</option>
+         <option value="ss3" disabled>SS3</option>
+         </optgroup>
+      </select>
+      <label for="subject">Subject</label>
+      <input list="subject">
+      <datalist id="subject">
+        <option value="Math"></option>
+        <option value="English"></option>
+        <option value="Geography"></option>
+        <option value="Physics"></option>
+      </datalist>
+      <label for="web">Website</label>
+      <input type="url" value="https://">
+      <input type="image" src="../go-icon.png">
+      <button type="button">Submit</button>
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+      <label for="search">Search</label>
+      <input type="search">
+      <input type="time">
+      <label for="date-and-time">Your Traveling Date and Time</label>
+      <input type="datetime-local" id="date-and-time">
+      Progress<input type="range" min="1" max="100" value="50">
+      <progress min="1" max="100" value="50"></progress>
+      <details>
+        <summary>Hidden Information</summary>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis facilis explicabo totam ea natus, culpa porro iusto maiores recusandae temporibus eum quibusdam doloribus magnam. Fugiat tempore omnis debitis incidunt quos.</p>
+      </details>
+      Upload Your Passport<input type="file" accept="audio/*" multiple>
+    </form>
+</body>
+</html>

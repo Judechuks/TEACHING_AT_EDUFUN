@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    body{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 5px;
+    }
+    header{
+      background-color: aqua;
+      grid-column: 1 / 4;
+
+      display: grid;
+      grid-template-columns: auto auto auto;
+      align-items: center;
+      justify-content: space-between;
+    }
+    footer{
+      background-color: aqua;
+      grid-column: 1 / 4;
+    }
+    section{
+      background-color: aqua;
+      height: 300px;
+    }
+    article{
+      background-color: grey;
+    }
+    aside{
+      background-color: aqua;
+      grid-row: 2 / 4;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="../go-icon.png" alt="logo">
+    <h1>Company</h1>
+    <nav>Home About Contact</nav>
+  </header>
+  <aside>Aside</aside>
+  <section>Box 1</section>
+  <article>Article 1</article>
+  <article>Article 2</article>
+  <section>Box 2</section>
+  <footer>
+    <p>Copyright &copy; Michael</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+       <fieldset>
+       <legend>Personal Information</legend>
+       <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Type your Name here" size="" required pattern="[A-Za-z]*" title="You must enter your name and it must be letters only (A-Z or a-z)" autofocus>
+      <br> <br>
+      <label for="pass">Password</label>
+      <input type="password" id="pass" maxlength="10" >
+      <br> <br>
+      <label for="comment">Comment</label> <br>
+      <textarea id="comment" cols="30" rows="10"></textarea>
+      <br> <br>
+      <input type="submit" value="SUBMIT">
+      <input type="reset" value="CLEAR">
+      <input type="button" value="BUTTON">
+      <br> <br>
+      <button type="submit">SUBMIT</button>
+      <button type="reset">CLEAR</button>
+      <button type="button">BUTTON</button>
+       </fieldset>
+
+       <details>
+       <summary>Secret Message</summary>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptatem accusantium, sed ratione minus non placeat architecto commodi quidem voluptate blanditiis perspiciatis esse voluptates, distinctio molestiae cupiditate aspernatur. Voluptatem nobis sit rerum possimus commodi quisquam quis officiis, totam atque molestiae repellat iure officia asperiores praesentium autem eius est tempore voluptate enim quia, maxime voluptatibus! Aliquid a, voluptates earum eius ullam labore tempore consectetur, repudiandae pariatur perspiciatis, maiores quos ea! Inventore aliquid excepturi repudiandae illum dolorum laboriosam libero odio porro optio voluptatum id ut, quidem at rerum quos commodi atque consequatur veritatis mollitia omnis magni? Deleniti totam ad quod distinctio debitis voluptatum illum expedita porro, et repellendus saepe est maiores ratione aperiam quas, molestiae dignissimos quasi repellat eos amet! Laudantium ipsa et possimus soluta vero, sunt corrupti nesciunt totam hic. Eveniet quod aut possimus iste ab! Maiores incidunt quam officiis repudiandae soluta asperiores a, illo porro et? Hic magnam modi delectus aperiam reiciendis earum aut dicta veritatis. Dolores enim vero velit veritatis, magnam explicabo reiciendis numquam eveniet? Vel id non, ullam dolorem provident debitis quae consequatur doloribus placeat consequuntur hic repudiandae? Architecto deleniti possimus reprehenderit et hic molestiae asperiores tempore aspernatur, eveniet, autem ipsa cum doloribus perferendis perspiciatis fuga fugit numquam!</p>
+       </details>
+   <br> <br>
+   <label>Gender</label> <br>
+     <label for="m">Male</label>  <input type="radio" id="m" name="gender" >
+     <label for="f">Female</label>  <input type="radio" id="f" name="gender"checked>
+     <label for="o">Others</label>  <input type="radio" id="o" name="gender">
+     <br> <br>
+     <label>Countries you have visited</label> <br>
+     <label for="ja">Japan</label>  <input type="checkbox" id="ja">
+     <label for="us">USA</label>  <input type="checkbox" id="us">
+     <label for="gh">Ghana</label>  <input type="checkbox" id="gh" checked>
+     <label for="ru">Russia</label>  <input type="checkbox" id="ru">
+     <label for="ca">Cameroon</label>  <input type="checkbox" id="ca">
+     <br> <br>
+     <label for="phone">Phone Number</label>
+     <input type="tel" id="phone"pattern="[0-9, +]{11,}" placeholder="0##########">
+     <br> <br>
+     <label for="class">Class</label>
+     <select>
+       <optgroup label="Junior Class">
+          <option disabled>JSS1</option>
+          <option>JSS2</option>
+          <option selected>JSS3</option>
+       </optgroup>
+       <optgroup label="Senior Class">
+          <option>SSS1</option>
+          <option>SSS2</option>
+          <option>SSS3</option>
+       </optgroup>
+     </select>
+
+     <br> <br>
+     <label for="hgt">Height</label>
+     <input list="height">
+     <datalist id="height">
+     <option value="Tall"></option>
+     <option value="Average"></option>
+     <option value="Short"></option>
+     </datalist>
+
+     <br> <br>
+     <label for="DOB">Date of Birth</label>
+     <input type="date" id="DOB">
+
+     <br> <br>
+     <label for="web">Website</label>
+     <input type="url" id="web" placeholder="https://">
+
+     <br> <br>
+     <label for="fav">Favorite Color</label>
+     <input type="color" id="fav">
+     <br> <br>
+     <input type="image" src="../go-icon.png">
+
+     <br> <br>
+     <label for="search">Search</label>
+     <input type="search" id="search">
+     <br> <br>
+     <label for="mnth">Month</label>
+     <input type="month" id="mnth">
+     <br> <br>
+     <label for="week">Week</label>
+     <input type="week" id="week">
+     <br> <br>
+     <label for="time">Time</label>
+     <input type="time" id="time">
+     <br> <br>
+     <label for="date-time">Date and Time</label>
+     <input type="datetime-local" id="date-time">
+     <br> <br>
+     <label for="numb">Even Number</label>
+     <input type="number" min="5" max="10" step="2" id="numb">
+     <br> <br>
+     <label for="pro">Progress</label>
+     <input type="range" id="pro" min="0" max="100" value="25">
+     <br>
+     <progress min="0" max="100" value="50"></progress>
+     <br> <br>
+     <label for="upload">Upload your Passport</label>
+     <input type="file" id="upload" accept="audio/*" multiple>
+    </form>
+</body>
+</html>

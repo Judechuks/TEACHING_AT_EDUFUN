@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+</head>
+<style>
+main{
+   display: grid;
+   background-color: gray;
+   width: 1000px;
+   height: 500px;
+   grid-auto-flow: row;
+   grid-template-columns: 1fr 0.5fr 1fr;
+   align-content: space-around;
+   align-items: center;
+}
+header{
+   height: 80px;
+   width: 120px;
+   background-color: blue;
+}
+section{
+   height: 80px;
+   width: 120px;
+   background-color: green;
+}
+footer{
+   height: 80px;
+   width: 120px;
+   background-color: red;
+}
+</style>
+<body>
+  <main>
+    <header>HEADER</header>
+    <section>SECTION</section>
+    <footer>FOOTER</footer>
+    <footer>FOOTER</footer>
+    <footer>FOOTER</footer>
+  </main>
+</body>
+</html>

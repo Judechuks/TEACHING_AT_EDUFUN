@@ -1,0 +1,11 @@
+/* selector
+{property:value;
+} */
+
+div {
+background-color: burlywood; 
+color:red;
+}
+span {
+  color: red;
+}

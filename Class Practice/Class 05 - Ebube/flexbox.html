@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flex Box</title>
+</head>
+<style>
+div{
+   /* height: 200px; */
+   width: 100px;
+}
+
+.first{
+   background-color: aqua;
+   /* padding: 20px; */
+   order: 0;
+   flex-basis: 300px;
+}
+.second{
+   background-color: gray;
+   order: 0;
+   flex-basis: 300px;
+}
+.third{
+   background-color: blue;
+   order: 0;
+   /* flex-basis: 300px;
+   flex-grow: 0;
+   flex-shrink: 1; */
+   flex: 0 1 300px;
+}
+.fourth{
+   background-color: green;
+   order: 0;
+   flex-basis: 300px;
+   align-self: flex-start;
+   
+}
+.fifth{
+   background-color: red;
+   order: 0;
+   flex-basis: 300px;
+}
+   main{
+     display: flex;
+     width: 100%;
+     height: 500px;
+     background-color: black;
+     /* flex-direction: row;
+     flex-wrap: nowrap; */
+     /* row-gap: 10px;
+     column-gap: 20px; */
+     /* gap: 10px; */
+     flex-flow: row nowrap;
+
+     justify-content: start;
+     align-items: center;
+   }
+</style>
+<body>
+   <main>
+      <div class="first">1</div>
+      <div class="second">2</div>
+      <div class="third">3</div>
+      <div class="fourth">4</div>
+      <div class="fifth">5</div>
+   </main>
+</body>
+</html>

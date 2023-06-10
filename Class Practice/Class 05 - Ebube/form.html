@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+      
+      <fieldset>
+      <legend>Personal Details</legend>
+      <label for="name">Name</label> &nbsp; &nbsp; &nbsp; &nbsp;
+      <input type="text" id="name" placeholder="Full Names" size="" autofocus pattern="[A-Za-z]*" title="Make sure your name are only Characters from A-Z or a-z">  
+      <br> <br>
+      <label for="user">Username</label> &nbsp;
+      <input type="text" id="user" maxlength="14" required>  
+      <br> <br>
+      <label for="email">Email</label> &nbsp; &nbsp; &nbsp; &nbsp; 
+      <input type="email" id="email" placeholder="Email@gmail.com"> 
+      <br> <br>
+      <label for="pass">Password</label> &nbsp;
+      <input type="password" id="pass" value="" required> 
+      <br> <br>
+      <label for="comment">Comment</label> <br>
+      <textarea id="comment" cols="30" rows="10">My comment</textarea> 
+      <br><br>
+      <input type="submit" value="LOGIN">
+      <input type="reset" value="CLEAR">
+      </fieldset>
+      <br>
+      <details style="background-color: grey;">
+       <summary>Secret Information</summary>
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed commodi doloribus dolor velit sint qui? Ducimus earum sit autem, rem nesciunt magni neque beatae rerum alias minus quae, magnam ad!</p>
+      </details>
+      <br> <br>
+      <label for="gender">Gender</label> <br>
+      <input type="radio" name="gender" id="m" checked> <label for="m">Male</label>
+      <input type="radio" name="gender" id="f"> <label for="f">Female</label>
+      <input type="radio" name="gender"id="o"> <label for="o">Others</label>
+      <br> <br>
+      <label for="">Favorite Food</label> <br>
+      <input type="checkbox" id="rice"> <label for="rice">Rice</label>
+      <input type="checkbox" id="beans"> <label for="beans">Beans</label>
+      <input type="checkbox" id="spag" checked> <label for="spag">Spaghetti</label>
+      <input type="checkbox" id="indo"> <label for="indo">Indomie</label>
+      <br> <br>
+      <label for="tel">Phone Number</label>
+      <input type="tel" id="tel" placeholder="0*********" maxlength="15" pattern="[0-9]{15}">
+       <br> <br>
+
+      <label for="class">Class</label>
+      <select name="" id="class">
+        <option disabled selected>Select One</option>
+      <!-- <optgroup label="Junior">  -->
+        <option value="">JSS1</option>
+        <option value="">JSS2</option>
+        <option value="">JSS3</option>
+        <!-- </optgroup> -->
+         <!-- <optgroup label="Senior"> -->
+        <option value="">SS1</option>
+        <option value="">SS2</option>
+        <option value="">SS3</option>
+        <!-- </optgroup> -->
+      </select>
+      <br> <br>
+      <label for="hgt">Height</label>
+      <input list="Height" id="hgt">
+      <datalist id="Height">
+        <option value="Tall"></option>
+        <option value="Average"></option>
+        <option value="Short"></option>
+      </datalist>
+      <br> <br>
+      <label for="DOB">Date of Birth</label>
+      <input type="date" id="DOB" min="1900-01-01" max="2020-01-01">
+      <br> <br>
+      <label for="web">Website</label>
+      <input type="url" id="web" placeholder="https://">
+      <br> <br>
+      <label for="fav">Favorite Color</label>
+      <input type="color" name="" id="fav">
+      <br> <br>
+      <label for="Search">Search</label>
+      <input type="search" id="search">
+      <br> <br>
+      <label for="mon">Month of Birth</label>
+      <input type="month" id="mon">
+      <br> <br>
+      <label for="week">Traveling Week</label>
+      <input type="week" id="week">
+      <br> <br>
+      <label for="time">Traveling Time</label>
+      <input type="time" id="time">
+      <br> <br>
+      <label for="datetime">Traveling Date and Time</label>
+      <input type="datetime-local" id="datetime">
+      <br> <br>
+      <label for="num">Age</label>
+      <input type="number" id="num" min="4" max="120" step="1">
+      <br> <br>
+      <label for="pro">Progress</label>
+      <input type="range" id="pro" min="0" max="100" value="90">
+      <br> <br>
+      <label for="pr">Progress</label>
+      <progress id="pr" min="0" max="100" value="90"></progress>
+      <br> <br>
+      <label for="upload">Upload Passport</label>
+      <input type="file" id="upload" multiple accept="audio/*">
+      <br> <br>
+      <input type="image" src="../icons8.png">
+    </form>
+</body>
+</html>

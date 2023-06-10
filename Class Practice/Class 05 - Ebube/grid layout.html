@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Grid</title>
+</head>
+<style>
+*{
+   margin: 0;
+   padding: 0;
+}
+   main{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      /* justify-content: start;
+      align-items: start; */
+      background-color: gray;
+   }
+   div{
+      height: 200px;
+      width: 200px;
+   }
+   div:first-child{
+      background-color: cadetblue;
+      
+   }
+   header{
+      background-color: aqua;
+      width: 100%;
+      height: 100px;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 1;
+   }
+   section{
+      background-color: red;
+      width: 100%;
+      grid-column-start:1;
+      grid-column-end:4;
+   }
+   footer{
+      background-color: aqua;
+      width: 100%;
+      height: 100px;
+      /* grid-row-start: 3;
+      grid-row-end: 3; */
+      /* grid-column-start:1;
+      grid-column-end:4; */
+      grid-column: 1/4;
+      grid-column: 1/ span 3;
+      grid-column: span 3;
+   }
+   img{
+      width: 100%;
+      height: 100%;
+   }
+</style>
+<body>
+   <main>
+      <header>Company Name</header>
+      <section>
+        <!-- <div><img src="../water-drop.jpeg" alt="">Ebube has gone far in css</div> -->
+        <div>Ebube has gone far in css</div>
+        <!-- <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolore quam, maxime nam cupiditate et qui? Veritatis expedita aut consequuntur alias consequatur similique dolores? Doloribus, aut rerum, repudiandae expedita atque minima blanditiis porro tenetur dignissimos, odit quod. Possimus, aut voluptatem?</p></div> -->
+      </section>
+      <!-- <footer>Copyright &copy; Ebube</footer> -->
+   </main>
+</body> 
+</html>

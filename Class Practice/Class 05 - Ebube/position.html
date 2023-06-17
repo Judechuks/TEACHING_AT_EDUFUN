@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<style>
+div{
+    width: 90px;
+    height: 90px;
+}
+div:first-child{
+    position: static;
+    background-color: blue;
+    top: 90px;
+}
+div:nth-child(2){
+    position: relative;
+    background-color: green;
+    top: 90px;
+    left: 70px;
+    /* right: -1300px; */
+    /* bottom: -408px; */
+}
+div:nth-child(3){
+    position: absolute;
+    background-color: yellow;
+    /* top: 0px; */
+    /* left: 90px; */
+    right: 0px;
+    bottom: -290px;
+}
+div:nth-child(4){
+    position: sticky;
+    background-color: brown;
+    top: 0px;
+    /* left: 90px; */
+    /* right: 0px; */
+    /* bottom: 90px; */
+}
+div:nth-child(5){
+    position: fixed;
+    background-color: pink;
+    top: 160px;
+    /* left: 90px; */
+    /* right: 0px; */
+    /* bottom: 90px; */
+}
+</style>
+<body>
+    <div>static(default)</div>
+    <div>Relative</div>
+    <div>Absolute</div>
+    <div>Sticky</div>
+    <div>Fixed</div>
+</body>
+</html>

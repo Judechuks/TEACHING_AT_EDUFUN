@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition</title>
+</head>
+<style>
+  div{
+    height: 150px;
+    width: 250px;
+    margin-top: 20px;
+  }
+  .box1{
+    background-color: aqua;
+    /* transition-delay: 0s;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease; */
+    transition: transform 5s, background-color 2s 5s;
+    
+  }
+  .box1:hover{
+    transform: translate(50px, 50px);
+    background-color: blue;
+  }
+  .box2{
+    background-color: green;
+    transition: 1s;
+  }
+  .box2:hover{
+    transform: rotate(180deg);
+  }
+  .box3{
+    background-color: purple;
+  }
+  .box3:hover{
+    transform: scale(0.5);
+  }
+  .box4{
+    background-color: blue;
+  }
+  .box4:hover{
+    transform: skew(-45deg);
+  }
+</style>
+<body>
+  <div class="box1"></div>
+  <div class="box2">EBUBE</div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+</body>
+</html>

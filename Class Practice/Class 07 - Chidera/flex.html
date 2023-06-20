@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+</head>
+<style>
+*{
+    margin: 0;
+  }
+    div{
+      background-color: red;
+      flex-basis: 30px;
+      order: 4;
+      flex-grow: 1;
+    }
+    section{
+      background-color: blue;
+      width: 30px;
+      order: 1;
+      flex-grow: 1;
+    }nav{
+       background-color: aqua;
+       flex-basis: 30px;
+       flex-grow: 1;
+    }article{
+    background-color: purple;
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 4;
+    /* width: 600px; */
+    flex-basis: 30px;
+    }
+    body{
+      background-color: gray;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      /* justify-content: center; */
+      /* align-items: center; */
+      /* gap: 10px; */
+      flex-direction: row;
+      /* flex-wrap: wrap; */
+    }
+    h1{
+      text-align: center;
+      flex-grow: 1;
+    }
+    img{
+      order: 2;
+      flex-grow: 1;
+    }
+</style>
+<body>
+  <img src="../facebook.png" alt="">
+  <h1>Company</h1>
+  <nav>
+    Home About Services Contact
+  </nav>
+  <div>Item 1</div>
+  <section>
+    item 2
+  </section>
+  <article>
+    item 3
+  </article>
+</body>
+</html>

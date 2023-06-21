@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form</title>
+</head>
+<body>
+   <form action="" method="">
+      <br>
+      <fieldset>
+        <legend>Bio Data</legend>
+        <label for="firstName">User Name</label>
+      <input type="text" id="firstName" name="First-Name" value="" size="" required autofocus> 
+      <br> <br>
+      <label for="pass">Password</label>
+      <input type="password" id="pass" >
+      <br> <br>
+      <label for="feedback">Feedback</label> <br>
+      <textarea id="feedback" cols="60" rows="10"></textarea>
+      <br> <br>
+      <label for="days">No of Days</label>
+      <input type="number" id="days" step="2" value="" min="0" max="10">
+      <br> <br>
+      <input type="submit" value="LOGIN">
+      <input type="reset" value="CLEAR">
+      <input type="button" value="Ordinary Button"> 
+      <br> <br>
+      <label>Gender</label> <br>
+      <label for="male">Male</label> <input type="radio" name="gender" value="male" id="male" checked> 
+      <label for="female">Female</label> <input type="radio" name="gender" id="female">
+      <br> <br>
+      <label>Favorite Food</label> <br>
+      <label for="spag">Spaghetti</label> <input type="checkbox" id="spag">
+      <label for="rice">Rice</label> <input type="checkbox" id="rice" checked>
+      <label for="beans">Beans</label> <input type="checkbox" id="beans">
+      <label for="ptn">Plantain</label><input type="checkbox" id="ptn">
+      <label for="brd">Bread</label><input type="checkbox" id="brd">
+      </fieldset>
+      <details>
+         <summary>Sercret Info</summary>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et eos aperiam laudantium hic deleniti, eius, sunt, eum sapiente nobis libero dolores incidunt id ex maxime molestias autem quia quis.</p>
+         <button type="submit">LOGIN</button>
+      <button type="reset">CLEAR</button>
+      <button type="button">Ordinary Button</button> 
+      </details>
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" pattern="[0-9]{15,}" title="ONLY numbers are required 15 characters and Above">
+      <br>
+      <label for="class">Class</label>
+      <select id="class">
+      <optgroup label="Junior Secondary">
+         <option value="js1">JSS1</option>
+         <option value="" disabled>JSS2</option>
+         <option value="" selected>JSS3</option>
+       </optgroup>
+       <optgroup label="Senior Secondary">
+         <option value="">SS1</option>
+         <option value="">SS2</option>
+         <option value="">SS3</option>
+       </optgroup>
+      </select>
+      <br>
+      <label for="skin">Complexion</label>
+      <input list="Complexion" id="skin">
+      <datalist id="Complexion">
+        <option value="Light"></option>
+        <option value="Dark"></option>
+      </datalist>
+      <br>
+      <label for="DOB">Date of Birth</label>
+      <input type="date" id="DOB" max="2020-01-01" min="1881-01-01">
+      <br>
+      <label for="Web">Your Website</label>
+      <input type="url" id="Web" placeholder="https://">
+      <br>
+      <label for="fav">Favorite Color</label>
+      <input type="color" id="fav">
+      <br>
+      <input type="image" src="../go-icon.png">
+      <br>
+      <input type="search" placeholder="Search Here"> <br>
+      <label>Traveling Month</label>
+      <input type="month"> <br>
+      <label>Traveling Week</label>
+      <input type="week"> 
+      <br>
+      <label>Traveling Time</label>
+      <input type="time">
+      <br>
+      <label>Traveling Date and Time</label>
+      <input type="datetime-local">
+      <br>
+      <label for="">End of Year</label>
+      <input type="range" min="0" max="12" value="11">
+      <br>
+      <label for="">End of Year</label>
+      <progress min="0" max="100" value="50"></progress>
+      <label for="">Upload Your Passport</label>
+      <input type="file" multiple accept="image/*">
+   </form>
+</body>

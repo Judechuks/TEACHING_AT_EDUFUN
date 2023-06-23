@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>List</title>
+   <link rel="stylesheet" href="list style.css">
+   <style>
+   /* .heading{
+    font-size: 30px;
+    color: blue;
+  } */
+  /* #maintitle{
+   color: blue;
+   background-color: red;
+  } */
+  ol, ul{
+    background-color: gray;
+    /* font-size: 20px; */
+  }
+  dl h2{
+    color: blue;
+  }
+  dl > h2{
+    color: rgba(115, 255, 0, 0.5);
+    color: #ff0000;
+    color: hsl(1, 100%, 50%);
+  }
+  /* *{
+    color: green!important;
+  } */ 
+  *{
+    color: green;
+  }
+   </style>
+</head>
+
+<body>
+
+   <h1 style="font-size: 40px; color: green;">Ordered List</h1> 
+   <ol type="a" reversed start="1">
+      <h2 id="maintitle">Fruits</h2>
+      <li>Mango</li>
+      <li value="4">Apple</li>
+      <li>Pineapple</li>
+      <li>Guava</li>
+   </ol>
+
+   <h1>Unordered List</h1>
+   <ul type="disc">
+      <h2 id="maintitle" class="title1 title2 heading">Countries</h2>
+      <li>Nigeria</li>
+      <li>Ghana</li>
+      <li>Canada</li>
+      <li>Germany</li>
+   </ul>
+   
+   <h1>Definition/description list</h1> 
+   <dl>
+      <h2>Dictionary Meaning</h2>
+      <dt><h2>HTML</h2></dt>
+        <dd>Hypertext Markup Language</dd>
+      <dt>Food</dt>
+        <dd>is any substance that when taken into the body is not harmful rather nourishes the body</dd>
+   </dl>
+
+</body>
+
+</html>

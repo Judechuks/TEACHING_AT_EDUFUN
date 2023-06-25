@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>star</title>
+</head>
+<style>
+ *{
+   margin: 0;
+   padding: 0;
+ }
+  .box1, .box2, .box3, .box4, .box5{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+  }
+  .box1{
+    animation: rotation 1.5s linear infinite;
+  }
+  .box2{
+    transform: rotate(45deg);
+  }
+  .box3{
+    /* background-color: green; */
+    transform: rotate(25deg);
+  }
+  .box4{
+    /* background-color: yellow; */
+    transform: rotate(40deg);
+  }
+  .box5{
+    background-color: orangered;
+    border-radius: 50%;
+  }
+  main{
+    width: fit-content;
+    height: fit-content;
+    margin: 70px auto;
+  }
+  @keyframes rotation{
+    0%{
+      transform: rotate(0deg);
+    } 
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  .rod{
+    width: 20px;
+    height: 200px;
+    margin: auto;
+    background: #000;
+  }
+  footer{
+    width: 200px;
+    height: 50px;
+    background: #000;
+    border-radius: 50%;
+    transform: translateY(-25px);
+  }
+</style>
+<body>
+  <main>
+    <div class="box1">
+      <div class="box2">
+        <div class="box3"> 
+          <div class="box4">
+            <div class="box5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rod"></div>
+    <footer></footer>
+  </main>
+</body>
+</html>

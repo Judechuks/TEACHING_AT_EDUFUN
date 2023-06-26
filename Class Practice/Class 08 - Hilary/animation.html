@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+</head>
+<style>
+  div{
+    width: 200px;
+    height: 200px;
+  }
+  .box1{
+    background-color: aqua;
+    /* animation-name: move, bgchange;
+    animation-delay: 20ms;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both; */
+    animation: 2s ease-in-out 20ms 4 normal forwards move;
+    animation-name: move, bgchange;
+  }
+
+  @keyframes bgchange{
+    from{
+      background-color: green;
+    }
+    to{
+      background-color: red;
+    }
+  }
+
+  @keyframes move{
+    10%{
+      /* margin: 0; */
+      background-color: blue;
+      transform: translateY(-80px);
+    }
+    30%{
+      background-color: green;
+      transform: translateY(0px);
+    }
+    60%{
+      background-color: yellow;
+      transform: translateY(80px);
+    }
+    80%{
+      background-color: red;
+      transform: translateY(0px);
+    }
+    100%{
+     /* margin-left: 90%; */
+     font-size: 25px;
+      /* background-color: purple; */
+      transform: translateY(-80px);
+    }
+  }
+</style>
+<body>
+  <div class="box1">Box 1</div>
+  <!-- <div class="box2">Box 2</div> -->
+</body>
+</html>

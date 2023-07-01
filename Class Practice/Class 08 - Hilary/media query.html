@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<style>
+@media screen and (max-width: 1000px){
+  body{
+    background-color: blue;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 700px){
+  body{
+    background-color: green;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 400px){
+  body{
+    background-color: orange;
+    font-size: 30px;
+  }
+}
+</style>
+<body>
+  <form action="" method="">
+ 
+ <fieldset>
+ <legend>Personal Information</legend>
+ <label for="user">Username</label>
+ <input type="text" id="user" value="" size="20" maxlength="10" required autofocus>
+  <br>
+ <label>Password<input type="password"></label> <br>
+ <label for="com">Comment</label><br>
+ <textarea id="com" cols="30" rows="10" ></textarea> <br>
+ <label for="">Numbers</label>
+ <input type="number" min="0" max="30" step="1" name="numbers"> <br>
+ <label for="">Email</label>
+ <input type="email"> <br>
+ <label for="">Gender</label>
+ <label for="m">Male</label><input type="radio" name="gender" id="m" checked>
+ <label for="f">Female</label>
+ <input type="radio" name="gender" id="f">
+ <label for="o">Others</label>
+ <input type="radio" name="gender" id="o">
+ <br>
+
+<label for="">Favorite Food</label> <br>
+ <label for="p">Platain</label><input type="checkbox" name="food" id="p" checked>
+ <label for="r">Rice</label>
+ <input type="checkbox" name="food" id="r">
+ <label for="b">Beans</label>
+ <input type="Checkbox" name="food" id="b">
+ <br>
+<input type="tel" placeholder="Phone Number" pattern="[A-Z]*"> <br>
+<label for="">Class</label>
+ <select name="" id="">
+ <optgroup label="Junior Class">
+ <option value="js1">JSS1</option>
+ <option value="">JSS2</option>
+ <option value="">JSS3</option>
+ </optgroup><optgroup label="Senior Class">
+ <option value="" selected>SS1</option>
+ <option value="">SS2</option>
+ <option value="" disabled>SS3</option></optgroup>
+ </select>
+ <br>
+ <label for="">Subject</label>
+ <input list="subj">
+ <datalist id="subj">
+ <option value="Maths"></option>
+ <option value="English"></option>
+ <option value="CRS"></option>
+ </datalist>
+ <br>
+ <input type="submit" value="SUBMIT">
+ <input type="reset" value="CLEAR">
+ <input type="button" value="Ordinary Button">
+ </fieldset>
+  </form>
+</body>
+</html>

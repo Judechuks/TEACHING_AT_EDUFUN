@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformation</title>
+</head>
+<style>
+  div{
+    height: 200px;
+    width: 200px;
+  }
+  .box1{
+    background-color: aqua;
+  }
+  .box1:hover{
+    /* transform: translateX(50px); */
+    /* transform: translateY(50px); */
+    transform: translate(45px, 50px);
+  }
+  .box2{
+    background-color: blue;
+    transition: 1s;
+  }
+  .box2:hover{
+    /* transform: rotateX(90deg); */
+    /* transform: rotateY(90deg); */
+    transform: rotate(360deg);
+  }
+  .box3{
+    background-color: green;
+    transition: 1s;
+  }
+  .box3:hover{
+    transform: scaleX(1.5);
+    transform: scaleY(0.5);
+    transform: scale(2, 1.5);
+  }
+  .box4{
+    background-color: pink;
+  }
+  .box4:hover{
+    transition: 1s;
+    transform: skewX(90deg);
+    transform: skewY(90deg);
+    transform: skew(360deg, 180deg);
+  }
+  .box5{
+    background-color: skyblue;
+    transition: 1s;
+  }
+  .box5:hover{
+    transform: scale(2, 1.5) rotate(360deg) translate(500px);
+  }
+</style>
+<body>
+  <div class="box1">text</div>
+  <div class="box2">text</div>
+  <div class="box3">text</div>
+  <div class="box4">text</div>
+  <div class="box5">text</div>
+</body>
+</html>

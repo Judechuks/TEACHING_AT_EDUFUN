@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition</title>
+</head>
+<style>
+  div{
+    height: 200px;
+    width: 200px;
+  }
+  .box1{
+    background-color: aqua;
+  }
+  .box1:hover{
+    transform: translate(45px, 50px);
+  }
+  .box2{
+    background-color: yellow;
+    /* transition-delay: 1s;
+    transition-duration: 20s;
+    transition-property: all;
+    transition-timing-function: ease; */
+    transition: all 2s ease 1s;
+  }
+  .box2:hover{
+    background-color: blue;
+    /* transform: rotateX(90deg); */
+    /* transform: rotateY(90deg); */
+    transform: rotate(360deg);
+  }
+
+</style>
+<body>
+  <div class="box1">text</div>
+  <div class="box2">text</div>
+</body>
+</html>

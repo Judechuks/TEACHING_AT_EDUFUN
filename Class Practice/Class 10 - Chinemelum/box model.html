@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+</head>
+<style>
+  .box{
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    /* border-width: 10px;
+    border-style: groove;
+    border-color: blue; */
+
+    /* border-top: 10px groove blue;
+    border-left: 10px groove blue;
+    border-right: 10px groove blue;
+    border-bottom: 10px groove blue; */
+
+    border: 10px solid blue;
+
+    /* outline-width: 20px;
+    outline-style: double;
+    outline-style: red; */
+
+    /* outline: 10px double red; */
+    /* outline-offset: -40px; */
+
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+
+    /* padding: 1: = all the four side; */
+    /* padding: 2: top&bottom left&right; */
+    /* padding: 3: top, left&right, bottom; */
+    /* padding: 4: top, right, bottom, left ; */
+
+    padding: 20px;
+    padding: 30px 40px;
+    padding: 30px 40px 60px;
+    padding: 30px 40px 60px 60px;
+
+    /* every rule of padding also applies to margin */
+    /* margin-top: 60px;
+    margin-left: 90px; */
+    /* margin-right: 120px; */
+    /* margin-bottom: 120px; */
+/* 
+    margin-left: auto;
+    margin-right: auto; */
+    margin: 20px auto;
+
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    
+    /* border-radius: 1: = all the four edge; */
+    /* border-radius: 2: top-left&bottom-right bottom-left&top-right; */
+    /* border-radius: 3: top-left, bottom-left&top-right, bottom-right; */
+    /* border-radius: 4: top-left, top-right, bottom-right, bottom-left ; */
+    /* border-radius: 20px;
+    border-radius: 80px 20px;
+    border-radius: 80px 20px 160px;
+    border-radius: 0 80px 20px 160px; */
+
+    /* box-shadow: x-val, y-val, thickness, color-shadow; */
+    /* box-shadow: inset 0px 0px 20px black; */
+    box-shadow: 0px 0px 20px 10px black;
+
+    box-sizing: border-box;
+  }
+  div{
+    height: 200px;
+    /* width: 250px; */
+    width: 200px;
+    background-color: yellow;
+    border-radius: 100%;
+  }
+  span{
+    text-shadow: 10px 10px 2px black;;
+  }
+</style>
+<body>
+  <div class="box">
+    <span>MY TEXT CONTENT</span>
+  </div>
+  <div></div>
+</body>
+</html>

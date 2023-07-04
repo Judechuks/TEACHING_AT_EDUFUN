@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="first-css.css">
+</head>
+<body>
+   <h1>Registration Form</h1>
+  <form>
+    <label for="">Name</label>
+    <input type="text" placeholder="Enter Your Name">
+    <br> <br>
+
+    <!-- <select multiple> -->    
+    <label>Class</label>
+    <select>
+      <optgroup label="Junior Class">
+        <option value="" disabled>JSS1</option>
+        <option value="">JSS2</option>
+        <option value="">JSS3</option>
+      </optgroup>
+      <optgroup label="Senior Class">>
+        <option value="" selected>SS1</option>
+        <option value="">SS2</option>
+        <option value="">SS3</option>
+      </optgroup>
+    </select>
+    <br> <br>
+
+    <label for="">Height</label>
+    <input list="height">
+    <datalist id="height">
+      <option value="Tall"></option>
+      <option value="Average"></option>
+      <option value="Short"></option>
+    </datalist>
+    
+    <br> <br>
+    <label for="">Website</label>
+    <input type="url" value="https://">
+    <br> <br>
+
+    <label for="">Favorite Color</label>
+    <input type="color">
+    <br> <br>
+    
+    <input type="image" src="../go-icon.png" alt="submit Image">
+    <br> <br>
+    
+    <label for="">Search</label>
+    <input type="search">
+    <br> <br>
+
+    <label for="">Month</label>
+    <input type="month">
+    <br> <br>
+    <label for="">Week</label>
+    <input type="week">
+    <br> <br>
+    <label for="">Time</label>
+    <input type="time">
+    <br> <br>
+    <br> <br>
+    <label for="">Date and Time</label>
+    <input type="datetime-local">
+    <br> <br>
+    <input type="range" max="100" min="0" value="80"> <br>
+    <progress value="80" min="0" max="100"></progress>
+    <br>
+    <details>
+      <summary>Hidden Message</summary>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ducimus aperiam! Asperiores corporis illo rem eos sunt distinctio excepturi facilis?</p>
+    </details>
+    <br>
+    <label>Upload Passport</label>
+    <input type="file" multiple accept="audio/*">
+    <button>SUBMIT</button>
+  </form>
+</body>
+</html>

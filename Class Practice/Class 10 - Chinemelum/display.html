@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display</title>
+</head>
+<style>
+  p{
+    display: block;
+    background-color: blue;
+  }
+  img{
+    display: block;
+  }
+  a{
+    /* display: none; */
+    /* visibility: hidden; */
+    opacity: 0.1;
+  }
+  span{
+    display: inline-block;
+    padding: 40px;
+    background-color: red;
+  }
+  .hint{
+    display: none;
+  }
+  .container:hover .hint{
+    display: inline-block;
+  }
+</style>
+<body>
+  <p>I'm paragraph</p>
+<div class="container">
+    <img src="../water-drop.jpeg" alt="">
+    <p class="hint">This is an an image of water</p>
+</div>
+  <a href="">I'm a link</a>
+  <span>I'm span</span>
+</body>
+</html>

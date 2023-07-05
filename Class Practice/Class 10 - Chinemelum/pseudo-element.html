@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Element</title>
+</head>
+<style>
+li:before{
+    content: 'details ';
+  }
+    /* 
+  li:after{
+    content: 'details';
+  } */
+  /* li{
+    list-style-type: decimal;
+    list-style-image: url(../go-icon.png);
+    list-style-position: inside;
+    
+    list-style: lower-alpha url(../go-icon.png) inside;
+  } */
+  li::marker{
+    content: url(../icons8.png);
+  }
+</style>
+<body>
+  <ul>
+    <li>Dog</li>
+    <li>Lion</li>
+    <li>Tiger</li>
+    <li>Leopard</li>
+    <li>Cat</li>
+  </ul>
+</body>
+</html>

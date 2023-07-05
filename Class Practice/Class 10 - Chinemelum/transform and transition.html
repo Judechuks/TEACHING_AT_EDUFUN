@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformation</title>
+</head>
+<style>
+  div{
+    width: 200px;
+    height: 200px;
+  }
+  .box1{
+    background-color: #f00;
+  }
+  .box1:hover{
+    /* transform: translateX(300px);
+    transform: translateY(-100px); */
+    transform: translate(300px, -100px);
+    transition: 1s;
+  }
+  .box2{
+    background-color: #f0f;
+  }
+  .box2:hover{
+    /* transform: rotateX(360deg); */
+    /* transform: rotateY(270deg); */
+    background-color: #f00;
+    transform: rotate(360deg);
+    /* transition-delay: 0; */
+    /* transition-duration: 4s; */
+    /* transition-property: all; */
+    /* transition-timing-function: ease-in-out; */
+    transition: 4s;
+  }
+  .box3{
+    background-color: #ff0;
+    margin-left: 300px;
+  }
+  .box3:hover{
+    /* transform: scaleX(0.5); */
+    /* transform: scaleY(2); */
+    transform: scale(1.5, 2);
+  }
+  .box4{
+    background-color: #0f0;
+    margin-left: 300px;
+  }
+  .box4:hover{
+    transform: skewX(180deg);
+    transition: 1s;
+  }
+</style>
+<body>
+  <div class="box1"></div>
+  <div class="box2">Text</div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+</body>
+</html>

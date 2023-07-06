@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+</head>
+<style>
+/* =====================HEADER======================== */
+  div{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    /* animation-name: movement; */
+    /* animation-delay: 0s; */
+    /* animation-duration: 6s; */
+    /* animation-timing-function: ease; */
+    /* animation-iteration-count: 3; */
+    /* animation-direction: normal; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-fill-mode: forwards; */
+    animation: movement 6s ease 0s infinite normal backwards;
+  }
+  /* @keyframes movement{
+    0%{
+      background-color: blue;
+      transform: translateX(0px);
+    } 
+    30%{
+      background-color: yellow; 
+      transform: translate(60px, 0px); 
+    }
+    50%{
+      transform: translate(200px, -100px);
+
+    }
+    60%{
+      background-color: black;
+      transform: translate(400px, 100px);
+    }
+    80%{
+      background-color: white;
+      transform: translate(800px, 0px);
+    }
+    100%{
+      background-color: green;
+      transform: translateX(1000px);
+    }
+  } */
+  /* ======================= BANNNER =========================== */
+  @keyframes movement{
+    0%{
+      backgrOUND-color: blue;
+      transform: translateX(0px);
+    } 
+    100%{
+      background-color: green;
+      transform: translateX(1000px);
+      font-size: 3rem;
+    }
+  }
+
+</style>
+<body>
+  <div>Text</div>
+</body>
+</html>

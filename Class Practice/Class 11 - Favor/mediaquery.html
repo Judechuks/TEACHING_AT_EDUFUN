@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query</title>
+</head>
+<style>
+section{
+  background-color: gray;
+  height: 100vh;
+  width: 100%;
+}
+div{
+  height: 300px;
+  width: 600px;
+  background-color: red;
+  display: inline-block;
+}
+article{
+  height: 300px;
+  width: 600px;
+  background-color: blue;
+  display: inline-block;
+}
+@media (max-width: 800px) and (min-width: 500px){
+  article{
+    background-color: blueviolet;
+    width: 200px;
+  }
+  div{
+    width: 200px;
+    background-color: green;
+  }
+}
+@media (min-width: 1000px){
+  article{
+    background-color: yellow;
+    width: 200px;
+    border-radius: 30px;
+  }
+  div{
+    width: 200px;
+    background-color: rgb(128, 0, 90);
+  }
+}
+</style>
+<body>
+  <section>
+    <div></div>
+    <article></article>
+  </section>
+</body>
+</html>

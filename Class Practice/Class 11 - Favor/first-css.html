@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First CSS Class</title>
+  <!-- <link rel="stylesheet" href="first-css.css"> -->
+</head>
+<style>
+body{
+  background-color: gray;
+}
+/* h2{
+  color: red;
+} */
+  /* .my-heading{
+  color: green;
+  font-size: 40px;
+  } */
+  .my-heading, #heading{
+  color: rebeccapurple;
+  font-size: 40px;
+  }
+  /* #heading{
+    color: rebeccapurple;
+    font-size: 40px;
+  } */
+  ol > li{
+    color: deeppink;
+  }
+  ol li{
+    color: royalblue;
+  }
+  *{
+    /* color: red!important; */
+    color: rgba(84, 112, 163, 0.911);
+    /* color: #ff00ff; */
+    /* color: cyan; */
+  }
+</style>
+<body>
+  <p>This is a paragraph</p>
+  <ol>
+    <!-- <h2 style="color: purple; font-size: 40px;">Countries Visited</h2> -->
+    <h2 id="heading">Countries Visited</h2>
+    <li>Ghana</li>
+    <li>Australia</li>
+    <li>Cameroon</li>
+  </ol>
+  <ul>
+    <!-- <h2 style="color: purple; font-size: 40px;">Animals</h2> -->
+    <h2 class="heading main-heading my-heading">Animals</h2>
+    <li>Aquatic</li>
+      <ol>
+        <li>Fish</li>
+         <div><li>Octopus</li></div>
+      </ol>
+    <li>Terestial</li>
+  </ul>
+</body>
+</html>

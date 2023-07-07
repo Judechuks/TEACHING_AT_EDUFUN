@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+<body>
+  <form action="" method="post|get">
+   <fieldset>
+    <legend>Personal Information</legend>
+    <label for="name">Name</label> 
+    <input type="text" id="name" value="" size="20" maxlength="10" autofocus> <br> <br>
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="mypassword" required> <br> <br>
+    <label for="">Feedback</label> <br>
+    <textarea cols="50" rows="15"></textarea> <br> <br>
+    <label for="num">Numbers</label>
+    <input type="number" min="0" max="10" step="3"> <br> <br>
+    <label for="">Email</label>
+    <input type="email"> <br> <br>
+   </fieldset> <br>
+   <details style="background-color: gray">
+     <summary>Hidden Information</summary>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam culpa enim quas quam laboriosam, laborum nesciunt quibusdam, sunt dolorum consequatur atque ducimus. Accusamus expedita deserunt minima est aperiam? Magnam, molestiae sint tenetur aspernatur aliquid quibusdam culpa dolor incidunt libero aperiam, debitis id ipsum? Adipisci repellat sequi quae earum facilis suscipit dolor consectetur fugit minima magni blanditiis, atque recusandae, laudantium exercitationem? Voluptatum aspernatur sint dicta. Voluptatibus totam porro, rem ipsum atque consequatur eius soluta illo facere qui natus corrupti obcaecati repudiandae?</p>
+   </details> <br>
+
+    <input type="submit" value="SUBMIT">
+    <input type="reset" value="CLEAR">
+    <input type="button" value="ORDINARY BUTTON" onclick="alert('Hey Welcome to my website')"> <br> <br>
+    <button type="submit">SUBMIT</button>
+    <button type="reset">CANCEL</button>
+    <button type="button">ORDINARY</button>
+    <label for="">Gender</label> <br>
+    <label for="m">Male</label> <input type="radio" name="gender" id="m" checked>
+    <label for="">Female</label> <input type="radio" name="gender">
+    <label for="">Others</label> <input type="radio" name="gender"> <br> <br>
+
+    <label for="">Favorite Food</label> <br>
+    <label for="">Rice and Stew</label> <input type="checkbox">
+    <label for="">Yam with Egg Sauce</label> <input type="checkbox">
+    <label for="">Indomie</label> <input type="checkbox">
+    <label for="">Spaghetti</label> <input type="checkbox">
+    <label for="">Fried rice</label> <input type="checkbox" checked> <br>
+    <label for="">Phone Number</label>
+    <input type="tel" pattern="[A-Za-z]{10}" title="Your characters must be 10"> <br>
+    <label for="">Class</label>
+    <select>
+      <optgroup label="Junior Class">
+      <option value="" selected disabled>Class to be admitted into</option>
+      <option value="">JSS 1</option>
+      <option value="">JSS 2</option>
+      <option value="" >JSS 3</option>
+      </optgroup>
+      <optgroup label="Senior Class">
+      <option value="ss1">SS 1</option>
+      <option value="">SS 2</option>
+      <option value="" disabled>SS 3</option>
+      </optgroup>
+    </select> <br>
+    <label for="">Complexion</label>
+    <input list="skin">
+    <datalist id="skin">
+      <option value="Light"></option>
+      <option value="Dark"></option>
+    </datalist> <br>
+    <label for="">Date of Birth</label>
+    <input type="date" min="1990-01-01" max="2020-01-01">
+    <br>
+    <label for="">Your Website</label>
+    <input type="url" placeholder="https://" value="https://">
+    <br>
+    <label for="">Favorite</label>
+    <input type="color">
+    <br>
+    <input type="image" src="../go-icon.png"> <br>
+    <input type="search" placeholder="Search Items Here">
+    <label for="">Traveling Month</label>
+    <input type="month">
+    <input type="week">
+    <input type="time">
+    <input type="datetime-local">
+    <input type="range" min="0" value="90" max="100">
+    <progress min="0" value="60" max="80"></progress> <br>
+    <label for="">Upload Your Passport</label>
+    <input type="file" accept="image/*" multiple>
+  </form>
+</body>
+</html>

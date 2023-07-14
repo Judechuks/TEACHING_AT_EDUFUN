@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Layout</title>
+</head>
+<style>
+header, footer{
+  height: 150px;
+  background-color: chocolate;
+  width: 100%;
+}
+header{
+  position: fixed;
+  top: 0;
+}
+footer{
+  position: sticky;
+  bottom: 0;
+}
+main{
+   height: 150vh;
+   background-color: gray;
+}
+</style>
+<body>
+<header></header>
+<main></main>  
+<footer></footer>
+</body>
+</html>

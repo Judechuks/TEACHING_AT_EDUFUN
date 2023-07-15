@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Class</title>
+</head>
+<style>
+  a:link{
+    color: greenyellow;
+  }
+  a:visited{
+    color: aqua;
+  }
+  a:hover{
+    display: block;
+    background-color: gray;
+    font-size: 2rem;
+  }
+  a:focus{
+    display: block;
+    background-color: darkcyan;
+  }
+  a:active{
+     color: blue;
+  }
+  h2:not(#fire, #ducan){
+    background-color: blue;
+  }
+  /* li:only-child{
+    font-size: 4rem;
+  } */
+  /* li:nth-child(even){
+    font-size: 4rem;
+  } */
+  /* h2::before{
+    content: url(../go-icon.png);
+  } */
+  /* h2::after{
+    content: url(../go-icon.png);
+  } */
+  h2::first-letter{
+    font-size: 4rem;
+  }
+  p::first-line{
+    font-size: 2rem;
+  }
+  /* li::marker{
+    content: url(../up.png);
+  } */
+  li{
+    /* list-style-type: none;
+    list-style-image: url(../go-icon.png);
+    list-style-position: inside; */
+    list-style: decimal inside;
+  }
+
+</style>
+<body>
+   <h1>My Favorite Artist</h1>
+  <a href="#ducan"><p>Ducan Mighty</p></a>
+  <a href="#fire"><p>Fireboy</p></a>
+  <a href="#davido"><p>Davido</p></a>
+  <a href="#bey"><p>Beyounce</p></a>
+  <a href="#Rihanna"><p>Rihanna</p></a>
+
+  <h2 id="ducan">Ducan Mighty</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.</p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.</p>
+
+  <h2 id="fire">Fireboy</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.</p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.</p>
+
+  <h2 id="davido">Davido</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.</p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.</p>
+
+  <h2 id="bey">Beyounce</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.</p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.</p>
+
+  <h2 id="Rihanna">Rihanna</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.</p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.</p>
+  <a href="#">Go to the top</a> <br>
+  <a href="image.html" target="_blank">Read More</a> 
+  <ul>
+     <li>Rice</li>
+     <li>Beans</li>
+     <li>Spaghetti</li>
+     <li>Egg</li>
+     <li>Plantain</li>
+     <li>Potato</li>
+     <li>Potato</li>
+     <li>Potato</li>
+     <li>Potato</li>
+     <li>Potato</li>
+     <li>Potato</li>
+     <li>Potato</li>
+  </ul>
+  <ol>
+    <li>I'm Alone</li>
+  </ol>
+</body>
+</html>

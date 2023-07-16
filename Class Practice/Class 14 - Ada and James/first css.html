@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>First CSS Class</title>
+  <link rel="stylesheet" href="../Class 13 - Uzoma/first-css.css">
+  <style>
+    h2{
+    color: blue;
+    font-size: 50px;
+    background-color: blanchedalmond;
+  }
+  body{
+    background-color: gray;
+  }
+  /* li{
+    font-size: 84px;
+  } */
+  #ghana{
+    color: red;
+  }
+  .can{
+    font-style: italic;
+  }
+  .cana, .fr{
+    color: blueviolet;
+  }
+  ul li{
+    color: green;
+  }
+  ul > li{
+    color: red;
+  }
+  *{
+    /* color: green!important; */
+    color: green;
+    color: rgba(255, 155, 0, 0.5);
+    /* color: #rrggbb; */
+    color: #f00;
+    color: hsl(240, 100%, 50%);
+  }
+  div{
+    font-size: 40px;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+  }
+  </style>
+</head>
+<body>
+<!-- <ol></ol> stands for ordered list, which is used to create a list -->
+  <ol>
+  <p>This is a paragragh</p>
+  <h2>Countries</h2>
+  <li style="font-size: 24px;">Nigeria</li>
+               <ul>
+                  <li style="font-size: 24px;">Anambra</li>
+                     <div><li>Inside List</li></div>
+                  <li style="font-size: 24px;">Abia</li>
+                  <li style="font-size: 24px;">Delta</li>
+                  <li style="font-size: 24px;">Edo</li>
+               </ul>
+  <li id="ghana">Ghana</li>
+  <li class="can cana">Canada</li>
+  <li class="fr">France</li>
+</ol>
+<div></div>
+</body>
+</html>

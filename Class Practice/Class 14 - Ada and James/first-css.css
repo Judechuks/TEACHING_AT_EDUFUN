@@ -1,0 +1,13 @@
+/* selector{ 
+  property: value;
+} */
+
+h2{
+  color: yellow;
+  font-size: 50px;
+  background-color: blanchedalmond;
+  text-align: center;
+}
+body{
+  background-color: gray;
+}

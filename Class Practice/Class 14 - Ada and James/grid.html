@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+</head>
+<style>
+  main{
+    width: 1200px;
+    height: 800px;
+    background-color: gray;
+
+    display: grid;
+    /* grid-auto-flow: row; */
+    /* grid-template-columns: repeat(3, 200px) ; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 20% 20% 20%;
+    /* grid-template-rows: 200px 200px; */
+    /* row-gap: 20px; */
+    /* column-gap: 20px; */
+    /* gap: 20px; */
+
+    justify-content: center;
+    /* justify-items: center; */
+    align-items: stretch;
+    /* align-content: center; */
+    /* place-content: end center; */
+  }
+  header, section, aside, article, nav, footer{
+    /* height: 200px; */
+    /* width: 200px; */
+    background-color: blue;
+  }
+  section{
+    background-color: red;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  aside{
+    background-color: yellow;
+  }
+  article{
+    background-color: purple;
+  }
+  nav{
+    background-color: orange;
+    /* grid-column: 1 / 4; */
+    grid-column: 1 / span 1;
+  }
+  footer{
+    background-color: green;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+</style>
+<body>
+<main>
+    <header>Header</header>
+    <section>aside</section>
+    <aside> NEws </aside>
+    <article>box 2</article>
+    <nav>Box 3</nav>
+    <footer>footer</footer>
+</main>
+</body>
+</html>

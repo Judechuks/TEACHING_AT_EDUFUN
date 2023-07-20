@@ -1,0 +1,31 @@
+form{
+  background-color: blue;
+  color: black;
+  width: 50%;
+}
+h1{
+  color: orange;
+  color: rgba(228, 150, 33, 0.5);
+  color: #070090; 
+  color: hsl(180, 100%, 100%);
+}
+#heading,
+.title3{
+  color: purple;
+  font-size: 40px;
+}
+/* div h1{
+  background-color: #ccc;
+} */
+div > h1{
+  background-color: #ccc;
+}
+*{
+  /* color: aqua!important; */
+}
+h1{
+  /* color: blue;  */
+}
+span{
+  color: yellow;
+}

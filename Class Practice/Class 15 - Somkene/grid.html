@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+</head>
+<style>
+  section{
+    width: 1000px;
+    height: 900px;
+    background-color: gray;
+
+    display: grid;
+    /* grid-auto-flow: column; */
+    grid-template-columns: 200px 200px 200px;
+    /* grid-template-columns: 1fr 1.5fr 1fr; */
+    /* grid-template-columns: 50% 30% 20%; */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns: repeat(3, 300px); */
+    /* grid-template-rows: 200px 200px 200px; */
+    /* column-gap: 20px;
+    row-gap: 30px; */
+    /* gap: 30px 20px; */
+
+    /* justify-content: space-evenly;  */
+    justify-content: center;
+    align-content: center;
+    /* align-items: center; */
+    /* place-content: align-content justify-content; */
+    /* place-content: center space-evenly; */
+  }
+
+  div{
+    /* width: 200px;*/
+    height: 200px; 
+  }
+  .box1{
+    background-color: aqua;
+  }
+  .box2{
+    background-color: green;
+    /* grid-row-start: 3;
+    grid-row-end: 4; */
+    /* grid-column-start: 3;
+    grid-column-end: 4; */
+
+    /* grid-column: 3 / 4; */
+    /* grid-row: 3 / 4; */
+
+    grid-column: 1 / span 3;
+  }
+  .box3{
+    background-color: yellow;
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+  }
+  .box4{
+    background-color: pink;
+  }
+  .box5{
+    background-color: red;
+  }
+  .box6{
+    background-color: blue;
+  }
+  .box7{
+    background-color: purple;
+  }
+  .box8{
+    background-color: maroon;
+  }
+  .box9{
+    background-color: chartreuse;
+  }
+</style>
+<body>
+  <Section>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+  </Section>
+</body>
+</html>

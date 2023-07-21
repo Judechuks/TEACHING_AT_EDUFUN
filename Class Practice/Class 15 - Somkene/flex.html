@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  section{
+    display: flex;
+    width: 1000px;
+    height: 800px;
+    background-color: gray;
+    /* gap: 40px; */
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    align-items: center;
+  }
+  div{
+    width: 200px;
+    height: 200px;
+  }
+  .box1{
+    background-color: blue;
+    order: 1;
+  }
+  .box2{
+    background-color: green;
+    order: 2;
+  }
+  .box3{
+    background-color: yellow;
+    order: 3;
+  }
+  .box4{
+    background-color: orange;
+    order: 6;
+  }
+  .box5{
+    background-color: red;
+    order: 5;
+    flex-basis: 500px;
+  }
+  .box6{
+    background-color: pink;
+    order: 6;
+    flex-grow: 2;
+  }
+  .box7{
+    background-color: aqua;
+    order: 7;
+  }
+  .box8{
+    background-color: maroon;
+    order: 8;
+  }
+  .box9{
+    background-color: magenta;
+    order: 9;
+  }
+</style>
+<body>
+  <section>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+    <div class="box6">6</div>
+    <div class="box7">7</div>
+    <div class="box8">8</div>
+    <div class="box9">9</div>
+  </section>
+</body>
+</html>

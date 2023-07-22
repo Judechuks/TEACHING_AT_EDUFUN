@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Class</title>
+</head>
+<style>
+  a:link{
+    text-decoration: none;
+    color: yellow;
+    margin: 30px;
+  }
+  a:visited{
+    color: red;
+  }
+  a:hover{
+    background-color: aquamarine;
+    color: pink;
+    font-size: 2rem;
+    padding: 10px;
+  }
+  a:focus{
+    background-color: green;
+  }
+  a:active{
+    color: yellow;
+  }
+  a:not(#contact, .music){
+    font-size: 2rem;
+  }
+  a:first-child{
+    background-color: cornflowerblue;
+  }
+  /* li:first-child{
+    background-color: cornflowerblue;
+  }
+  li:last-child{
+    background-color: yellow;
+  }
+  li:nth-child(4){
+    background-color: red;
+  } */
+  li:nth-child(odd){
+    background-color: #ff0;
+  }
+  li:nth-child(even){
+    background-color: #00f;
+  }
+  li::first-letter{
+    font-size: 2.5rem;
+  }
+  p::first-line{
+    color: #00f;
+  }
+  li{
+    list-style-type: none;
+    list-style-image: url(../icons8.png);
+    list-style-position: inside;
+    list-style: decimal url(../icons8.png) inside;
+  }
+  li::before{
+    content: "Item ";
+    content: url(../go-icon.png);
+  }
+</style>
+<body>
+  <a href="#a">Home</a> <br>
+  <a href="#b">About</a> <br>
+  <a href="#c" class="music">Music</a> <br>
+  <a href="#d">Video</a> <br>
+  <a href="#e" id="contact">Contact Us</a> 
+
+  <ul>
+    <li>Apple</li>
+    <li>Pineapple</li>
+    <li>Mango</li>
+    <li>Orange</li>
+    <li>Cashew</li>
+    <li>Banana</li>
+  </ul>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ut laudantium! Voluptatibus est enim, facere optio ipsam officiis ex repellat. Sunt quam quod tempore perferendis neque accusantium dolores commodi repellendus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ut laudantium! Voluptatibus est enim, facere optio ipsam officiis ex repellat. Sunt quam quod tempore perferendis neque accusantium dolores commodi repellendus?</p>
+</body>
+</html>

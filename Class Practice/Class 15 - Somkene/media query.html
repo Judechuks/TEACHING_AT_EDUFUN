@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media query</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  section{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  article{
+    background-color: blue;
+    font-size: 90px;
+  }
+  aside{
+    background-color: black;
+    color: white;
+    font-size: 90px;
+  }
+  @media screen and (max-width: 700px){
+   section{
+     grid-template-columns: 1fr;
+   }
+   aside{
+    font-size: 30px;
+   }
+   article{
+    font-size: 30px;
+   }
+  }
+</style>
+<body>
+  <section>
+    <article>Hey watch me</article>
+    <aside>Me too</aside>
+  </section>
+</body>
+</html>

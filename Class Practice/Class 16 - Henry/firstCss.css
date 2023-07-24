@@ -1,0 +1,34 @@
+form{
+  background-color: blue;
+  color: black;
+  width: 50%;
+}
+.henry{
+  background-color: red;
+}
+#age-label{
+  /* background-color: green; */
+}
+body{
+  background-color: chartreuse;
+}
+div > h1, h5{
+  background-color: gray;
+  color: brown;
+  font-size: 2rem;
+}
+.right{
+  background-color: #fff;
+  /* font-size: 3rem; */
+  /* margin: 10px; */
+}
+*{
+  color: orange;
+}
+.age{
+  background-color: blue;
+}
+.age{
+  background-color: purple;
+}
+/* inheritance means when a child gets what the parents has */

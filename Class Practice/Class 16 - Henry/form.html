@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="firstCss.css">
+  <style>
+    form{
+      background-color: red;
+      color: black;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <form action="" style="background-color: darkgrey; width: 100%;">
+  <!-- <form action=""> -->
+    <label for="firstName" class="first-label henry" class="">First Name</label>
+    <input type="text" id="firstName" maxlength="6" required autofocus> <br> <br>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" value="" size="20"> <br> <br>
+    <label for="">Comment</label> <br>
+    <textarea name="" id="" cols="30" rows="10"></textarea> <br>
+    <label for="" id="age-label" class="age">Age</label>
+    <input type="number" min="0" value="30" max="60"> <br> <br>
+    <label for="">Email</label>
+    <input type="email"> <br> <br>
+
+   <input type="submit" value="SUBMIT"> 
+   <input type="reset" value="CLEAR"> 
+   <input type="button" value="CLICK ME" onclick="alert('Welcome!')"> <br> <br>
+   <button type="submit">SUBMIT</button>
+   <button type="reset">CLEAR</button>
+   <button type="button" onclick="alert('Hello!')">CLICK ME</button> <br> <br>
+
+   <fieldset>
+    <legend>Personal details</legend>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" value="" size="20" > <br> <br>
+    <label for="">Gender</label> <br>
+    <label for="">Male</label> <input type="radio" name="gender" value="M">
+    <label for="">Female</label> <input type="radio" name="gender" checked>
+    <label for="">Other</label> <input type="radio" name="gender">  <br> <br>
+    <label for="">Favorite Food</label> <br>
+    <label for="">Rice</label> <input type="checkbox" >
+    <label for="">Beans</label> <input type="checkbox">
+    <label for="">Plantain</label> <input type="checkbox"> <br> <br>
+    <label for="">Phone Number</label>
+    <input type="tel" pattern="[0-9]{11,}" title="USE 11 DIGITS NUMBERS ONLY"> <br>
+    <label for="">Class</label>
+    <select multiple>
+     <optgroup label="JUNIOR">
+      <option value="">JSS 1</option>
+      <option value="">JSS 2</option>
+      <option value="">JSS 3</option>
+     </optgroup>
+     <optgroup label="SENIOR">
+      <option value="" selected>SSS 1</option>
+      <option value="">SSS 2</option>
+      <option value="" disabled>SSS 3</option>
+      </optgroup>
+    </select> <br> <br>
+    <label for="">Date Of Birth</label>
+    <input type="date" min="2000-1-18" max="2005-1-18">
+    <label for="">Website</label> 
+    <input type="url" placeholder="https://"> <br>
+    <label for="">Favorite Color</label>
+    <input type="color">
+    <input type="image" src="../go-icon.png"> <br>
+    <label for="">Search</label>
+    <input type="search">
+    <label for="">Month</label>
+    <input type="month">
+    <label for="">Week</label>
+    <input type="week">
+    <label for="">Time</label> <br>
+    <input type="time">
+    <label for="">Date and Time</label>
+    <input type="datetime-local"> <br>
+    <label for="">Progress</label>
+    <input type="range" min="0" value="10" max="100"> <br>
+    <label for="">Progress</label>
+    <progress min="0" value="60" max="100"></progress>
+   </fieldset>
+
+   <details style="background-color: gray;">
+     <summary>Hidden Information</summary>
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus qui architecto commodi cumque cum, nulla numquam nihil sint laborum repellendus deleniti esse ad at accusamus libero veniam incidunt! Vel molestiae, optio, itaque perferendis a accusamus ratione nisi aut unde numquam quas nemo, modi illo sit. Molestiae voluptatum magni saepe. Enim recusandae molestias possimus ex eum sint dolores vel officiis ut sunt magnam id illo modi quos veritatis reiciendis accusantium dolorem, iure consectetur quo odio beatae odit? Minus error dolorem enim aut. Provident minus quibusdam est quos accusantium quidem quis neque ipsum veritatis quam architecto, magnam hic, illum perspiciatis nihil aliquid?</p>
+   </details>
+   <label for="">Upload your Passport</label>
+   <input type="file" accept="image/*">
+  </form>
+</body>
+</html>

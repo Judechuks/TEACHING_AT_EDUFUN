@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+</head>
+<style>
+  section{
+    width: 100%;
+    height: 800px;
+    background-color: gray;
+
+    display: grid;
+    /* grid-auto-flow: row; */
+    /* grid-template-columns: 33.333% 33.333% 33.333%; */
+    grid-template-columns: auto auto auto;
+    
+    /* grid-template-rows: 300px 300px; */
+    /* row-gap: 20px;
+    column-gap: 20px; */
+    /* gap: 20px 50px; */
+    /* gap: 20px; */
+
+    justify-content: space-evenly;
+    align-items: center;
+    
+    /* align-content: start; */
+  }
+  div{
+    width: 200px;
+    height: 200px;
+  }
+  .box1{
+    background-color: aqua;
+  }
+  .box2{
+    background-color: green;
+  }
+  .box3{
+    background-color: yellow;
+  }
+  .box4{
+    background-color: pink;
+  }
+  .box5{
+    background-color: red;
+  }
+  .box6{
+    background-color: blue;
+  }
+  .box7{
+    background-color: purple;
+  }
+  .box8{
+    background-color: maroon;
+  }
+  .box9{
+    background-color: chartreuse;
+  }
+</style>
+<body>
+  <Section>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+  </Section>
+</body>
+</html>

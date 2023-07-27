@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <!-- <form action="" method="post|get"> -->
+    <center><h1>Registration Form</h1></center>
+  <form>
+    <label for="name">Name</label>
+    <input type="text" id="name" size="20" maxlength="10" required autofocus  pattern="[A-Za-z]*" title="ONLY LOWER CASE LETTERS ARE REQUIRED"> <br> <br>
+
+    <label for="pass">Password</label>
+    <input type="password" id="pass" value="Favor"> <br> <br>
+
+    <label for="">Comment</label> <br>
+    <textarea name="" id="" cols="30" rows="10"></textarea> <br> <br>
+    
+    <label for="">Age</label>
+    <input type="number" min="0" max="10" step="2"> <br> <br>
+
+    <label for="">Email</label>
+    <input type="email">
+    <br> <br>
+
+    <input type="submit" value="Login">
+    <input type="reset" value="Clear">
+    <input type="button" value="Ordinary Button" onclick="alert('Welcome')"> 
+    <br> <br> 
+    <button type="submit">Register</button>
+    <button type="reset">Wipe</button>
+    <button type="button" onclick="alert('Good Day Visitor!')">Greet Me</button>
+    
+    <fieldset>
+      <legend>Bio Data</legend>
+      <label for="">State of Origin</label>
+      <input type="text">
+      <br> <br>
+      <label for="">Gender</label> <br>
+      <label for="">Male</label> <input type="radio" name="gender" value="M">
+      <label for="">Female</label> <input type="radio" name="gender" checked>
+      <label for="">Others</label> <input type="radio" name="gender">
+       <br> <br>
+      <label for="">Favorite Food</label> <br>
+      <label for="">Rice</label>      <input type="checkbox" value="Rice">
+      <label for="">Spaghetti</label>   <input type="checkbox" value="Spag">
+      <label for="">Plantain</label>   <input type="checkbox" value="Plantain" checked>
+      <label for="">Beans</label>   <input type="checkbox" value="Beans"> 
+      <br> <br>
+      <label for="">Phone</label> 
+      <input type="tel" pattern="[0-9]{11}" title="ONLY 11 DIGIT NUMBERS ARE REQUIRED">
+      <br> <br>
+      <label for="">Class</label>
+      <select multiple> 
+       <!-- <optgroup label="JUNIOR"> -->
+        <option value="JSS1">JS 1</option>
+        <option value="JSS2">JS 2</option>
+        <option value="JSS3">JS 3</option>
+       <!-- </optgroup> -->
+       <!-- <optgroup label="SENIOR"> -->
+        <option value="SSS1">SS 1</option>
+        <option value="SSS2" selected>SS 2</option>
+        <option value="SSS3" disabled>SS 3</option>
+      <!-- </optgroup> -->
+      </select>
+      <br> <br>
+
+      <label for="">Date of Birth</label>
+      <input type="date" min="1960-01-01" max="2022-01-01">
+      <br> <br>
+    </fieldset>
+    <br> <br>
+
+    <details style="background-color: gray;">
+      <summary>Hidden Info</summary>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam magnam delectus earum aspernatur sit, quidem velit magni, similique, reiciendis qui deserunt quo? Ipsam, ipsa nulla quae sed ad modi commodi enim delectus itaque doloremque harum asperiores, eius quisquam rerum voluptatem cum in aliquid officiis recusandae sit. Quasi rerum soluta nulla nam doloremque qui corporis praesentium consectetur eius, cum consequatur quam repellendus quas beatae deleniti eum repellat dicta veritatis fugit similique unde necessitatibus velit molestias est! Consectetur optio a commodi sint, sequi ducimus possimus quod inventore in consequatur nesciunt voluptat
+      um error totam ad vel iure. Cupiditate quisquam quos ipsa odio error sequi maiores architecto, iusto in suscipit ratione adipisci, repellendus debitis assumenda obcaecati porro eaque pariatur nihil, eveniet corrupti. Blanditiis, modi voluptas alias harum laborum error temporibus cupiditate in necessitatibus perspiciatis libero, dolore recusandae quibusdam sint, nulla itaque ex voluptates optio nesciunt amet ab facilis? Repellendus rem deserunt ea possimus quia minima iusto ad quo eligendi! Vero blanditiis nisi numquam nostrum nam repellendus officia laboriosam reprehenderit beatae rerum molestias, voluptates modi laudantium sequi a quis perferendis aliquam obcaecati. Eaque voluptatibus facere excepturi minus labore. Maiores sequi nostrum quae, quia beatae voluptatem veniam cumque ea laudantium eos similique quis iste repudiandae voluptas illum architecto omnis facere earum voluptatum aliquam consequatur cupiditate natus! Omnis hic tempora quae at quibusdam deserunt alias minus suscipit odio. Cumque, aliquam accusantium. Soluta nulla ut fugit perferendis cumque maxime modi assumenda velit itaque nobis! Odio, provident quos! Odit ut placeat assumenda, vitae nobis at quam magnam recusandae impedit neque, dolores natus non ipsa ratione ullam et? Tempora, neque voluptate eligendi illum inventore consequuntur sed, quaerat molestias repellat a quos, suscipit quasi veritatis. Voluptates fugiat quidem nihil quis, laudantium omnis deleniti, dolore hic quibusdam veniam, sunt culpa soluta explicabo. Soluta molestias aliquid quidem quam excepturi in at vitae fugit!</p>
+  </details>
+  <br> <br>
+
+  <label for="">Website</label>
+  <input type="url" placeholder="https://">
+  <br> <br>
+
+  <label for="">Favorite</label>
+  <input type="color">
+  <br> <br>
+
+  <input type="image" src="../go-icon.png">
+  <br> <br>
+
+  <input type="search" placeholder="Search Here">
+  <br> <br>
+
+  <label>Month of Graduation</label>
+  <input type="month">
+  <br> <br>
+  <label>Traveling Week</label>
+  <input type="week">
+  <br> <br>
+  <label>Traveling Time</label>
+  <input type="time">
+  <br> <br>
+  <label>Traveling date and Time</label>
+  <input type="datetime-local">
+  <br> <br>
+  <progress min="0" max="100" value="40"></progress>
+  <br> <br>
+  <input type="range" min="0" max="50" value="40">
+  <br> <br>
+  <label for="">Upload your CV</label>
+  <input type="file" accept=".pdf">
+  </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+</head>
+<style>
+  div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+    animation-name: movement;
+    animation-delay: 0;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 4;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+  }
+  @keyframes movement {
+    0%{
+      transform: translateX(0);
+      background-color: #00b;
+    
+    }
+    50%{
+    background-color: green;
+    }
+    100%{
+      transform: translateX(1200px);
+      background-color: #0ff;
+      font-size: 40px;
+    }
+  }section{
+    background-color: #f0f;
+    width: 200px;
+    height: 200px;
+    animation: rotate 4s infinite;
+  }
+  @keyframes rotate {
+    from{
+      transform: rotate(0);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+</style>
+<body>
+  <div>Text</div>
+  <section></section>
+</body>
+</html>

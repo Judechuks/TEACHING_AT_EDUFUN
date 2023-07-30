@@ -1,0 +1,24 @@
+/* selector{
+  property: value;
+} */
+/* h1{
+  color: red;
+  text-align: center;
+} */
+
+.first-h1{
+  color: red;
+  text-align: center;
+}
+/* #panther, #adam, #beauty{
+  color: blue;
+} */
+/* body p{
+  color: green;
+} */
+/* div > p{
+  background-color: red;
+} */
+/* *{
+  color: yellow;
+} */

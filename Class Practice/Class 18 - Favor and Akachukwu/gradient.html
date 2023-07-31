@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient</title>
+</head>
+<style>
+  main, section, article{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: aqua;
+  }
+  main{
+    background: linear-gradient(to top left, red 0 30%, green 30% 60%, blue 60% 100%);
+    /* background: repeating-linear-gradient(to left, red 0 15%, green 15% 30%, blue 30% 45%); */
+    border-radius: 0%;
+  }
+  section{
+    /* background: conic-gradient(aqua 0 30%, yellowgreen 30% 60%, maroon 60% 100%); */
+    background: repeating-conic-gradient(red 0 15%, green 15% 30%, blue 30% 45%); 
+  }
+  article{
+  margin-top: 20px;
+    background: radial-gradient(red 0 30%, green 30% 60%, blue 60% 100%);
+  }
+
+</style>
+<body>
+  <main></main>
+  <section></section>
+  <article></article>
+</body>
+</html>

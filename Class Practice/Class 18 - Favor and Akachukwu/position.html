@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+</head>
+<style>
+  div{
+    width: 200px;
+    height: 200px;
+  }
+
+  .static{
+    position: static;
+    background-color: #f00;
+    top: 120px;
+    right: 0;
+  }
+  .relative{
+    background-color: #0f0;
+    position: relative;
+    /* top: 200px; */
+    left: 120px;
+      z-index: 2;
+  }
+  .absolute{
+    position: absolute;
+    /* top: calc(50% - 100px); */
+    /* left: 0px; */
+    /* right: calc(50% - 100px); */
+    right: 200px;
+    left: 200px;
+    top: 0;
+    bottom: 0;
+    background-color: #00f;
+  }
+  .fixed{
+    background-color: #0ff;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  .sticky{
+    background-color: #ff0;
+    position: sticky;
+    top: 20px;
+    left: 0;
+    z-index: 0;
+  }section{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #ccc;
+  }
+  .inside{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    background-color: orangered;
+    z-index: 200;
+  }
+</style>
+<body>
+  <div class="static">STATIC</div>
+  <div class="relative">RELATIVE</div>
+  <div class="absolute">ABSOLUTE</div>
+  <div class="fixed">FIXED</div>
+  <div class="sticky">STICKY</div>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+
+  <section>
+    <div class="inside"></div>
+  </section>
+  
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo element</title>
+</head>
+<style>
+  a::before{
+    content: url(../icons8.png);
+  }
+  a::after{
+    content: " Henry";
+  }
+  p::first-letter{
+    font-size: 3rem;
+  }
+  p::first-line{
+    color: blue;
+  }
+  a:link{
+    color: black;
+  }
+  a:visited{
+    color: brown;
+  }
+  a:hover{
+    color: chartreuse;
+    background-color: blue;
+    font-size: 28px;
+  }
+  a:focus{
+    background-color: pink;
+  }
+  a:active{
+    color: cyan;
+  }
+  /* li:not(.aka, .henry){
+    font-size: 2rem;
+  } */
+  /* li:first-child{
+    font-size: 2rem;
+  } */
+  /* li:last-child{
+    font-size: 2rem;
+  } */
+  li:nth-child(even){
+    font-size: 2rem;
+  }
+</style>
+<body>
+  <h1>My Favorite Artist</h1>
+  <a href="#ducan">Ducan Mighty</a> <br>
+  <a href="#fire">Fireboy</a> <br>
+  <a href="#davido">Davido</a> <br>
+  <a href="#bey">Beyounce</a> <br>
+  <a href="#Rihanna">Rihanna</a> <br>
+
+  <h2 id="ducan">Ducan Mighty</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.</p>
+
+  <h2 id="fire">Fireboy</h2>
+ <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam pariatur numquam saepe voluptatem, ratione ipsa, nisi officiis aliquid quam necessitatibus voluptatum laboriosam unde dolor quae asperiores? Quas, minus. Debitis repellat rerum quisquam esse nulla? Laboriosam in veritatis aut tempore deserunt maxime consectetur neque aperiam! Laboriosam similique sit ab magnam vitae mollitia quae tempore eum quia. Voluptatum in, aperiam neque deleniti dolorum corporis delectus repellat! Esse, magnam quae ipsum reiciendis explicabo optio at doloremque dolorem est minima unde libero nisi modi et, magni illum ut tempora molestias expedita cumque sed placeat possimus! Asperiores dolore reprehenderit doloribus non nisi eius, obcaecati sed.</p>
+
+ <ul>
+   <li>Favor</li>
+   <li class="henry">Henry</li>
+   <li class="aka">Akachukwu</li>
+   <li>Stephen</li>
+   <li>Somkene</li>
+ </ul>
+</body>
+</html>

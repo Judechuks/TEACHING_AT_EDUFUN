@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List</title>
+  <!-- <link rel="stylesheet" href="first-css.css"> -->
+</head>
+<style>
+*{
+  /* color: orange!important; */
+  margin: 0;
+  padding: 0;
+}
+h1{
+  /* color: red!important; */
+  font-size: 30px;
+}
+.guava, .russia{
+  color: purple;
+  background-color: gray;
+  font-size: 30px;
+}
+/* .russia{
+  color: purple;
+  background-color: gray;
+  font-size: 30px;
+} */
+
+.ul-2 li{
+  color: ;
+  background-color: rgba(0, 255, 255, 0.1); /*(from 0 to 255) */
+  /* alpha (from 0 to 1 that is, decimal point) */
+  /* hex (from 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e and f) */
+  /* color: #rgb; */
+  background-color: #00f; /*(0 0 0)*/
+  background-color: #00f50f; /*(00 00 00)*/
+}
+.ul-2 > li{
+  color: #c90;
+}
+</style>
+<body>
+  <h1>Unordered List</h1>
+  <ul type="square">
+   <li>Mango</li>
+   <li>Orange</li>
+   <li class="guava">Guava</li>
+   <li>Cashew</li>
+  </ul>
+  <h1 style="color:green;">Ordered List</h1>
+  <ol type="1" start="1">
+    <li id="usa">USA</li>
+    <li>China</li>
+    <li class="russia cold" id="cold">Russia</li>
+    <li>Nigeria</li>
+  </ol>
+  <h1>Definition or Description List</h1>
+  <dl>
+    <ol>
+      <li>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language is one of the language used in creating a website</dd>
+      </li>
+      <li>
+      <dt>CSS</dt>
+      <dd>is a stylesheet used for beautifying a website</dd>
+      </li>
+    </ol>
+    
+    <ul class="ul-2">
+      <li>Family
+        <ul>
+          <li>Father</li>
+          <li>Mother</li>
+      </ul>
+      <li>Transport</li>
+    </li>
+    </ul>
+  </dl>
+<div>
+   <span>
+     <span></span>
+   </span>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling List</title>
+</head>
+<style>
+  li{
+    /* list-style-type: decimal;
+    list-style-image: url(../icons8.png);
+    list-style-position: outside; */
+    list-style:  url(../icons8.png) inside;
+    background-color: gray;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  a{
+    background-color:gray ;
+    padding: 40px;
+    display: inline-block;
+    display: none;
+    /* visibility: hidden; */
+  }
+  .container{
+    width: 100%;
+    height: 200px;
+  }
+  .container:hover a{
+    /* visibility: visible; */
+    display: inline-block;
+  }
+  p{
+    background-color: red;
+    padding: 40px;
+    display: inline-block;
+  }
+</style>
+<body>
+  <ul>
+    <h1>Fruits</h1>
+    <li>Apple</li>
+    <li>Orange</li>
+    <li>Pineapple</li>
+    <li>Guava</li>
+    <li>Cherry</li>
+  </ul>
+<div class="container">
+    <a href="#">Favor</a>
+    <a href="#">Akachukwu</a>
+</div>
+  <p>HTML</p>
+</body>
+</html>

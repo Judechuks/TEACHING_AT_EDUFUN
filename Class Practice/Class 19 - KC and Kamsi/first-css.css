@@ -1,0 +1,22 @@
+/* 
+selector {
+property: value;
+}
+*/
+h1{
+  color: blue;
+  font-size: 30px;
+  background-color: aqua;
+}
+.russia{
+  color: red;
+}
+#usa{
+  color: blue;
+}
+.cold{
+  font-size: 30px;
+}
+#cold{
+  color: purple;
+}

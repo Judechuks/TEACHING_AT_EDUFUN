@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <!-- <form action="database" method="GET|POST"> -->
+  <form action="">
+
+    <label for="">Comment:</label> <br>
+    <textarea cols="30" rows="10"></textarea>
+    <br>
+    <label for="">Password</label>
+    <input type="password" maxlength="6">
+    <br>
+    <input type="submit" value="LOGIN">
+    <input type="reset" value="CLEAR">
+    <input type="button" value="ORDINARY BUTTON" onclick="alert('Hello Kamsi')">
+    <br>
+    <button type="submit">REGISTER</button>
+    <button type="reset">CLEAR</button>
+    <button type="button" onclick="alert('Hello Ken')">CLICK ME</button>
+    <br>
+    <fieldset>
+      <legend>Personal Information</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" size="20" required autofocus value="Kamsi">
+        <br>
+        <label for="">Age</label>
+       <input type="number" min="1" max="100" step="1">
+    <br>
+    <label for="">Email</label>
+    <input type="email">
+    <br>
+    </fieldset>
+    <details style="background-color: gray;">
+      <summary>Secret Information</summary>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ducimus velit neque deserunt iure, fugit dolorum non dicta voluptates deleniti recusandae totam in repellat illum quia. Quas in temporibus consequuntur.</p>
+    </details>
+    <br>
+    <label for="">Gender</label> <br>
+    <label for="">Male</label> <input type="radio" name="gender" checked>
+    <label for="">Female</label><input type="radio" name="gender">
+    <label for="">Other</label><input type="radio" name="gender">
+    <br>
+    <p>Which of these is/are used for web development</p>
+    <input type="checkbox" checked> <label for="">HTML</label><br>
+    <input type="checkbox"> <label for="">CSS</label><br>
+    <input type="checkbox"><label for="">JavaScript</label> <br>
+    <input type="checkbox"> <label for="">C++</label><br>
+    <br>
+    <label for="">Phone Number</label>
+    <input type="tel" pattern="[0-9]{11,}" title="NUMBERS ONLY, MUST BE 11 CHARACTERS" placeholder="Enter Phone Number">
+    <br>
+    <label for="">Class</label> 
+    <!-- <select multiple> -->
+    <select>
+      <!-- <optgroup label="JUNIOR SECONDARY"> -->
+      <option value=""disabled selected>--Select your Class--</option>
+      <option value="JSS1">JSS 1</option>
+      <option value="JSS2">JSS 2</option>
+      <option value="" >JSS 3</option>
+      <!-- </optgroup> -->
+      <!-- <optgroup label="SENIOR SECONDARY"> -->
+      <option value="" >SS 1</option>
+      <option value="">SS 2</option>
+      <option value="">SS 3</option>
+      <!-- </optgroup> -->
+    </select>
+
+    <br> <br>
+
+    <label for="">Date of Birth</label>
+    <input type="date" min="1900-01-01" max="2022-01-01">
+    <br> <br>
+    <label for="">Your Website Address</label>
+    <input type="url" placeholder="https://">
+    <br> <br>
+    <label for="">Color</label>
+    <input type="color">
+    <br> <br>
+    <input type="image" src="../go-icon.png">
+    <br> <br>
+    <label for="">Search</label>
+    <input type="search" placeholder="Search anything here">
+    <br> <br>
+    <label for="">Travel Month</label>
+    <input type="month">
+    <br> <br>
+    <label for="">Travel Week</label>
+    <input type="week">
+    <br> <br>
+    <label for="">Work Closing Time</label>
+    <input type="time">
+    <br> <br>
+    <label for="">Date of Birth and Time</label>
+    <input type="datetime-local">
+    <br> <br>
+    <label for="">Progress</label>
+    <input type="range" min="0" max="100" value="90">
+    <br> <br>
+    <label for="">Progress</label>
+    <progress min="0" max="100" value="50"></progress>
+    <br> <br>
+    <label for="">Upload your Passport</label>
+    <input type="file" accept="" multiple>
+
+  </form>
+</body>
+</html>

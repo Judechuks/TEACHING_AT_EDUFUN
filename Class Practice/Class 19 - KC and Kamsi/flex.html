@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+</head>
+<style>
+  section{
+    width: 95%;
+    height: 800px;
+    background-color: gray;
+
+    display: flex;
+    /* gap: 20px; */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* align-content: start; */
+ 
+  }
+  div{
+    /* width: 200px; */
+    height: 200px;
+    flex-basis: 200px;
+    flex-grow: 0;
+  }
+  .box1{
+    background-color: red;
+    order: 1;
+  }
+  .box2{
+    background-color: green;
+  }
+  .box3{
+    background-color: blue;
+    order: -1;
+  }
+  .box4{
+    background-color: purple;
+    /* flex-basis: 800px; */
+    flex-grow: 4;
+  }
+  .box5{
+    background-color: aqua;
+    order: 1;
+  }
+  .box6{
+    background-color: yellow;
+  }
+  .box7{
+    background-color: pink;
+    order: 2;
+  }
+  .box8{
+    background-color: maroon;
+    flex-shrink: 3;
+    order: 1;
+  }
+  .box9{
+    background-color: coral;
+  }
+</style>
+<body>
+  <section>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+    <div class="box6">6</div>
+    <div class="box7">7</div>
+    <div class="box8">8</div>
+    <div class="box9">9</div>
+  </section>
+</body>
+</html>

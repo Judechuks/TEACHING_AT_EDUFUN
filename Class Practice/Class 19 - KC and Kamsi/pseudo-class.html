@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling Links</title>
+</head>
+<style>
+  /* a:link{
+      color: darkorange;
+  }
+  a:visited{
+    color: aqua;
+  } */
+  a:active{
+    color: blue;
+  }
+  a:hover:not(.about, #Contact){
+    color: deeppink;
+    font-size: 2rem;
+    background-color: darkcyan;
+  }
+  a:focus{
+    color:darkgreen;
+    background-color: lightcoral;
+  }
+  li:first-child{
+    font-size: 2rem;
+    color: aquamarine;
+  }
+  li:last-child{
+    font-size: 2rem;
+    color: green;
+  }
+  li:only-child{
+    color: blue;
+    background: #f00;
+  }
+  /* li:nth-child(4){
+    color: chartreuse;
+    font-size: 2rem;
+  } */
+  li:nth-child(odd){
+    color: chartreuse;
+    font-size: 2rem;
+  }
+  li::before{
+    content: '\201C';
+  }
+  li::after{
+    content: url(../icons8.png);
+  }
+  p::first-letter{
+    font-size: 9rem;
+  }
+  p::first-line{
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+</style>
+<body>
+  <a href="#a">Home</a> <br>
+  <a href="#b" class="about">About</a> <br>
+  <a href="#c">Features</a> <br>
+  <a href="#d">Testimonials</a> <br>
+  <a href="#e">Team</a> <br>
+  <a href="#f" id="Contact">Contact</a> <br>
+  <a href="#g">Sign Up</a> <br>
+  <a href="#h">Sign In</a>
+
+  <ul>
+    <li>Dog</li>
+    <li>Cat</li>
+    <li>Bat</li>
+    <li>Rat</li>
+    <li>Lion</li>
+    <li>Elephant</li>
+    <li>Ant</li>
+    <li>Fly</li>
+  </ul>
+  <ol>
+    <li>KC</li>
+    &copy;
+  </ol>
+  <p>Kenechukwu</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto placeat fuga dicta ea quo, non laborum aliquam animi sed veniam tempore quisquam, maxime temporibus? Deserunt quasi ipsa, vero ut praesentium quaerat soluta, velit totam nesciunt delectus, fuga quidem. Sequi, temporibus perspiciatis minima, praesentium dicta pariatur consectetur eaque adipisci vero numquam eius facere cum ex aspernatur aut tenetur dignissimos quis ducimus animi beatae dolore nulla illum fugit. In, commodi ratione molestiae illum sequi, nesciunt rerum a veniam cumque laudantium placeat dicta ut suscipit debitis beatae natus aliquam optio itaque maxime. Ad provident quis sed odio dolorem quidem unde delectus pariatur amet?</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Element</title>
+</head>
+<style>
+  li::after{
+    content:  "Chidera ";
+  }
+  li::before{
+    content: url(../go-icon.png);
+  }
+  p::first-letter{
+    font-size: 80px;
+    color: blue;
+  }
+  p::first-line{
+    font-size: 22px;
+  }
+</style>
+<body>
+  <ul>
+    <li>List1</li>
+    <li>List2</li>
+    <li>List3</li>
+    <li>List4</li>
+  </ul>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque exercitationem expedita, quam quod facere rem rerum assumenda, atque perspiciatis hic officiis culpa optio, sunt vel accusantium voluptas tenetur architecto. Nesciunt minus provident ex corrupti eaque optio pariatur itaque blanditiis soluta architecto laborum, repellendus velit, vel voluptatibus dolor, magni neque facere eius excepturi nostrum. Minima quaerat natus facere odit ullam eum reiciendis sequi dolores nam, perferendis eligendi quasi, a, numquam expedita. Libero odio autem ab incidunt vero inventore similique porro reiciendis quod voluptatum ipsum non officiis at fugiat blanditiis atque, est nihil totam maiores dolorum tempora fugit! Consequuntur molestiae consequatur suscipit!</p>
+</body>
+</html>

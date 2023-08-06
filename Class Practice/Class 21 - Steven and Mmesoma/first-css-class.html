@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First CSS Class</title>
+  <link rel="stylesheet" href="first-css.css">
+</head>
+<style>
+*{
+  color: blue;
+}
+  /* selector {
+    property: value;
+  } */
+  h1{
+    color: red;
+    background-color: gray;
+    font-size: 40px;
+  }
+  .steven{
+    color: aqua !important;
+    font-size: 50px;
+  }
+  #mmesoma{
+    color: yellow;
+    font-size: 50px;
+  }
+  /* #mmesoma, .steven{
+     color: yellow;
+    font-size: 50px;
+  } */
+  section p{
+    color: brown;
+  }
+  section > p{
+   color: blue;
+  }
+</style>  
+<body>
+  <h1 style="color: purple;">My First CSS Class</h1>
+  <!-- <p style="color: green; background-color: gray;">This is my first class in CSS and at the end of my tra/ining in CSS I will be able to build beautiful websites.</p> -->
+  <h1>My First CSS Class</h1>
+  <p>This is my first class in CSS and at the end of my training in CSS I will be able to build beautiful websites.</p>
+  <h1>This is a second H1</h1>
+  <h1 class="third-h1 steven" id="mmesoma">This is a third H1</h1>
+  <h1 id="mmesoma">This is a Fourth H1</h1>
+
+  <p>Mmsoma <u>Steven</u></p>
+  <section>
+     <p>Section paragraph</p>
+     <div>
+      <p>Div paragraph</p>
+     </div>
+  </section>
+  <p>Outside Section Paragraph</p>
+</body>
+</html>

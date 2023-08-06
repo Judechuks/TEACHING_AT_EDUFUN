@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+</head>
+<style>
+ a:link{
+   color: chartreuse;
+ }
+ a:visited{
+   color: black;
+ }
+ a:active{
+   background-color: aqua;
+   border: 2px solid black;
+ }
+ /* a:hover{
+   background-color: darkgreen;
+   font-size: 2rem;
+ } */
+ a:not(.about):hover{
+   background-color: red;
+ }
+ a:focus{
+   background-color: greenyellow;
+ }
+ li:first-child{
+   color: deepskyblue;
+ }
+ li:last-child{
+  color: blue;
+ }
+ li:nth-child(2){
+   color: brown;
+   font-size: larger;
+ }
+ li:not(:nth-child(2), :nth-child(3)):hover{
+   background-color: #f00;
+ }
+ li:nth-child(odd){
+   background-color: #0f0;
+ }
+ li:nth-child(even){
+   background-color: #00f;
+ }
+</style>
+<body>
+  <a href="">Ebube</a> <br>
+  <a href="#home">Home</a> <br>
+  <a href="#about" >About</a> <br>
+  <a href="#contact">Contact</a> <br>
+  <ul>
+    <li>Ebube</li>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+    <li>Salvation</li>
+    <li>Chidera</li>
+    <li>KC</li>
+  </ul>
+</body>
+</html>

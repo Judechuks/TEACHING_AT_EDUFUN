@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling Link</title>
+</head>
+<style>
+ a:link{
+   color: aqua;
+ }
+ a:visited{
+   color: chartreuse;
+ }
+ a:active{
+   color: darkblue;
+ }
+ a:hover{
+  color: aliceblue;
+  background-color: darkgreen;
+  font-size: 2rem;
+ }
+ a:focus{
+   font-size: 2rem;
+ }
+ a:not(.blog, #sign-in){
+   font-size: 3rem;
+ }
+ /* li:first-child{
+  font-size: 1.5rem;
+  color: red; 
+}
+ li:last-child{
+  font-size: 1.5rem;
+  color: blue; 
+} */
+/* li:nth-child(2){
+  font-size: 1.5rem;
+  color: green;
+} */
+/* li:nth-child(2){
+  font-size: 1.5rem;
+  color: green;
+} */
+/* li:nth-child(odd){
+  font-size: 1.5rem;
+  color: green;
+}
+li:nth-child(even){
+  font-size: 1.5rem;
+  color: red;
+} */
+li:only-child{
+  color: blueviolet;
+  font-size: 2rem;
+}
+</style>
+<body>
+  <a href="#a">Home</a> <br>
+  <a href="#b">About</a> <br>
+  <a href="#c">Contact</a> <br>
+  <a href="#d" class="blog">Blog</a> <br>
+  <a href="#e" id="sign-in">Sign In</a> <br>
+  <a href="#f">Sign up</a> <br>
+
+  <ul>
+    <li>Lion</li>
+    <li>Tiger</li>
+    <li>Leopard</li>
+    <li>Cheetah</li>
+    <li>Cat</li>
+  </ul>
+
+  <ol>
+    <li>mmesoma</li>
+  </ol>
+</body>
+</html>

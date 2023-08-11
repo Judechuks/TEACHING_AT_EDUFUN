@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+</head>
+<style>
+  section{
+    width: 200px;
+    height: 200px;
+    background-color: #ff0;
+    animation-name: movement;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-iteration-count: 2;
+    /* animation-direction: alternate-reverse; */
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+  }
+  /* @keyframes movement{
+    from {
+      margin-left: 0;
+    }
+    to{
+      margin-left: 700px;
+    }
+  } */
+  @keyframes movement{
+    0% {
+     margin-left: 0;
+    }
+    50%{
+      background-color: blue;
+    }
+    100%{
+      margin-left: 1000px;
+      font-size: 4rem;
+      background-color: green;
+    }
+  }
+  /* @keyframes movement{
+    0% {
+      transform: scale(1);
+    }
+    50%{
+      background-color: blue;
+      transform: scale(0.5);
+    }
+    100%{
+      transform: scale(1);
+    }
+  } */
+</style>
+<body>
+  <section>text</section>
+</body>
+</html>

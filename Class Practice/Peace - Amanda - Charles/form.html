@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <form action="" method="">
+    <textarea name="report" id="report" cols="90" rows="20"></textarea>
+    <br> <br>
+    <button type="submit">SUBMIT</button>
+    <button type="reset">CLEAR</button>
+    <button type="button" onclick="alert('Hello! Welcome to my Page')">CLICK</button>
+    <br> <br>
+    <input type="submit" value="LOGIN">
+    <input type="reset" value="CLEAR">
+    <input type="button" value="CLICK">
+    <br> <br>
+    <label for="">Age</label>
+    <input type="number" min="" max="" value="2" step="3">
+    <br> <br>
+    <label for="">Email</label>
+    <input type="email">
+    <br> <br>
+    <fieldset>
+      <legend>Bio Data</legend>
+      <label for="f-name">First Name</label>
+      <input type="text" id="f-name" autofocus placeholder="Type in your name" required> <br> <br>
+      <label for="l-name">Last Name</label>
+      <input type="text" id="l-name" size="20"maxlength="20"> <br> <br>
+      <label for="">Password</label>
+      <input type="password"> <br> <br>
+    </fieldset>
+    <details>
+      <summary>Hidden Information</summary>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo possimus voluptatibus est a reprehenderit sint quo non ducimus, iusto optio nostrum nemo praesentium maiores asperiores eum, autem obcaecati? Tenetur saepe similique corporis vel enim incidunt repellendus rerum animi perspiciatis nisi? Itaque numquam culpa similique distinctio recusandae laboriosam omnis unde! Doloremque, aliquid voluptatum? Ipsa quis nulla at doloribus ratione aut doloremque consequatur atque nihil dolore repellat possimus explicabo quasi, molestiae laboriosam ut dicta nam tempore. Possimus odio labore facilis modi beatae ducimus temporibus velit aspernatur rerum, ad delectus cum.</p>
+    </details>
+    <label for="">Gender</label> <br>
+    <label for="">Male</label>
+    <input type="radio" name="gender" value="m">
+    <label for="">Female</label>
+    <input type="radio" name="gender" checked value="f">
+    <label for="">Other</label>
+    <input type="radio" name="gender" value="o">
+    <br> <br>
+    <label for="">Favorite Food</label>
+    <br>
+    <label for="">Rice</label>
+    <input type="checkbox" checked>
+    <label for="">Beans</label>
+    <input type="checkbox">
+    <label for="">Egg</label>
+    <input type="checkbox">
+    <label for="">Plantain</label>
+    <input type="checkbox">
+    <br> <br>
+    <label for="">Phone Number</label>
+    <input type="tel" pattern="[0-9]{11,}" title="NUMBER SHOULD BE 11 CHARACTERS AND ABOVE">
+    <br><br>
+    <label for="">Class</label>
+    <select>
+    <optgroup label="JUNIOR SECONDARY">
+      <option value="JSS1">JSS 1</option>
+      <option value="">JSS 2</option>
+      <option value="">JSS 3</option>
+    </optgroup>
+    <optgroup label="SENIOR SECONDARY">
+      <option value="">SSS 1</option>
+      <option value="">SSS 2</option>
+      <option value="">SSS 3</option>
+    </optgroup>
+    </select> <br>
+    <label for="">Date of Birth</label>
+    <input type="date" min="2000-01-01" max="2023-08-12"> <br>
+    <label for="">Website</label>
+    <input type="url" value="https://"> <br>
+    <label for="">Choose Your Favorite Color</label>
+    <input type="color"> <br>
+    <input type="search" placeholder="Search Here">
+    <input type="image" src="../go-icon.png"> <br>
+    <label for="">Traveling Month</label>
+    <input type="month"> <br>
+    <label for="">Traveling Week</label>
+    <input type="week"> <br>
+  </form>
+</body>
+</html>

@@ -1,4 +1,15 @@
-h1{
+/* h1{
   background-color: blue;
   color: white;
+  font-size: 35px;
+} */
+/* h2{
+  background-color: blue;
+  color: white;
+  font-size: 35px;
+} */
+h1, h2, p{
+  background-color: blue;
+  color: white;
+  font-size: 35px;
 }

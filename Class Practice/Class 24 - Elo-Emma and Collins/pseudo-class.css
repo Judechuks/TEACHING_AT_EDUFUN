@@ -1,0 +1,26 @@
+li:not(.cat,.ele){
+    font-size: 20px;
+   
+   }
+   li:first-child{
+    color: brown;
+   }
+   li:last-child{
+   color:green
+   }
+   li:nth-child(1){
+   font-size: 40px;
+   
+   }
+   a::before{
+       /* content: 'chukwujekwute emmanuel'; */
+       /* content: url(game\ thnik.jpg); */
+       content: '\2605';
+   }
+   p::first-line{
+       color:blue
+   }
+   p::first-letter{
+       font-size: 50px;
+   }
+   

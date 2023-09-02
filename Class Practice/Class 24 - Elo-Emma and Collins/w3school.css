@@ -17,6 +17,7 @@ header{
   top: 0;
   padding-top: 15px;
   padding-bottom: 15px;
+  z-index: 2;
 }
 header h1{
   font-size: 1.5rem;
@@ -35,11 +36,12 @@ header div{
   right: 2%;
 }
 nav{
-  background-color: #222;
   grid-column: 1 / span 3;
+  background-color: #222;
   position: fixed;
   top: 58px;
   width: 100%;
+  z-index: 2;
 }
 nav a{
   display: inline-block;
@@ -51,10 +53,18 @@ nav a{
 nav a:hover{
   background-color: black;
 }
+/* .article{
+  width: 100%;
+  position: relative;
+} */
 article{
   background-color: lightgray;
   position: fixed;
   top: 96px;
+  left: 0;
+  bottom: 0;
+  right: 85%;
+  overflow-y: scroll;
 }
 article a{
   display: block;
@@ -69,23 +79,27 @@ article a:hover {
   color: white;
 }
 section{
-  background-color: #f00;
   width: 100%;
-  min-height: 100vh;
-  position: absolute;
-  left: 80%;
-  right: 20%;
+  position: relative;
+  top: 96px;
   z-index: -1;
 }
 section img{
   width: 100%;
 }
+.aside{
+  position: relative;
+  top: 96px;
+}
 aside{
-  position: fixed;
+  position: sticky;
+  top: 96px;
   right: 0;
   left: 20%;
-  top: 96px;
+  bottom: 0;
+  padding-inline: 10px;
 }
 aside img{
   width: 100%;
+  height: 400px;
 }

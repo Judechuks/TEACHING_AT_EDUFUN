@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling Link</title>
+</head>
+<style>
+  a{
+    font-size: 1.3rem;
+  }
+  a:link{
+    color: chartreuse;
+  }
+  a:visited{
+    color: brown;
+  }
+  a:hover{
+    color: aqua;
+    background-color: gray;
+  }
+  a:focus{
+    color: coral;
+    background-color: black;
+  }
+  a:active{
+    color: yellow;
+  }
+  input:active{
+    background-color: gray;
+  }
+  li:not(.good){
+    font-size: 1.5rem;
+    background-color: red;
+  }
+  li:first-child{
+    font-size: 2rem;
+  }
+  li:last-child{
+    font-size: 1rem;
+  }
+  li:nth-child(even){
+    color: green;
+  }
+  li:only-child{
+    background-color: gray;
+  }
+</style>
+<body>
+  <a href="#a">Home</a> <br>
+  <a href="#b">About</a> <br>
+  <a href="#c">Contact</a> <br>
+  <a href="#d">Sign In</a> <br>
+  <a href="#e">Sign Out</a> <br>
+  <input type="text">
+  <ul>
+    <li>Peace</li>
+    <li>Joy</li>
+    <li class="good">Goodluck</li>
+    <li>Amanda</li>
+  </ul>
+  <br>
+  <br>
+  <br>
+  <ul>
+    <li>Precious</li>
+  </ul>
+
+</body>
+</html>

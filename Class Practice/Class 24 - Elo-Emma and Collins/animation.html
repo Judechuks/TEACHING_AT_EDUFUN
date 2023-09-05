@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+</head>
+<style>
+  div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* animation-name: movement;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 4;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+  } */
+  animation: 4s linear alternate forwards movement;
+  }
+  p{
+    animation-name: movement;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+        animation-fill-mode: forwards;
+  }
+  @keyframes movement{
+    0%{
+      margin-left: 0;
+      background-color: blue;
+      font-size: 1rem;
+      transform: scale(0.5);
+    }
+    20%{
+      background-color: red;
+    }
+    100%{
+      margin-left: 1200px;
+      background-color: blueviolet;
+      font-size: 2rem;
+      transform: scale(2);
+    }
+  }
+  /* @keyframes movement{
+    from{
+      margin-left: 0;
+      background-color: blue;
+      font-size: 1rem;
+      transform: scale(0.5);
+    }
+    to{
+      margin-left: 1200px;
+      background-color: blueviolet;
+      font-size: 2rem;
+      transform: scale(2);
+    }
+  } */
+</style>
+<body>
+  <div>text</div>
+  <p>Emmanuel</p>
+</body>
+</html>

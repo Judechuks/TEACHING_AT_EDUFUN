@@ -2,13 +2,107 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-color: darkblue;
+  color: white;
+}
+/*========== HEADER ==========*/
 header{
-  background-color: blue;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+header .brand, nav{
+  flex-basis: 30%;
 }
 header img{
   width: 60px;
   height: 60px;
+}
+header h1{
+  font-size: 2.5rem;
+  text-transform: uppercase;
 } 
-
+header span{
+  color: red;
+}
+header .fa{
+  display: none;
+}
+a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+}
+nav a{
+  display: inline-block;
+  padding: 6px;
+  border-radius: 5px;
+  transition: 1s;
+}
+nav a:hover{
+  background-color: #fff;
+  color: darkblue;
+}
+li{
+  list-style-type: none;
+}
+header li{
+  display: inline-block;
+  margin-right: 10px;
+}
+h2, h3{
+  font-size: 2rem;
+  text-align: center;
+  color: red;
+  margin-bottom: 10px;
+}
+/*========== ASIDE ==========*/
+aside{
+  text-align: center;
+  padding: 40px 0;
+}
+aside li{
+  margin-top: 20px;
+  transition: 1s;
+}
+aside li:hover{
+  transform: scale(1.2);
+}
+/*========== SECTION ==========*/
+section{
+  padding: 40px;
+}
+section img{
+  width: 100%;
+}
+section h2{
+  font-size: 2.4rem;
+}
+p{
+  font-size: 1.1rem;
+}
+section p{
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+/*========== ARTICLE ==========*/
+article{
+  text-align: center;
+  padding: 40px 0;
+}
+article h3{
+  margin-top: 30px;
+}
+/*========== FOOTER ==========*/
+footer{
+  padding: 40px 0;
+  text-align: center;
+}
+footer h3{
+  color: #fff;
+}
+footer p{
+  margin-top: 15px;
+}

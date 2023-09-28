@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling List</title>
+</head>
+<style>
+  li::after {
+    /* content: " Dalu "; */
+    /* content: url(../go-icon.png); */
+    content: "\0024";
+    color: red;
+  }
+  li::first-letter{
+    font-size: 2rem;
+  }
+  p::first-line {
+    font-size: 2rem;
+    color: blue;
+  }
+  li {
+    list-style-type: none;
+    /* list-style-image: url(../go-icon.png); */
+    /* list-style-position: outside; */
+    /* list-style: decimal url(../go-icon.png) inside; */
+  }
+</style>
+<body>
+  <ol>
+    <li>Dog</li>
+    <li>Cat</li>
+    <li>Goat</li>
+    <li>Cow</li>
+    <li>Rat</li>
+    <li>Bat</li>
+    <li>Pig</li>
+  </ol>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, voluptates expedita, accusantium molestias pariatur culpa cupiditate sapiente facilis temporibus beatae delectus quae architecto natus enim aspernatur tenetur inventore rem et. Placeat earum commodi obcaecati consequatur veritatis officia, repudiandae, delectus neque id rem corporis adipisci blanditiis expedita quasi nostrum! Commodi incidunt laudantium, consectetur quo molestias perferendis provident illum similique asperiores optio mollitia facere voluptatem! Quis doloribus quaerat commodi expedita maiores explicabo tempora in doloremque itaque perferendis laudantium tempore, veritatis laboriosam repellat corporis. Nulla velit cum rerum? Pariatur fugiat facilis nesciunt laudantium quis exercitationem aspernatur eum ipsa, quibusdam earum cupiditate perferendis dolore.</p>
+</body>
+</html>

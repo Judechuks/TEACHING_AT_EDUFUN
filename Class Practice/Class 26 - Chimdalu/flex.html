@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+</head>
+<style>
+  div{
+    /* width: 200px; */
+    height: 200px;
+    flex-basis: 200px;
+    /* flex-grow: 1; */
+  }
+  section{
+    width: 90%;
+    height: 800px;
+    background-color: grey;
+
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* align-content: center; */
+  }
+  .box1{
+    background-color: red;
+    flex-shrink: 2;
+  }
+  .box2{
+    background-color: green;
+    /* flex-grow: 1; */
+  }
+  .box3{
+    background-color: blue;
+    order: 2;
+  }
+  .box4{
+    background-color: yellow;
+  }
+  .box5{
+    background-color: aqua;
+  }
+  .box6{
+    background-color: magenta;
+  }
+  .box7{
+    background-color: maroon;
+    order: 1;
+  }
+  .box8{
+    background-color: blueviolet;
+    order: 3;
+  }
+  .box9{
+    background-color: orange;
+    order: 3;
+    /* flex-basis: 400px; */
+  }
+</style>
+<body>
+  <section>
+    <div class="box1">A</div>
+    <div class="box2">B</div>
+    <div class="box3">C</div>
+    <div class="box4">D</div>
+    <div class="box5">E</div>
+    <div class="box6">F</div>
+    <div class="box7">G</div>
+    <div class="box8">H</div>
+    <div class="box9">I</div>
+  </section>
+</body>
+</html>

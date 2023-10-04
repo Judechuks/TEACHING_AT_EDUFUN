@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="first-css.css">
+</head>
+<body>
+  <!-- <form action="database.bd" method="get|post"> -->
+  <form action="" method="">
+    <fieldset>
+    <legend>Bio data</legend>
+    <label for="name">Name</label>
+    <input type="text" id="name" value="" size="20" autofocus> <br> <br>
+    <label for="pass">Your Password</label>
+    <input type="password" id="pass" maxlength="6" required> <br> <br>
+    <label for="">Comment</label> <br />
+    <textarea cols="30" rows="10"></textarea> <br>
+    <label for="">Age</label>
+    <input type="number" min="0" max="150" value="0" step="1"> <br>
+    <label for="">Your Email</label>
+    <input type="email"> <br>
+    <input type="submit" value="REGISTER">
+    <input type="reset" value="CLEAR">
+    <input type="button" onclick="alert('Welcome to my website')" value="ORDINARY BUTTON">
+    <br> <br>
+    <button type="submit">Register</button>
+    <button type="reset">Clear</button>
+    <button type="button">Ordinary Button</button>
+    <details>
+      <summary>Hidden Information</summary>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, error ad hic repudiandae voluptates officiis corrupti, necessitatibus quibusdam labore, dolorum vero! Assumenda eos earum molestias hic optio, praesentium distinctio ad.</p>
+    </details>
+    </fieldset>
+    <label for="">Male</label>
+    <input type="radio" name="gender" value="male">
+    <label for="">Female</label> 
+    <input type="radio" name="gender" value="female" checked>
+    <label for="">Other</label> 
+    <input type="radio" name="gender" value="other">
+    <br>
+    <label for="">Favorite meal</label> <br>
+    <label for="">Rice</label> <input type="checkbox">
+    <label for="">Beans</label> <input type="checkbox">
+    <label for="">Spaghetti</label> <input type="checkbox">
+    <label for="">Indomie</label> <input type="checkbox">
+    <br>
+    <label for="">Class</label>
+    <!-- <select multiple> -->
+    <select>
+      <optgroup label="Junior">
+      <option value="" disabled>JSS 1</option>
+      <option value="">JSS 2</option>
+      <option value="" selected>JSS 3</option>
+      </optgroup>
+      <optgroup label="Senior">
+      <option value="">SS 1</option>
+      <option value="">SS 2</option>
+      <option value="">SS 3</option>
+      </optgroup> 
+    </select> <br>
+    <label for="">Phone Number</label>
+    <input type="tel" pattern="[0-9]{11,}" title="Must be number only and 11 digits" placeholder="Your Phone number"> <br>
+    <label for="">Date</label>
+    <input type="date" min="2000-01-01" max="2022-01-01"> <br>
+    <label for="">Website</label>
+    <input type="url" value="https://">
+    <label for="">Favorite Color</label>
+    <input type="color"> <br>
+    <input type="image" src="../go-icon.png">
+    <br>
+    <label for="">Search</label>
+    <input type="search"> <br>
+    <label for="">Time of Travel</label>
+    <input type="time"> <br>
+    <label for="">Date and Time of Travel</label>
+    <input type="datetime-local">
+    <br>
+    <label for="">Month</label>
+    <input type="month">
+    <br>
+    <label for="">Week</label>
+    <input type="week">
+    <br>
+    <label for="">My learning Progress</label>
+    <input type="range" min="" max="" value="90">
+    <br>
+    <label for="">My learning Progress</label>
+    <progress min="0" max="100" value="50"></progress>
+    <br>
+    <label for="">Upload your Document</label>
+    <input type="file" accept=".jpg">
+  </form>
+</body>
+</html>

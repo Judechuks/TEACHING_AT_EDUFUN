@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First CSS Class</title>
+  <link rel="stylesheet" href="first-css.css">
+</head>
+<style>
+ /* selector{
+   property: value;
+ } */
+ *{
+   color: red;
+ }
+ p{
+   color: aqua;
+   font-size: 20px;
+   background-color: rgba(255, 153, 0, 0.034); /*0 to 255*/ /*0 to 1*/
+   background-color: #009f00;  /*0 1 2 3 4 5 6 7 8 9 a b c d e f*/
+   /* opacity: 1; */
+ }
+ .second{
+   color: brown;
+ }
+ #heading2{
+    font-size: 3rem;
+ }
+ #heading6{
+   color: blue;
+ }
+ h4, h5, h3 {
+   background-color: green;
+ }
+ div p{
+    font-size: 3rem;
+ }
+ section > p{
+   color: cyan;
+ }
+</style>
+<body>
+    <p>This is my first webpage/<p>                                        
+    <p class="second jewlry">jewelries</p>
+    <h1>This is heading 1 </h1>
+    <h2 id="heading2">This is heading 2</h2>
+    <h3>This is heading 3</h3>  
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6 id="heading6" class="second">This is heading 6</h6>
+    <hr>
+    <p style="background-color: green;">This text is <b> bold </b> </p>
+    <div>
+      <p>Jesse</p>
+    </div>
+    <section>
+      <p>Francis</p>
+      <article>
+        <p>Robert</p>
+      </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient</title>
+</head>
+<style>
+section{
+  width: 600px;
+  height: 600px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+}
+.box1{
+  /* background: linear-gradient(to top right, green 0 33.3%, yellow 33.3% 66.6%, red 66.6% 100%); */
+  background: repeating-linear-gradient(to right, green 0 15%, yellow 15% 30%, red 30% 45%);
+}
+.box2{
+  /* background: radial-gradient(circle, green 0 33.3%, yellow 33.3% 66.6%, red 66.6% 100%); */
+  background: repeating-radial-gradient( green 0 15%, yellow 15% 30%, red 30% 45%);
+  /* border-radius: 50%; */
+}
+.box3{
+  /* background: conic-gradient(green 0 33.3%, yellow 33.3% 66.6%, red 66.6% 100%); */
+  background: repeating-conic-gradient( green 0 15%, yellow 15% 30%, red 30% 45%);
+  border-radius: 50%;
+}
+</style>
+<body>
+  <section class="box1"></section>
+  <section class="box2"></section>
+  <section class="box3"></section>
+</body>
+</html>

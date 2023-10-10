@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+</head>
+<style>
+  div {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    animation-name: movement;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 4;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+  }
+  /* @keyframes movement {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(1000px);
+      background-color: #00f;
+    }
+  } */
+  @keyframes movement {
+    0% {
+      transform: translateX(0px);
+    }
+    40% {
+      background-color: #ff0;
+    }
+    80% {
+      background-color: #0f0;
+    }
+    100% {
+      transform: translateX(1000px);
+      background-color: #00f;
+    }
+  }
+</style>
+<body>
+  <div></div>
+</body>
+</html>

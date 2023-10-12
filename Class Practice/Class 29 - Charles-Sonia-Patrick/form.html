@@ -6,11 +6,93 @@
   <title>Form</title>
 </head>
 <body>
-  <form action="file.php" method="post|get">
-    <label for="name">Name</label>
-    <input type="text" id="name"> <br> <br>
-    <label for="">Password</label>
-    <input type="password">
+  <!-- <form action="database" method="post"> -->
+  <form>
+    <fieldset>
+      <legend>My Personal Information</legend>
+      <label for="name">Name</label>
+      <input type="text" id="name" value="" size="20" required> <br> <br>
+      <label for="">Password</label>
+      <input type="password" maxlength="4"> <br> <br>
+      <label for="">Feedback</label> <br>
+      <textarea id="" cols="30" rows="10" autofocus></textarea> <br>
+      <label for="">Age</label>
+      <input type="number" max="100" min="1" value="" step="1"> <br>
+      <label for="">Email</label>
+      <input type="email"> <br>
+      <label for="">Gender</label> <br>
+      <label for="">Male</label> <input type="radio" name="gender" checked>
+      <label for="">Female</label> <input type="radio" name="gender">
+      <label for="">Others</label> <input type="radio" name="gender">
+      <br>
+      <label for="">Favorite Food</label> <br>
+      <label for="">Rice and Stew</label> <input type="checkbox">
+      <label for="">Beans</label> <input type="checkbox">
+      <label for="">Plantain</label> <input type="checkbox" checked>
+      <label for="">Spaghetti</label> <input type="checkbox">
+      <label for="">Indomie</label> <input type="checkbox">
+      <br>
+      <label for="">Phone Number</label>
+      <input type="tel" pattern="[0-9]{10}" placeholder="090......." title="NUMBERS WITH 11 DIGITS ONLY">
+      <br>
+      <label for="">Date of Birth</label>
+      <input type="date" min="2000-01-01" max="2022-01-01"> <br>
+      </fieldset>
+      <label for="">Class</label> 
+      <!-- <select multiple> -->
+      <select>
+        <option value="" disabled selected>--- Choose your Class --- </option>
+        <option value="jss1">JSS 1</option>
+        <option value="jss2">JSS 2</option>
+        <option value="jss3">JSS 3</option>
+        <option value="">SS 1</option>
+        <option value="">SS 2</option>
+        <option value="" disabled>SS 3</option>
+      </select>
+      <br>
+      <label for="">Your website</label>
+      <input type="url" value="https://">
+    <br>
+    <label for="">Favorite Color</label>
+    <input type="color">
+    <br>
+    <input type="image" src="../go-icon.png">
+    <details style="background-color: gray;">
+    <summary>Hidden Information</summary>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque esse voluptatibus quod voluptate, a ea, maiores quibusdam non qui tempore laboriosam ducimus aut deserunt odio eveniet consequatur explicabo aliquam perferendis.</p>
+    </details>
+    <br>
+    <input type="search" placeholder="Search Here">
+    <br>
+    <label for="">Month opf graduation</label>
+    <input type="month">
+    <br>
+    <label for="">Week of Traveling</label>
+    <input type="week">
+    <br>
+    <label for="">Traveling Time</label>
+    <input type="time">
+    <br>
+    <label for="">Date and Time</label>
+    <input type="datetime-local">
+    <br>
+    <label for="">Exam Loading</label>
+    <input type="range" min="0" max="100" value="90">
+    <br>
+    <br>
+    <label for="">Exam Loading</label>
+    <progress min="0" max="100" value="80"></progress>
+    <br>
+    <label for="">Upload your File</label>
+    <input type="file" accept="image/*" multiple>
+    <br>
+    <input type="submit" value="SUBMIT">
+    <input type="reset" value="CLEAR">
+    <input type="button" value="CLICK ME" onclick="alert('Welcome to Our Page')">
+    <br>
+    <button type="submit">SUBMIT</button>
+    <button type="reset">CLEAR</button>
+    <button type="button">ORDINARY BUTTON</button>
   </form>
 </body>
-</html>
+</html>                                                                                                                                                                                                                     

@@ -5,16 +5,22 @@
   <link rel="stylesheet" href="first-css.css">
 </head>
 <style>
-h3{
+h3, h1{
   background-color: aqua;
   font-size: 40px;
+  color: white;
 }
+/* h1 {
+  background-color: aqua;
+  font-size: 40px;
+  color: white;
+} */
 h6{
   color: red;
 }
-p {
+/* p {
   color: orange;
-}
+} */
 .godwin{
   color: brown;
 }
@@ -22,11 +28,20 @@ p {
   color: yellow;
 }
 body{
-  background-color: gray;
+  /* background-color: gray; */
+  /*background-color: rgb(72, 84, 156); /*0 to 255*/ /* a has 0 to 1*/
+  background-color: rgb(255, 0, 255); /*0 1 2 3 4 5 6 7 8 9 a b c d e f*/
+}
+section p{
+  color: magenta;
+}
+section > p{
+  color: darksalmon;
 }
 </style>
 <body>
   <p class="ike" style="font-size: 20px;">My name is Ikechukwu</p>
+  <p>Body paragraph</p>
   <h1 title="This is my main title">Heading 1</h1>
   <h2>Heading 2</h2>
   <h2>Heading 2</h2>
@@ -39,5 +54,12 @@ body{
   <h6>Heading 6</h6>
   <p style="color: blue;">My name is <b>Sonia</b> <br> I am in SS1</p>
   <p style="font-size: 20px;">I am from <u>Onitsha North</u> local government in Onitsha, Anambra state</p>
+  <section>
+    <p>Section paragraph</p>
+    <div>
+      <p>Div Paragraph</p>
+      <p>Div Paragraph</p>
+    </div>
+  </section>
 </body>
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Element</title>
+</head>
+<style>
+  li::before{
+    /* content: ' jesse '; */
+    /* content: url(../go-icon.png); */
+    content: '\2663';
+    margin-right: 10px;
+    font-size: 2rem;
+  }
+  p::first-letter{
+    font-size: 4rem;
+    color: green;
+  }
+  p::first-line{
+    color: red;
+  }
+  li{
+    list-style-type: none; 
+    /* list-style-image: url(../icons8.png); */
+    /* list-style-position: inside; */ 
+    /* list-style: none; */
+  }
+  li::marker{
+    content: '\2714';
+  }
+</style>
+<body>
+    <ul>
+    <li>Lion</li>
+    <li>Elephant</li>
+    <li>Tiger</li>
+    <li>Goat</li>
+    <li>Zebra</li>
+    <li>Dog</li>
+    <li>Cat</li>
+    <li>Rat</li>
+    <li>Bat</li>
+    <li>Fox</li>
+  </ul>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus delectus facilis quo animi maiores dignissimos ad pariatur, at reprehenderit ex repellat praesentium dolorem alias doloremque similique, rem nisi quibusdam aspernatur placeat eaque voluptatem. Repellendus est nesciunt iste commodi, atque suscipit harum ratione vel ipsum dolorum ea quod fugiat veniam facilis, dolorem minima. Impedit sunt totam aspernatur, nostrum, molestiae possimus minus repellendus non soluta quisquam eaque error unde natus qui temporibus provident porro? Impedit omnis neque consequuntur sit quidem sed nulla tempora corporis. Obcaecati aliquid delectus at sapiente, culpa tempora nihil eius expedita magni in enim asperiores rem iusto aliquam fugiat.</p>
+</body>
+</html>

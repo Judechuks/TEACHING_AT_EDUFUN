@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling Links</title>
+</head>
+<style>
+  a:link{
+    color: aqua;
+  }
+  a:visited {
+    color: brown;
+  }
+  a:active{
+    color: blueviolet;
+    border: 1px solid black;
+  }
+  a:hover {
+    background-color: yellow;
+    padding: 10px;
+    border: 2px solid green;
+    cursor: pointer;
+  }
+  a:focus{
+    background-color: pink;
+    padding: 10px;
+    border: 2px solid black;
+  }
+  li:first-child{
+    color: blue;
+  }
+  li:last-child{
+    font-size: 2rem;
+    color: aqua;
+  }
+  h1:last-child{
+    font-size: 2rem;
+    color: aqua;
+  }
+  /* li:only-child{
+    color: red;
+  } */
+  /* li:nth-child(8){
+    border: 2px solid red;
+  } */
+  /* li:nth-child(even){
+    color: red;
+  } */
+  li:not(.goat, #dog){
+    border-left: 2px solid red;
+    padding-left: 10px;
+  }
+</style>
+<body>
+  <a href="#a">Home</a>
+  <a href="#b">About</a>
+  <a href="#c">Contact</a>
+  <a href="#d">Login</a>
+  <a href="#e">Logout</a>
+  <img src="../facebook.png" alt="">
+  <ul>
+    <li>Lion</li>
+    <li>Elephant</li>
+    <li>Tiger</li>
+    <li class="goat">Goat</li>
+    <li>Zebra</li>
+    <li id="dog">Dog</li>
+    <li>Cat</li>
+    <li>Rat</li>
+    <li>Bat</li>
+    <li>Fox</li>
+  </ul>
+  <ul>
+    <li>Nigeria</li>
+  </ul>
+  <h1>Jesse</h1>
+  <h1>Matthew</h1>
+  <h1>Gabriel</h1>
+</body>
+</html>

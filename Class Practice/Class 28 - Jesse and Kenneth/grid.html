@@ -16,15 +16,19 @@
     /* grid-template-columns: 200px 300px 400px; */
     /* grid-template-columns: auto auto auto; */
     /* grid-template-columns: 1fr 3fr 1fr; */
-    grid-template-columns: 1fr 1fr 1fr;
     /* grid-template-columns: 20% 50% 20%; */
 
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-columns: 33.30% 33.30% 33.30%;
+    /* justify-content: space-evenly;
+    align-content: space-evenly ; */
+    justify-items: space-between;
+    align-items: space-between;
 
     /* row-gap:40px;
     column-gap: 20px; */
     /* gap: 40px 20px ; */
-    gap: 20px;
+    /* gap: 20px; */
   }
   div{
     /* width: 200px; */
@@ -32,18 +36,35 @@
   }
   .box1{
     background-color: red;
+    /* grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 3;
+    grid-row-end: 4; */
+
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    /* grid-column: 2 / span 2; */
   }
   .box2{
     background-color: green;
   }
   .box3{
     background-color: blue;
+    /* grid-row-start: 1;
+    grid-row-end: 3; */
+
+    grid-row: 1 / 3;
   }
   .box4{
     background-color: yellow;
   }
   .box5{
     background-color: cyan;
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+
+    grid-column: 2 / 4 ;
   }
   .box6{
     background-color: magenta;
@@ -60,15 +81,15 @@
 </style>
 <body>
   <section>
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
-    <div class="box4"></div>
-    <div class="box5"></div>
-    <div class="box6"></div>
-    <div class="box7"></div>
-    <div class="box8"></div>
-    <div class="box9"></div>
+    <div class="box1">A</div>
+    <div class="box2">B</div>
+    <div class="box3">C</div>
+    <div class="box4">D</div>
+    <div class="box5">E</div>
+    <div class="box6">F</div>
+    <div class="box7">G</div>
+    <div class="box8">H</div>
+    <div class="box9">I</div>
   </section>
 </body>
 </html>

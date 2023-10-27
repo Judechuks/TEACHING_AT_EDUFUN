@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Element</title>
+</head>
+<style>
+    ul li::before{
+    /* content: 'tacas'; */
+    /* content: url(../go-icon.png); */
+    /* content: '\25BA'; */
+    content: '\2714';
+    color: blue;
+    margin-right: 10px;
+  }
+  li::marker{
+    /* content: '\25ba'; */
+    /* content: none; */
+  }
+  p::first-letter{
+    font-size: 6rem;
+    color: blue;
+  }
+  p::first-line{
+    color: blue;
+  }
+  ol li{
+    /* list-style-type: none; */
+    /* list-style-image: url(../icons8.png);
+    list-style-position: inside; */
+
+    list-style: decimal outside;
+  }
+  tr:not(.first):hover{
+    background: green;
+  }
+</style>
+<body>
+  <ul>
+    <li>About us</li>
+    <li>Our Services</li>
+    <li>Terms and Conditions</li>
+    <li>Privacy Policy</li>
+    <li>Legal Terms</li>
+  </ul>
+  &copy; &gt; &#64;
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus beatae incidunt, sint earum possimus accusamus ratione distinctio nam temporibus mollitia! Sequi assumenda aliquid quasi illum voluptas earum exercitationem quas animi. Necessitatibus similique aspernatur voluptas dolore consequuntur. Illo fugiat eaque aliquid laudantium fuga quam molestias voluptatem ipsum, amet perspiciatis cupiditate. Optio nobis sit tempora asperiores, perferendis necessitatibus mollitia similique ratione sequi vel commodi. Assumenda odio laboriosam cumque laborum officia porro, illum inventore? Hic consectetur doloribus itaque vitae deleniti fugiat quod, fugit ratione doloremque placeat rerum laboriosam accusantium temporibus delectus a quos beatae harum unde architecto omnis tempore officia? Tenetur impedit, quasi expedita commodi velit obcaecati labore error ipsum praesentium eaque sit reiciendis ad, cupiditate quisquam nemo maxime sapiente voluptate cumque exercitationem.</p>
+  <ol>
+    <li>Emmanuel</li>
+    <li>Chimaobi</li>
+    <li>Patrick</li>
+    <li>Charles</li>
+    <li>Sonia</li>
+    <li>Onyi</li>
+    <li>Godwin</li>
+  </ol>
+</body>
+</html>

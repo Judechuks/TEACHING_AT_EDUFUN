@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  section{
+    /* width: 800px; */
+    width: 500px;
+    height: 500px;
+  }
+  .box1{
+    /* background: linear-gradient(to bottom right, red 0 20%, blue 20% 40%, green 40% 60%, yellow 60% 100%); */
+    background: repeating-linear-gradient(to right, red 0 15%, blue 15% 30%, green 30% 50%, yellow 50% 55%);
+  }
+  .box2{
+    /* border-radius: 50%; */
+    background: radial-gradient(circle, red 0 20%, blue 20% 40%, green 40% 60%, yellow 60% 100%);
+    /* background: repeating-radial-gradient(red 0 15%, blue 15% 30%, green 30% 50%, yellow 50% 55%); */
+  }
+  .box3{
+    border-radius: 50%;
+    background: conic-gradient(red 0 20%, rgba(0, 0, 255, 0.2) 0% 40%, green 40% 60%, yellow 60% 100%);
+  }
+</style>
+<body>
+  <section class="box1"></section>
+  <section class="box2"></section>
+  <section class="box3"></section>
+</body>
+</html>

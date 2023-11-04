@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformation</title>
+</head>
+<style>
+  div{
+    width: 200px;
+    height: 200px;
+  }
+  .box1{
+    background-color: #f00;
+    /* transition-delay: 1s;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-property: all; */
+    /* transition: all 2s ease 1s; */
+    transition: 1s;
+  }
+  .box2{
+    background-color: #0f0;
+    transition-delay: 1s;
+    transition-duration: 2s;
+  }
+  .box3{
+    background-color: #00f;
+  }
+  .box4{
+    background-color: #ff0;
+  }
+  .box1:hover{
+    /* transform: translateX(-200px); */
+    /* transform: translateY(-100px); */
+    transform: translate(100px);
+    background-color: #00f;
+    font-size: 4rem;
+  }
+  .box2:hover{
+    /* transform: rotateX(80deg); */
+    /* transform: rotateY(280deg); */
+    transform: rotate(360deg);
+  }
+  .box3:hover{
+    /* transform: scaleX(0.5); */
+    /* transform: scaleY(1.5); */
+    transform: scale(1.5, 0.5);
+  }
+  .box4:hover{
+    /* transform: skewX(180deg); */
+    /* transform: skewY(180deg); */
+    transform: skew(180deg 60deg);
+    transition: 2s;
+  }
+</style>
+<body>
+  <div class="box1">A</div>
+  <div class="box2">B</div>
+  <div class="box3">C</div>
+  <div class="box4">D</div>
+</body>
+</html>

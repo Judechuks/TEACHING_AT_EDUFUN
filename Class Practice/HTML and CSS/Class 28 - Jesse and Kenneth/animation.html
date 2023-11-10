@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+</head>
+<style>
+  div{
+    width: 200px;
+    height: 200px;
+  }
+  .box1{
+    background-color: #f00;
+    /* animation-name: move;
+    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+    animation-fill-mode: backwards; */
+    animation: move 4s 5;
+  }
+  @keyframes move {
+    0%{
+      transform: translateX(-10vw);
+      background-color: blue;
+    }
+    30%{
+      background-color: yellow;
+    }
+    50%{
+      background-color: green;
+    }
+    100%{
+      transform: translateX(90vw);
+      background-color: magenta;
+      border-radius: 50%;
+      font-size: 4rem;
+    }
+  }
+</style>
+<body>
+  <div class="box1">A</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Element</title>
+</head>
+<style>
+  li::before{
+    /* content: 'text'; */
+    /* content: url(../go-icon.png); */
+    /* content: '\25ba'; */
+    content: '\2715';
+    color: blue;
+    margin-right: 20px;
+  }
+  p::first-line{
+    font-size: 2rem;
+    color: red;
+  }
+  p::first-letter{
+    font-size: 5rem;
+  }
+</style>
+<body>
+  <ul>
+    <li>Dog</li>
+    <li>Goat</li>
+    <li>Cat</li>
+    <li>Rat</li>
+    <li>Bat</li>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, amet libero dolor a temporibus asperiores quis mollitia harum excepturi id vero consectetur illo, nobis perspiciatis rerum? Necessitatibus rem voluptates nisi? Dolorum fugit eum facere! Possimus aliquam nisi tempore ut! Itaque.</p>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First CSS Class</title>
+    <link rel="stylesheet" href="first-css.css" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <style>
+    * {
+      text-transform: uppercase;
+      color: chartreuse;
+    }
+    p {
+      font-size: 20px;
+    }
+    h1 {
+      color: green;
+    }
+    /* .dog {
+      background-color: blue;
+      color: red;
+      font-size: 40px;
+    } */
+    #dog {
+      color: blueviolet;
+    }
+    .dog,
+    #cow {
+      color: red;
+      background-color: blue;
+      font-size: 40px;
+    }
+    ol li {
+      background-color: firebrick;
+      background-color: rgba(50, 0, 0, 1); /*0 to 255*/ /* a = 0 to 1*/
+      background-color: #555; /*0 to f = 0 1 2 3 4 5 6 7 8 9 a b c d e f*/
+    }
+    /*External css works with link tag*/
+  </style>
+  <body>
+    <h1 style="color: blue; font-size: 40px; font-size: 40px">Heading 1</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus sunt
+      eaque voluptas distinctio ex fugiat aliquam, similique voluptates
+      obcaecati voluptate commodi necessitatibus molestiae excepturi adipisci
+      dolore rem eveniet minus sapiente!
+    </p>
+    <!-- <h1>second Heading 1</h1> -->
+    <h1>third Heading 1</h1>
+    <h1>fourth Heading 1</h1>
+    <!-- <h1>fifth Heading 1</h1> -->
+    <ul>
+      <li class="dog first" id="dog">Dog</li>
+      <li>Goat</li>
+      <li id="cow">Cow</li>
+      <li>Rat</li>
+      <li class="dog">Bat</li>
+      <li>Cat</li>
+      <li>Hen</li>
+    </ul>
+    <ol>
+      <li>orange</li>
+      <li>banana</li>
+      <li>pineapple</li>
+      <div>
+        <li>Apple</li>
+      </div>
+      <li>cashew</li>
+      <li>pear</li>
+      <li>quava</li>
+    </ol>
+  </body>
+</html>

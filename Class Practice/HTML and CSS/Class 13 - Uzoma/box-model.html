@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box Model</title>
+  </head>
+  <style>
+    div {
+      height: 200px;
+      width: 200px;
+      background: aqua;
+      /* border-width: 15px;
+      border-style: groove;
+      border-color: red; */
+      border: 15px groove blue;
+      /* border-right: 15px groove blue; */
+      /* border-left: 15px groove blue; */
+
+      /* outline: 10px dashed red; */
+      /* padding-top: 40px;
+      padding-left: 60px;
+      padding-right: 80px;
+      padding-bottom: 30px; */
+
+      padding: 40px 80px 30px 60px; /*top right bottom left*/
+      padding: 40px 80px 30px; /*top right&left bottom*/
+      padding: 40px 80px; /*top&bottom right&left */
+      padding: 80px; /*all 4 sides*/
+
+      /* margin-left: 40px;
+      margin-right: 50px;
+      margin-top: 50px;
+      margin-bottom: 80px; */
+      /* margin: 120px; */ /*same shortcuts as your padding */
+      /* margin-left: auto;
+      margin-right: auto; */
+      margin: 80px auto;
+
+      /* border-top-right-radius: 240px;
+      border-bottom-right-radius: 240px;
+      border-top-left-radius: 240px;
+      border-bottom-left-radius: 240px; */
+
+      border-radius: 100px;
+
+      box-shadow: -25px -25px 1px 8px black;
+
+      box-sizing: border-box;
+    }
+  </style>
+  <body>
+    <div>Uzoma</div>
+  </body>
+</html>

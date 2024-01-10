@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+  </head>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+    }
+    .box1 {
+      background: red;
+      animation-name: movement;
+      animation-timing-function: linear;
+      animation-iteration-count: 3;
+      animation-delay: 0;
+      animation-duration: 2s;
+      animation-direction: normal;
+      animation-fill-mode: forwards;
+    }
+    p {
+      animation-name: float-in;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+    .box2 {
+      background: blue;
+      animation-name: rotate;
+      animation-duration: 4s;
+    }
+    @keyframes movement {
+      0% {
+        transform: translateX(0);
+      }
+      30% {
+        background: green;
+      }
+      100% {
+        transform: translateX(1200px);
+        background: purple;
+      }
+    }
+    @keyframes float-in {
+      from {
+        transform: translateY(-600px);
+      }
+      to {
+        transform: translateY(50px);
+      }
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <body>
+    <div class="box1"></div>
+    <p>Text</p>
+    <div class="box2"></div>
+  </body>
+</html>

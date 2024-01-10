@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- <form action="filename.php" method="get"> -->
+    <form action="" method="">
+      <label for="">Feedback</label> <br />
+      <br />
+      <textarea cols="30" rows="10"></textarea>
+      <br />
+      <label for="">Password</label>
+      <input type="password" maxlength="8" required /> <br />
+      <br />
+      <label for="">Age</label>
+
+      <input type="number" value="" min="0" max="100" step="1" /><br />
+      <br /><label for="">Email</label>
+      <input type="email" placeholder="enter your email" /> <br />
+      <br />
+      <input type="submit" value="SUBMIT" />
+      <input type="reset" value="CLEAR" />
+      <input
+        type="button"
+        value="CLICK ME"
+        onclick="alert('Welcome my website')" />
+      <br />
+      <br />
+      <fieldset>
+        <legend>My Personal Information</legend>
+        <label for="firstname">First Name</label>
+        <input
+          type="text"
+          id="firstname"
+          value=""
+          size="20"
+          required
+          autofocus />
+        <br />
+        <br />
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" required /> <br />
+        <br />
+      </fieldset>
+      <br />
+      <details>
+        <summary>Secret Information</summary>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste,
+          molestiae ratione esse natus, itaque nihil modi deleniti beatae a,
+          dolorem dolores harum? Expedita aperiam numquam esse aliquam et
+          voluptatibus odit beatae velit rem praesentium in quisquam, dolore
+          unde illum nostrum assumenda provident soluta vitae enim incidunt?
+          Animi possimus laudantium incidunt?
+        </p>
+      </details>
+      <label for="">Gender</label> <br />
+      <label for="gender1">Male</label>
+      <input type="radio" name="gender" id="gender1" checked />
+      <label for="gender2">Female</label>
+      <input type="radio" name="gender" id="gender2" />
+      <label for="gender3">Trans Gender</label>
+      <input type="radio" name="gender" id="gender3" />
+      <label for="gender4">Others</label>
+      <input type="radio" name="gender" id="gender4" />
+      <br />
+      <label for="">Favorite Food</label> <br />
+      <label for="">Rice and stew</label> <input type="checkbox" />
+      <label for="">Fried Rice</label> <input type="checkbox" />
+      <label for="">Spaghetti</label> <input type="checkbox" />
+      <label for="">Beans</label> <input type="checkbox" />
+      <label for="">Indomie</label> <input type="checkbox" /> <br />
+      <label for="">Phone number</label>
+      <input
+        type="tel"
+        pattern="[0-9]{11,}"
+        title="it should be numbers only and up to 11 digits" />
+      <br />
+      <br />
+      <label for="">Class</label>
+      <!-- <select multiple> -->
+      <select>
+        <option value="JSS 1">JSS 1</option>
+        <option value="JSS 2">JSS 2</option>
+        <option value="">JSS 3</option>
+        <option value="">SS 1</option>
+        <option value="" selected>SS 2</option>
+        <option value="" disabled>SS 3</option>
+      </select>
+      <br />
+      <label for="">Date of Birth</label>
+      <input type="date" min="2002-01-01" max="2023-01-01" />
+      <br />
+      <label for="">Your Website</label>
+      <input type="url" placeholder="https://yourwebsite" />
+      <br />
+      <label for="">Favorite Color</label>
+      <input type="color" />
+      <br />
+      <input type="image" src="../go-icon.png" />
+      <br />
+      <input type="search" placeholder="Search here" />
+      <br />
+      <label for="">Traveling Month</label>
+      <input type="month" />
+      <br />
+      <label for="">Week</label>
+      <input type="week" />
+      <br />
+      <label for="">Traveling Time</label>
+      <input type="time" />
+      <br />
+      <label for="">Traveling Date and Time</label>
+      <input type="datetime-local" />
+      <br />
+      <label for="">Loading</label>
+      <progress min="1" max="200" value="100"></progress>
+      <br />
+      <label for="">Loading</label>
+      <input type="range" min="0" max="100" value="100" />
+      <br />
+      <label for="">Upload your passport</label>
+      <input type="file" accept="image/*" multiple />
+      <!-- i just added this so that i can submit my information -->
+      <button type="submit">REGISTER</button>
+      <button type="reset">WIPE</button>
+      <button type="button">ORDINARY BUTTON</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- <form action="filename.php" method="get"> -->
+    <form action="" method="">
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" value="" size="20" required autofocus />
+      <br />
+      <br />
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" /> <br />
+      <br />
+      <label for="">Feedback</label> <br />
+      <br />
+      <textarea cols="30" rows="10"></textarea>
+      <br />
+      <label for="">Password</label>
+      <input type="password" maxlength="8" required /> <br />
+      <br />
+      <label for="">Age</label>
+
+      <input type="number" value="" min="0" max="100" step="1" /><br />
+      <br /><label for="">Email</label> <input type="email" /> <br />
+      <br />
+      <input type="submit" value="SUBMIT" />
+      <input type="reset" value="CLEAR" />
+      <input
+        type="button"
+        value="CLICK ME"
+        onclick="alert('Welcome my website')" />
+      <br />
+      <button type="submit">REGISTER</button>
+      <button type="reset">WIPE</button>
+      <button type="button">ORDINARY BUTTON</button>
+    </form>
+  </body>
+</html>

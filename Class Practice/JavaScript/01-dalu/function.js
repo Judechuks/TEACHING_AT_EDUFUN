@@ -20,9 +20,14 @@ quadracticEquation(2, 3, 1);
 
 // Arrow function
 const dalu = (a, b, c) => {
-  const x1 = ((-b + Math.sqrt(-b * -b - 4 * a * c)) / 2) * a;
-  const x2 = ((-b - Math.sqrt(-b * -b - 4 * a * c)) / 2) * a;
+  const x1 = (-b + Math.sqrt(Math.abs(-b * -b - 4 * a * c))) / (2 * a);
+  const x2 = (-b - Math.sqrt(Math.abs(-b * -b - 4 * a * c))) / (2 * a);
   console.log("first value", x1);
   console.log("second value", x2);
 };
 dalu(2, 3, 6);
+
+/* ASSIGNMENT 
+write a function that accepts user's first name and last name, 
+contatenate it and converts it into an uppercase letter
+*/

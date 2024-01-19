@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Check your console</p>
+  </body>
+  <script>
+    // Grading for school
+    // A = 70 and above
+    // B = 60 to 69
+    // C = 50 to 59
+    // D = 40 to 49
+    // E = 30 to 39
+    // F = 29 below
+
+    let score = 20;
+    let grade;
+    switch (true) {
+      case score >= 70:
+        grade = "A";
+        break;
+      case score >= 60 && score <= 69:
+        grade = "B";
+        break;
+      case score >= 50:
+        grade = "C";
+        break;
+      case score >= 40:
+        break;
+        grade = "D";
+        break;
+      case score >= 30:
+        grade = "E";
+        break;
+      default:
+        grade = "F";
+    }
+    console.log(grade);
+  </script>
+</html>

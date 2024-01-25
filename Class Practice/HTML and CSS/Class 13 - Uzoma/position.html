@@ -2,71 +2,76 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Position</title>
   </head>
   <style>
     div {
-      height: 200px;
       width: 200px;
+      height: 200px;
     }
-    .div1 {
-      background-color: red;
+    .box1 {
+      background: red;
       position: static;
-      top: 200px; /*doesnt work*/
+      top: 30px;
+      left: 60px;
     }
-    .div2 {
-      background-color: blue;
+    .box2 {
+      background: blue;
       position: relative;
-      top: 200px;
-      /* left: 300px; */
-      right: -200px;
-      z-index: 2;
+      bottom: 400px;
+      right: 100px;
+      z-index: 1;
     }
-    .div3 {
-      background-color: green;
+    .box3 {
+      background: green;
       position: absolute;
-      top: 20px;
-      right: 20px;
-      left: 0px;
-      /* bottom: 0; */
-      z-index: 3;
+      /* top: 30px; */
+      bottom: 0;
+      right: -100px;
+      top: -100px;
+      border-radius: 100%;
+      z-index: 0;
     }
-    .div4 {
-      background-color: yellow;
+    .box4 {
+      background: yellow;
       position: fixed;
       top: 0;
       z-index: 0;
     }
-    .div5 {
-      background-color: purple;
+    .box5 {
+      background: purple;
       position: sticky;
-      top: 0;
+      bottom: 0;
+      z-index: 2;
     }
     section {
-      margin-left: 300px;
+      width: 400px;
       height: 400px;
-      width: 800px;
-      background-color: gray;
+      background: gray;
       position: relative;
+      margin: auto;
     }
   </style>
   <body>
-    <div class="div1">Static</div>
-    <div class="div2">Relative</div>
-    <div class="div3">Absolute</div>
-    <section><div class="div3">Absolute</div></section>
-    <div class="div4">Fixed</div>
-    <div class="div5">Sticky</div>
-    <p>Text</p>
-    <p>Text</p>
-    <p>Text</p>
-    <p>Text</p>
-    <p>Text</p>
-    <p>Text</p>
-    <p>Text</p>
-    <p>Text</p>
+    <p>Txt</p>
+    <p>Txt</p>
+    <p>Txt</p>
+    <p>Txt</p>
+    <p>Txt</p>
+    <p>Txt</p>
+    <p>Txt</p>
+    <p>Txt</p>
+    <p>Txt</p>
+    <p>Txt</p>
+    <p>Txt</p>
+    <p>Txt</p>
+    <div class="box1">Static</div>
+    <div class="box2">Relative</div>
+    <section><div class="box3">Absolute</div></section>
+    <!-- <div class="box3 box">Absolute</div> -->
+    <div class="box4">Fixed</div>
+    <div class="box5">Sticky</div>
     <p>Text</p>
     <p>Text</p>
     <p>Text</p>

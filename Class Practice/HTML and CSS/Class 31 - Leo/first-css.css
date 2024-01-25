@@ -1,0 +1,10 @@
+/* selector {
+  property: value;
+} */
+h1 {
+  color: red;
+  font-size: 30px;
+}
+.leo {
+  color: green;
+}

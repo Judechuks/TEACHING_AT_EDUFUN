@@ -1,68 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>List</title>
-</head>
-<style>
-*{
-  margin: 0;
-}
-html{
-   /* font-size: 20px; */
-}
-body{
-   /* font-size: 25px; */
-}
-ul, ol{
-   /* font-size: 30px; */
-   font-size: 17px;
-}
-li{
-  /* font-size: 2em; */
-  font-size: larger;
-}
-div{
-   height: 50vh;
-   width: calc(100vw - 17px);
-   background-color: aqua;
-}
-</style>
-<body>
-   <h1>Ordered List</h1> 
-   <ol>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+    }
+    html {
+      font-size: 16px;
+    }
+    /* ol {
+      font-size: 30px;
+    } */
+    li {
+      font-size: 16px;
+      font-size: 1em; /* 1em = 16px */
+      font-size: 1rem; /*1rem = 16px*/
+      font-size: xx-large;
+    }
+    div {
+      width: 100%;
+      height: 100%;
+      background-color: red;
+    }
+    section {
+      width: calc(100vw - 18px);
+      height: 100vh;
+      background: green;
+    }
+    p {
+      font-size: 6rem;
+    }
+  </style>
+  <body>
+    <h1>Ordered List</h1>
+    <ol>
       <h2>Fruits</h2>
       <li>Mango</li>
       <li>Apple</li>
       <li>Pineapple</li>
       <li>Guava</li>
-   </ol>
+    </ol>
 
-   <h1>Unordered List</h1>
-   <ul>
+    <h1>Unordered List</h1>
+    <ul>
       <h2>Countries</h2>
-      <li>Nigeria </li><ol>
-                       <li>Anambra</li>
-                       <li>Delta</li>
-                       <li>Edo</li>
-                       <li>Ebony</li>
-                  </ol>
-      
-      
+      <li>Nigeria</li>
+      <ol>
+        <li>Anambra</li>
+        <li>Delta</li>
+        <li>Edo</li>
+        <li>Ebony</li>
+      </ol>
+
       <li>Ghana</li>
       <li>Canada</li>
       <li>Germany</li>
-   </ul>
-   
-   <h1>Definition/description list</h1> 
-   <dl>
+    </ul>
+
+    <h1>Definition/description list</h1>
+    <dl>
       <dt>HTML</dt>
-        <dd>Hypertext Markup Language</dd>
+      <dd>Hypertext Markup Language</dd>
       <dt>Food</dt>
-        <dd>is any substance that when taken into the body is not harmful rather nourishes the body</dd>
-   </dl>
-  <div>TEXT <br>TEXT </div>
-</body>
+      <dd>
+        is any substance that when taken into the body is not harmful rather
+        nourishes the body
+      </dd>
+    </dl>
+    <section>
+      <div>
+        <p>TEXT <br />TEXT</p>
+      </div>
+    </section>
+  </body>
 </html>

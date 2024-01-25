@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling links</title>
+  </head>
+  <style>
+    a:link {
+      color: green;
+    }
+    a:visited {
+      color: hotpink;
+    }
+    a:hover {
+      background-color: chartreuse;
+      font-size: 3rem;
+      text-decoration: none;
+      border: 2px solid black;
+    }
+    a:focus {
+      background-color: brown;
+      font-size: 3rem;
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+    div:hover {
+      background: red;
+    }
+    input:active {
+      color: darkorange;
+      outline: 2px solid red;
+    }
+    ul li:not(.mango, #pa) {
+      color: blue;
+    }
+    ol li:nth-child(even) {
+      background: green;
+    }
+    li:only-child {
+      color: hotpink;
+    }
+  </style>
+  <body>
+    <a href="#a">Home</a>
+    <a href="#b">About</a>
+    <a href="#c">Contact</a>
+    <a href="#d">Login</a>
+    <a href="#e">Sign up</a>
+    <input type="text" />
+    <div></div>
+    <ul>
+      <li>Apple</li>
+      <li class="mango">Mango</li>
+      <li>Banana</li>
+      <li id="pa">Pineapple</li>
+      <li>Cherry</li>
+      <li>Pear</li>
+    </ul>
+
+    <ol>
+      <li>Nigeria</li>
+      <li>Nigeria</li>
+      <li>Ghana</li>
+      <li>China</li>
+      <li>USA</li>
+      <li>Cameroon</li>
+      <li>Russia</li>
+    </ol>
+
+    <span>
+      <li>Im alone</li>
+    </span>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo Element</title>
+  </head>
+  <style>
+    li::after {
+      content: "Example";
+    }
+    .first::first-line {
+      color: aqua;
+    }
+    p::first-letter {
+      font-size: 4rem;
+    }
+    .form-1 ::placeholder {
+      color: blue;
+    }
+    li {
+      /* list-style-type: decimal;
+      list-style-image: url(../icons8.png);
+      list-style-position: inside; */
+
+      /* list-style: decimal url(../icons8.png) inside; */
+
+      list-style-type: decimal;
+      list-style-position: inside;
+    }
+    li::before {
+      /* content: "text"; */
+      /* content: url(../icons8.png); */
+      content: "\2667";
+      padding-right: 20px;
+    }
+  </style>
+  <body>
+    <!-- <ol type="i"> -->
+    <ol>
+      <li class="first">Apple</li>
+      <li>Mango</li>
+      <li>Cherry</li>
+      <li>Pineapple</li>
+      <li>Orange</li>
+      <li>Banana</li>
+    </ol>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iure fugit,
+      voluptatum eius pariatur maxime autem dignissimos quae, nesciunt quasi
+      dolorum soluta dolor, et repellendus reprehenderit? Labore, odit, ipsa
+      voluptatem iste fugit nulla temporibus qui architecto sunt sed ut
+      voluptates minima beatae vel vitae, repudiandae reprehenderit! Totam quae
+      sequi ex, commodi quibusdam minima assumenda voluptatem eos dolor,
+      dignissimos ad esse repellat nihil temporibus eius nisi maxime, cumque
+      nobis incidunt repudiandae rem. Voluptatem, reiciendis. Numquam, veniam?
+      Excepturi nihil natus minus totam tempore! Quidem tempore officiis unde
+      fugiat natus ea, et amet excepturi maiores perferendis suscipit magni
+      consequatur necessitatibus doloribus expedita ullam odit facere
+      reprehenderit voluptatem. Autem optio corporis nam nihil dolore explicabo,
+      deleniti quos laboriosam quo reiciendis sint? Eligendi iusto repudiandae
+      enim ullam nesciunt blanditiis iure sed laboriosam necessitatibus
+      consequuntur recusandae sequi adipisci atque ipsum cumque pariatur
+      voluptas reiciendis molestiae ducimus, esse repellat deserunt veniam
+      error.
+    </p>
+    <form action="" class="form-1">
+      <input type="text" placeholder="Your Name" />
+      <input type="text" placeholder="Your State" />
+    </form>
+    <form action="" class="form-2">
+      <input type="text" placeholder="Your School" />
+      <input type="text" placeholder="Your Course" />
+    </form>
+    <footer>&copy;</footer>
+  </body>
+</html>

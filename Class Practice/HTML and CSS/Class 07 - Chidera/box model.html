@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Box Model</title>
-</head>
-<style>
-body{
-  height: 100vh;
-}
-  div{
-    height: 300px;
-    width: 300px;
-    background-color: aqua;
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+    }
+    div {
+      height: 400px;
+      width: 400px;
+      background-color: aqua;
 
-    /* border-width: 8px;
-    border-style: double;
-    border-color: blue; */
+      /* border-width: 12px;
+      border-style: dashed;
+      border-color: blue; */
 
-    /* border: 8px double blue; */
-    border-left: 8px double blue;
-    border-right: 8px double blue;
+      border: 1rem solid red;
 
-    outline: 4px solid red;
+      /* outline: 5px solid green; */
+      /* outline-offset: -30px; */
 
-    /* padding-top: 120px; */
-    /* padding-left: 120px; */
-    /* padding-right: 60px; */
-    /* padding-bottom: 60px; */
+      /* padding-top: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 20px; */
 
-    padding: 50px;
-    /* padding: 50px 70px; */
-    /* padding: 50px 70px 40px; */
-    /* padding: 50px 80px 70px 40px; */
-    
-    /* margin-top: 60px; */
-    /* margin-left: 60px; */
-    /* margin-right: 40px; */
+      /* padding: 20px; 1 value = all 4 sides */
+      /* padding: 20px 50px; 2 values = top & bottom, left & right */
+      /* padding: 20px 40px 60px; 3 values = top, left & right, bottom */
+      padding: 20px 30px 40px 50px; /*4 values = top, right, bottom, left*/
 
-    /* margin: 60px; */
+      /* margin: 50px; same rule for padding applies here when it comes to using the shorthand */
+      /* margin-left: auto;
+      margin-right: auto; */
+      margin: 40px auto 50px;
 
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    margin: 40px auto;
-    
-    /* border-radius: 150px; */
-    box-sizing: border-box;
+      /* border-top-right-radius: 40px;
+      border-top-left-radius: 60px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px; */
 
-    box-shadow: 0px 0px 25px black;
-  }
-</style>
-<body>
-  <div>
-    Text
-  </div>
-</body>
+      /* border-radius: 60px 40px 0px 0px; */
+      /* border-radius: 60px 40px 0px; */
+      /* border-radius: 60px 40px; */
+      /* border-radius: 50%; */
+
+      box-sizing: border-box;
+
+      box-shadow: 0px 0px 10px 20px black;
+    }
+
+    p {
+      margin-top: 200px;
+      /* background-color: brown; */
+    }
+  </style>
+  <body>
+    <div>
+      <p>Text</p>
+    </div>
+  </body>
 </html>

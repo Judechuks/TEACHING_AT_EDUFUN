@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformation</title>
+  </head>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+    }
+    .box1 {
+      background-color: #ff0;
+      /* transition-delay: 0.5s;
+      transition-duration: 4s;
+      transition-property: all;
+      transition-timing-function: ease-in-out; */
+      transition: transform 5s, background-color 10s;
+    }
+    .box1:hover {
+      /* transform: translateX(-100px);
+      transform: translateY(-100px); */
+      transform: translate(80px, 80px);
+      background-color: purple;
+      font-size: 4rem;
+    }
+    .box2 {
+      background-color: #f00;
+    }
+    .box2:hover {
+      /* transform: scaleX(0.5); */
+      /* transform: scaleY(0.5); */
+      transform: scale(0.5);
+    }
+    .box3 {
+      background-color: #0f0;
+      transition: 1s;
+    }
+    .box3:hover {
+      transform: rotate(360deg);
+    }
+    .box4 {
+      background-color: #00f;
+      transition: 1s;
+    }
+    .box4:hover {
+      transform: skewY(50deg);
+      transform: skew(50deg, 70deg);
+    }
+  </style>
+  <body>
+    <div class="box1">A</div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+  </body>
+</html>

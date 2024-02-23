@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center><h1>Student Record</h1></center>
+    <!-- <table border="1" style="border-collapse: collapse"> -->
+    <center>
+      <table
+        border="1"
+        bordercolor="blue"
+        bgcolor="gray"
+        width="1000"
+        height="200"
+        title="Student record">
+        <!--thead, tbody and tfoot is not really compulsory-->
+        <!-- <caption>
+          Student Result
+        </caption> -->
+        <thead>
+          <tr>
+            <th colspan="7">Student Result</th>
+          </tr>
+          <tr>
+            <th>S/N</th>
+            <th>Name</th>
+            <th>Maths</th>
+            <th>English</th>
+            <th>Physics</th>
+            <th>Chemistry</th>
+            <th>Total Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Victor</td>
+            <td>80</td>
+            <td>70</td>
+            <td>75</td>
+            <td>80</td>
+            <th>305</th>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Cynthia</td>
+            <td>85</td>
+            <td>80</td>
+            <td rowspan="2">70</td>
+            <td>75</td>
+            <th>310</th>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Delight</td>
+            <td>75</td>
+            <td>75</td>
+            <!-- <td>60</td> -->
+            <td>70</td>
+            <th>290</th>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th colspan="7">905</th>
+          </tr>
+          <tr>
+            <th colspan="7">Grading, A= 70 - 100, B = 60 - 69, C = 50 - 59</th>
+          </tr>
+        </tfoot>
+      </table>
+      <abbr title="Hypertext">HTML</abbr>
+    </center>
+  </body>
+</html>

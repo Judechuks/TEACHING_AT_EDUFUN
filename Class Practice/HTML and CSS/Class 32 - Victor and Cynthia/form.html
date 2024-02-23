@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <form action="file where info is sent to" method="get"> -->
+    <form action="" method="">
+      <label for="fullname">Name</label>
+      <input
+        type="text"
+        id="fullname"
+        placeholder="Enter your Full Name"
+        autofocus />
+      <br />
+      <br />
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" value="+234" size="50" maxlength="10" />
+      <br />
+      <br />
+      <input type="email " placeholder="Enter your Email" /> <br />
+      <label for="">Age</label>
+      <input type="number" min="1" max="100" step="1" /> <br />
+      <br />
+      <input type="button" value="Ordinary Button" />
+      <input type="submit" value="SUBMIT" />
+      <input type="reset" value="CLEAR" /> <br />
+      <button type="button">Ordinary Button</button>
+      <button type="submit">SUBMIT</button>
+      <button type="reset">CLEAR</button>
+      <br />
+      <br />
+      <fieldset>
+        <legend>User's Feedback</legend>
+        <label>Password</label>
+        <input type="password" required title="PLEASE FILL THIS FIELD" /> <br />
+        <label for="">Comment</label> <br />
+        <textarea id="" cols="20" rows="10"></textarea> <br />
+      </fieldset>
+      <fieldset>
+        <legend>School details</legend>
+        <p>School</p>
+      </fieldset>
+      <fieldset>
+        <legend>Parents or Guardians</legend>
+        <p>Prents</p>
+      </fieldset>
+      <details>
+        <summary>Secret Information</summary>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, commodi
+          quod quae veniam inventore quia perspiciatis error. Alias, blanditiis
+          mollitia, culpa vel tenetur labore, vero quaerat cupiditate voluptatum
+          dolorum voluptatibus.
+        </p>
+      </details>
+      <br />
+      <label for="">Gender</label> <br />
+      <label for="male">Male</label>
+      <input type="radio" id="male" name="gender" checked />
+      <label for="female">Female</label>
+      <input type="radio" id="female" name="gender" />
+      <label for="other">Other</label>
+      <input type="radio" id="other" name="gender" />
+
+      <h4>Countries Visited</h4>
+      <label for="">Ghana</label>
+      <input type="checkbox" />
+      <label for="">USA</label>
+      <input type="checkbox" />
+      <label for="">Russia</label>
+      <input type="checkbox" checked />
+      <label for="">Canada</label>
+      <input type="checkbox" />
+      <label for="">China</label>
+      <input type="checkbox" checked />
+      <br />
+      <label for="">Phone Number</label>
+      <input
+        type="tel"
+        maxlength="11"
+        pattern="[0-9]{11,}"
+        title="ONLY DIGITS ARE NEEDED AND SHOULD BE 11 OR MORE CHARACTERS" />
+      <br />
+      <label for="">Country</label>
+      <select>
+        <option value="">Nigeria</option>
+        <option value="">Ghana</option>
+        <option value="">Cameroon</option>
+        <option value="">United State of America</option>
+        <option value="">China</option>
+        <option value="">Togo</option>
+        <option value="">Russia</option>
+        <option value="">Tunisia</option>
+        <option value="">Algeria</option>
+        <option value="">Niger</option>
+      </select>
+      <br />
+      <label for="">Class</label>
+      <select name="" id="">
+        <optgroup label="Junior">
+          <option value="jss1">JSS 1</option>
+          <option value="">JSS 2</option>
+          <option value="">JSS 3</option>
+        </optgroup>
+        <optgroup label="Senior">
+          <option value="">SS 1</option>
+          <option value="">SS 2</option>
+          <option value="">SS 3</option>
+        </optgroup>
+      </select>
+      <br />
+      <label for="">LGA</label>
+      <input list="lga" />
+      <!--name must match in this case "lga"-->
+      <datalist id="lga">
+        <option value="Onitsha North"></option>
+        <option value="Onitsha South"></option>
+        <option value="Orumba South"></option>
+        <option value="Ogbaru"></option>
+        <option value="Awka South"></option>
+      </datalist>
+      <br />
+      <label for="">Date of Birth</label>
+      <input type="date" min="2010-01-01" max="2023-01-01" />
+      <input type="datetime-local" />
+      <input type="time" /> <br />
+      <label for="">Your Website</label>
+      <input type="url" value="https://" /> <br />
+      <label for="">Pick your color</label> <input type="color" />
+      <br />
+      <input type="image" src="../go-icon.png" />
+      <label for="">Traveling week</label>
+      <input type="week" /> <br />
+      <label for="">Traveling Month</label>
+      <input type="month" /> <br />
+      <input type="search" /> <br />
+      <progress max="100" min="0" value="10"></progress>
+      <input type="range" min="0" max="100" value="0" /> <br />
+      <label for="">Upload your passport</label>
+      <!-- <input type="file" accept="image/*" /> -->
+      <input type="file" accept=".docx" multiple />
+    </form>
+  </body>
+</html>

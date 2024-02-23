@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animation</title>
-</head>
-<style>
-  div{
-    background-color: red;
-    height: 60px;
-    width: 60px;
-    animation-name: text;
-    animation-duration: 2s;
-    animation-iteration-count: 6;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-  }
-  @keyframes text{
-   50%{
-          font-size: 30px;
-          background-color: green;
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+  </head>
+  <style>
+    div {
+      background-color: red;
+      height: 60px;
+      width: 60px;
+      animation-delay: 1s;
+      animation-name: text;
+      animation-duration: 2s;
+      animation-iteration-count: 6;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate-reverse;
+      animation-fill-mode: forwards;
+    }
+    @keyframes text {
+      0% {
+        transform: scale(0);
       }
-      100%{
-          font-size: 50px;
-          background-color: pink;
+      20% {
+        background-color: blue;
       }
-
-  }
-</style>
-<body>
-  <div>Text</div>
-</body>
+      50% {
+        background-color: chartreuse;
+        opacity: 0;
+      }
+      /* For  animation-fill-mode: forwards; to work ensure there is 100% or to used in the keyframe */
+      /* 100% {
+        transform: scale(2);
+        background-color: blueviolet;
+      } */
+    }
+  </style>
+  <body>
+    <div class="col-1">Text</div>
+  </body>
 </html>

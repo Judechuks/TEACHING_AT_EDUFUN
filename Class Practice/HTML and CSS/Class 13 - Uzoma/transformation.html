@@ -9,6 +9,7 @@
     div {
       width: 200px;
       height: 200px;
+      background: purple;
     }
     .box1 {
       background: red;
@@ -19,22 +20,30 @@
       transform: translate(100px, 100px);
     }
     .box2 {
-      background: blue;
-      transition: 1s;
+      transition-duration: 2s;
+      transition-delay: 0s;
+      transition-property: all;
     }
     .box2:hover {
+      background: #0000ff;
       /* transform: rotateX(360deg); */
       /* transform: rotateY(-360deg); */
       transform: rotate(-360deg);
+      font-size: 5rem;
     }
     .box3 {
       margin-inline: auto;
       background: green;
+      /* transition-duration: 2s;
+      transition-delay: 1s;
+      transition-property: font-size;
+      transition-timing-function: ease; */
+      /* transition: all 2s ease 0s; */
+      transition: transform 2s, background 60s;
     }
     .box3:hover {
-      transform: scaleX(0.5);
-      transform: scaleY(1.5);
-      transform: scale(0.5, 1.5);
+      transform: rotate(360deg);
+      background: red;
     }
     .box4 {
       background: yellow;

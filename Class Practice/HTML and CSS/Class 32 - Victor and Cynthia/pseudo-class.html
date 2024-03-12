@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class</title>
+  </head>
+  <style>
+    a:link {
+      font-size: 4rem;
+      color: green;
+      text-decoration: none;
+    }
+    a:visited {
+      color: yellow;
+    }
+    /* a{
+      color: brown;
+    } */
+    a:hover {
+      color: aquamarine;
+      background: gray;
+      text-decoration: underline;
+    }
+    a:focus {
+      color: blue;
+      background: red;
+      text-decoration: underline;
+    }
+    a:active {
+      border: 2px solid chartreuse;
+    }
+    input:focus {
+      background: red;
+    }
+    /* li:first-child {
+      color: blueviolet;
+    }
+    li:last-child {
+      color: red;
+    } */
+    /* li:nth-child(5) {
+      color: coral;
+    } */
+    li:nth-child(odd) {
+      color: coral;
+    }
+    li:only-child {
+      color: green;
+    }
+    li:not(.ant, #rat) {
+      font-size: 3rem;
+    }
+  </style>
+  <body>
+    <a href="#a">Home</a>
+    <a href="#b">About</a>
+    <a href="#c">Services</a>
+    <a href="#d">Team</a>
+    <a href="#e">Sign in</a>
+    <a href="#f">Sign up</a>
+    <input type="text" />
+
+    <ul>
+      <li>Monkey</li>
+      <li>Elephant</li>
+      <li>Lion</li>
+      <li class="ant">Ant</li>
+      <li id="rat">Rat</li>
+      <li>Bat</li>
+      <li>Cat</li>
+    </ul>
+    <ol>
+      <li>Only child</li>
+    </ol>
+  </body>
+</html>

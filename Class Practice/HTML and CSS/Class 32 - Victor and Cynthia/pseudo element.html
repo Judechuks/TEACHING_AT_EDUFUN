@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+  </head>
+  <style>
+    li::before {
+      content: "\2714"; /*CSS Entity*/
+      content: url(../go-icon.png);
+      content: "";
+      /* content: "cynthia"; */
+      margin-right: 10px;
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: #000;
+    }
+    p::first-letter {
+      font-size: 4rem;
+      color: red;
+    }
+    P::first-line {
+      background: gray;
+    }
+  </style>
+  <body>
+    <ol>
+      <li>Nigeria</li>
+      <li>Ghana</li>
+      <li>China</li>
+      <li>Russia</li>
+      <li>Cameroon</li>
+    </ol>
+    <h4>HTML ENTITIES</h4>
+    <p>&nbsp; &lt; &gt; &copy;</p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam,
+      minus amet provident ipsa alias cupiditate quas impedit consequuntur
+      cumque vel dolore saepe quidem quasi molestiae totam quo! Voluptas, quasi
+      soluta? minus amet provident ipsa alias cupiditate quas impedit
+      consequuntur cumque vel dolore saepe quidem quasi molestiae totam quo!
+      Voluptas, quasi soluta? minus amet provident ipsa alias cupiditate quas
+      impedit consequuntur cumque vel dolore saepe quidem quasi molestiae totam
+      quo! Voluptas, quasi soluta?
+    </p>
+  </body>
+</html>

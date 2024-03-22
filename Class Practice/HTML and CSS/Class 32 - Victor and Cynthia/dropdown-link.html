@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown List</title>
+  </head>
+  <style>
+    button::after {
+      content: "\02C5";
+      margin-left: 10px;
+    }
+    ul {
+      display: none;
+    }
+    div {
+      width: fit-content;
+    }
+    div:hover ul {
+      display: block;
+    }
+  </style>
+  <body>
+    <div>
+      <button>Call</button>
+      <ul>
+        <li><a href="">Whatsapp</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Email</a></li>
+        <li><a href="">Telephone</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

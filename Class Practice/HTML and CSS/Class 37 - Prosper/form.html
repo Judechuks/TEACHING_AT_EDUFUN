@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- <form action="file.db" method="get"> -->
+    <form action="" method="">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" />
+      <br /><br />
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="last-name" />
+      <br /><br />
+      <label for="">Password</label>
+      <input type="password" maxlength="6" />
+      <br /><br />
+      <label for="">comment</label> <br />
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <br /><br />
+      <label for="">Age</label>
+      <input type="number" />
+      <br />
+      <br />
+      <label for="">Phone Number</label>
+      <input
+        type="tel"
+        pattern="[0-9]{6,}"
+        title="ONLY 6 DIGITS NUMBERS ARE REQUIRED" />
+      <button type="submit">REGISTER</button>
+      <button type="reset">CLEAR</button>
+      <button type="button">ORDINARY BUTTON</button>
+    </form>
+  </body>
+</html>

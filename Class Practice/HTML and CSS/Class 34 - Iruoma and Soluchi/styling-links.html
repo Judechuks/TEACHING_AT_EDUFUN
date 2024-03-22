@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Links</title>
+  </head>
+  <style>
+    a:link {
+      color: chartreuse;
+    }
+    a:visited {
+      color: aqua;
+    }
+    a:active {
+      color: chocolate;
+      border: 2px solid black;
+      text-decoration: none;
+    }
+    a:hover {
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    a:focus {
+      background-color: cornflowerblue;
+      font-size: 2rem;
+    }
+    input:focus {
+      outline: 2px solid blueviolet;
+    }
+    input:active {
+      background-color: red;
+    }
+    /* a {
+      color: aqua;
+    } */
+  </style>
+  <body>
+    <a href="#a">Home</a>
+    <a href="#b">About</a>
+    <a href="#c">Services</a>
+    <a href="#d">Sign in</a>
+    <a href="#e">Sign up</a>
+    <input type="text" />
+  </body>
+</html>

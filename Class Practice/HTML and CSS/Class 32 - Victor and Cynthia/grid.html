@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+  </head>
+  <style>
+    section {
+      background-color: gray;
+      width: 1200px;
+      height: 800px;
+      display: grid;
+      /* grid-auto-flow: row; */
+      /* grid-template-columns: 1fr 2fr 0.5fr; */
+      /* grid-template-columns: 200px 1fr auto; */
+      grid-template-columns: 30% 30% 30%;
+      /* grid-template-columns: repeat(3, 200px); */
+      /* grid-template-rows: 100px 200px 300px; */
+      /* row-gap: 50px;
+      column-gap: 40px; */
+      /* gap: 50px 50px; */
+      justify-content: space-evenly;
+      /* align-content: space-evenly; */
+      /* justify-items: center; */
+      /* align-items: center; */
+    }
+    div {
+      /* width: 200px; */
+      /* height: 200px; */
+    }
+    .box1 {
+      background: red;
+      /* grid-column-start: 3;
+      grid-column-end: 4; */
+
+      grid-column: 2/4;
+      /* grid-column: 2 / span 2; */
+
+      /* grid-row-start: 2;
+      grid-row-end: 3; */
+      /* grid-row: 2/3; */
+      grid-row: 2 / span 2;
+    }
+    .box2 {
+      background: green;
+    }
+    .box3 {
+      background: yellow;
+    }
+    .box4 {
+      background: purple;
+    }
+    .box5 {
+      background: orange;
+    }
+    .box6 {
+      background: aqua;
+    }
+    .box7 {
+      background: magenta;
+    }
+    .box8 {
+      background: maroon;
+    }
+    .box9 {
+      background: chartreuse;
+    }
+  </style>
+  <body>
+    <section>
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+      <div class="box6">6</div>
+      <div class="box7">7</div>
+      <div class="box8">8</div>
+      <div class="box9">9</div>
+    </section>
+  </body>
+</html>

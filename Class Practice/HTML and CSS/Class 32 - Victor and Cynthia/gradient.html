@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient</title>
+  </head>
+  <style>
+    div {
+      height: 400px;
+      width: 1000px;
+    }
+    .box1 {
+      /* background: linear-gradient(
+        to top left,
+        red 0 33.33%,
+        green 33.33% 67.33%,
+        blue 67.33% 100%
+      ); */
+      background: repeating-linear-gradient(
+        to left,
+        red 0 15%,
+        green 15% 30%,
+        blue 30% 45%
+      );
+    }
+    .box2 {
+      background-image: radial-gradient(
+        circle at center,
+        red 30%,
+        green 30% 60%,
+        blue 60%
+      );
+    }
+    .box3 {
+      background: conic-gradient(
+        from 0deg at center,
+        red 0 30%,
+        green 30% 60%,
+        blue 60% 100%
+      );
+      width: 400px;
+      border-radius: 50%;
+    }
+  </style>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+  </head>
+  <style>
+    li::after {
+      /* content: " Anambra "; */
+      /* content: url(../go-icon.png); */
+      /* content: "\2605"; */
+      content: "";
+      background-color: blue;
+      margin-right: 20px;
+      font-size: 2rem;
+      display: block;
+      height: 200px;
+      width: 200px;
+    }
+    p::first-line {
+      color: red;
+    }
+    p::first-letter {
+      font-size: 3rem;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>Ihiala</li>
+      <li>Obosi</li>
+      <li>Nnewi</li>
+      <li>Onitsha</li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, alias
+      perferendis eum laborum rerum iure dignissimos explicabo, magni quos nobis
+      similique quo. Vero voluptatem tenetur repellat fugit molestiae labore
+      harum eveniet eum, ex fuga amet laborum a iste aperiam accusamus ratione,
+      nesciunt laudantium fugiat aut asperiores libero! Nobis, perspiciatis
+      explicabo, architecto vel ipsam provident, consectetur nihil eos quas hic
+      deserunt? Commodi tenetur nobis debitis minus ipsam veritatis quasi
+      sapiente quidem officia quod impedit magni ipsum ullam, repudiandae
+      repellendus maiores dolore temporibus expedita labore nihil. Excepturi
+      mollitia obcaecati error enim harum, eveniet suscipit modi atque quae
+      minima impedit necessitatibus consequuntur numquam.
+    </p>
+  </body>
+</html>

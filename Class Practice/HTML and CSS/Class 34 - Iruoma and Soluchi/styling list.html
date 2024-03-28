@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling List</title>
+  </head>
+  <style>
+    li {
+      /* list-style-image: url(../go-icon.png);*/
+      list-style-type: decimal;
+      /* list-style-position: inside; */
+      /* list-style: decimal url(../go-icon.png) inside; */
+      /* background-color: blue; */
+    }
+    li::marker {
+      color: brown;
+      font-size: 30px;
+      content: "\261B";
+    }
+  </style>
+  <body>
+    <ol>
+      <li>Lion</li>
+      <li>Elephant</li>
+      <li>Leopard</li>
+      <li>Goat</li>
+      <li>Bat</li>
+      <li>Cat</li>
+      <li>Rat</li>
+    </ol>
+  </body>
+</html>

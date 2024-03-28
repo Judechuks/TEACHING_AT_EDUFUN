@@ -1,0 +1,10 @@
+/* selector {
+  property: value;
+} */
+h1 {
+  font-size: 54px;
+  color: blue;
+}
+p {
+  color: aqua;
+}

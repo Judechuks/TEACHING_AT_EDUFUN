@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+  </head>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+    }
+    .box1 {
+      background: red;
+      position: static;
+      top: 50px;
+      left: 60px;
+      right: 80px;
+      bottom: 60px;
+    }
+    .box2 {
+      background: green;
+      position: relative;
+      /* top: 50px; */
+      /* left: 60px; */
+      right: 80px;
+      bottom: 60px;
+      z-index: 1;
+    }
+    .box3 {
+      background: blue;
+      position: absolute;
+      top: 50px;
+      left: 60px;
+      right: 80px;
+      bottom: 60px;
+    }
+    .box4 {
+      background: purple;
+      position: fixed;
+      /* top: 50px; */
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+    .box5 {
+      background: yellow;
+      position: sticky;
+      bottom: 0;
+      left: 120px;
+      z-index: 3;
+    }
+    section {
+      width: 500px;
+      height: 500px;
+      background: #ccc;
+      position: relative;
+    }
+    article {
+      width: 50px;
+      height: 50px;
+      background: red;
+      position: absolute;
+      top: -25px;
+      right: -25px;
+      border-radius: 50%;
+    }
+  </style>
+  <body>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <div class="box1">Static</div>
+    <div class="box2">Relative</div>
+    <div class="box3">Absolute</div>
+    <div class="box4">Fixed</div>
+    <div class="box5">Sticky</div>
+
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+
+    <section>
+      <article></article>
+    </section>
+  </body>
+</html>

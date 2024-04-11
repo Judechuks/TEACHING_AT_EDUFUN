@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo class</title>
+  </head>
+  <style>
+    a:link {
+      color: chartreuse;
+    }
+    a:active {
+      color: orange;
+      border: 2px solid blue;
+      padding: 10px;
+    }
+    /* a:visited {
+      color: cyan;
+    } */
+    /* a:hover {
+      font-size: 2rem;
+      text-decoration: none;
+      color: darkorange;
+    } */
+    /* a:focus {
+      color: white;
+      background-color: gray;
+      padding: 10px;
+    } */
+    input:active {
+      outline: 2px solid red;
+    }
+    input:focus {
+      outline: 2px solid blue;
+    }
+    /* li:first-child {
+      font-size: 2rem;
+    }
+    li:last-child {
+      font-size: 2rem;
+    }
+    li:nth-child(2) {
+      color: rgb(174, 151, 151);
+    }
+    li:nth-child(even) {
+      color: red;
+    }
+    li:only-child {
+      color: blue;
+    } */
+    /* 
+    li:not(:nth-child(2)) {
+      font-size: 2.5rem;
+    } */
+
+    /* li:not(.ant):hover {
+      font-size: 2.5rem;
+    } */
+    li:not(.ant, :nth-child(3)) {
+      font-size: 2.5rem;
+    }
+  </style>
+  <body>
+    <a href="#a">Home</a>
+    <a href="#b">About</a>
+    <a href="#c">Product</a>
+    <a href="#d">Contact</a>
+    <a href="#e">Signup</a>
+    <a href="#f">Signin</a>
+    <br />
+    <input type="text" />
+    <ol>
+      <li>Antelope</li>
+      <li class="ant">Ant</li>
+      <li>Rat</li>
+      <li>Bat</li>
+      <li>Cat</li>
+      <li>Rabbit</li>
+      <li>Elephant</li>
+      <li>Dog</li>
+      <li>Tiger</li>
+      <li>Lion</li>
+    </ol>
+
+    <ul>
+      <li>Im the only person</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+  </head>
+  <style>
+    li::before {
+      content: "";
+      content: "Favor "; /*text, image, entity, empty*/
+      content: url(../go-icon.png);
+      content: "\2605";
+      color: blue;
+      margin-right: 10px;
+    }
+    /*li::after {
+      content: " Emma"; 
+    } */
+    /* li::before {
+      content: "Favor ";
+      content: url(../go-icon.png);
+      content: "";
+      height: 10px;
+      width: 10px;
+      background-color: blue;
+      display: block;
+    } */
+    p::first-line {
+      color: blue;
+    }
+    p::first-letter {
+      font-size: 3rem;
+    }
+    ::placeholder {
+      color: gray;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>Lion</li>
+      <li>Elephant</li>
+      <li>Rat</li>
+      <li>Cat</li>
+    </ul>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+      doloribus pariatur repudiandae quidem distinctio dicta corporis inventore
+      maxime? Assumenda minima, necessitatibus nisi harum quidem accusamus dicta
+      maiores inventore nulla quos tempore id neque provident, vel aperiam
+      officia, soluta placeat animi atque. Inventore officia vel tempore nemo
+      laboriosam doloribus ex vitae officiis commodi fugiat, asperiores ut in et
+      velit explicabo esse at error excepturi dolorum dolores facilis! Ipsa
+      debitis libero, architecto alias facere eos assumenda adipisci quo
+      molestiae minus aspernatur odit similique est numquam commodi aut iusto
+      esse animi quaerat? Aperiam vel similique dolores accusamus accusantium?
+      Iure animi consequuntur optio sint?
+    </p>
+    <input type="text" placeholder="Enter your name" />
+    <!-- html entity -->
+    &apos; &copy;
+  </body>
+</html>

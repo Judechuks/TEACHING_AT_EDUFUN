@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="" method="">
+      <fieldset>
+        <legend>My Bio data</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" value="Fred" size="40" autofocus /> <br />
+        <br />
+        <label for="">Password</label>
+        <input
+          type="password"
+          maxlength="6"
+          required
+          placeholder="your password" />
+        <br />
+        <label for="msg">Feedback</label> <br />
+        <textarea name="" id="msg" cols="30" rows="10"></textarea>
+        <br />
+        <label for="">Age</label>
+        <input type="number" min="0" max="10" step="2" />
+        <br />
+        <label for="">Email</label>
+        <input type="email" />
+        <br />
+        <label for="">Male</label>
+        <input type="radio" name="gender" />
+        <label for="">Female</label>
+        <input type="radio" name="gender" checked />
+        <label for="">Other</label>
+        <input type="radio" name="gender" />
+        <br />
+        <label for="">Rice</label>
+        <input type="checkbox" />
+        <label for="">Beans</label>
+        <input type="checkbox" />
+        <label for="">Spaghetti</label>
+        <input type="checkbox" checked />
+        <label for="">Indomie</label>
+        <input type="checkbox" checked />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Parents Details</legend>
+        <label for="">Parent's Name</label>
+        <input type="text" /> <br />
+        <label for="">Parent's Address</label>
+        <input type="text" /> <br />
+        <label>Parent's Phone Number</label>
+        <input
+          type="tel"
+          pattern="[0-9]{11,}"
+          title="NUMBERS ONLY AND SHOULD NOT BE LESS THAN 11 DIGITS" />
+        <!-- pattern="[0-9]*" -->
+        <br />
+        <label for="">Class</label>
+        <!-- <select name="" id="" multiple> -->
+        <select name="" id="">
+          <option value="" disabled selected>Choose Your Class</option>
+          <optgroup label="JUNIOR CLASS">
+            <option value="jss 1">JSS 1</option>
+            <option value="">JSS 2</option>
+            <option value="">JSS 3</option>
+          </optgroup>
+          <optgroup label="SENIOR CLASS">
+            <option value="">SS 1</option>
+            <option value="">SS 2</option>
+            <option value="">SS 3</option>
+          </optgroup>
+        </select>
+        <br />
+        <label for="">Subject</label>
+        <input list="subject" />
+        <datalist id="subject">
+          <option value="Maths"></option>
+          <option value="English"></option>
+          <option value="CRS"></option>
+          <option value="Agric"></option>
+          <option value="Home Econs"></option>
+        </datalist>
+        <br />
+        <label for="">Date of Birth</label>
+        <input type="date" min="2022-03-20" max="2024-01-20" />
+        <br />
+        <label for="">Your Website</label>
+        <input type="url" value="https://" />
+        <br />
+        <label for="">favorite color</label>
+        <input type="color" />
+      </fieldset>
+      <br />
+      <details>
+        <summary>Hidden Information</summary>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+          architecto repellendus sint ab quia delectus fugit repellat a incidunt
+          dignissimos cupiditate totam at quod alias debitis, ullam beatae
+          sapiente exercitationem?
+        </p>
+      </details>
+      <br />
+      <input type="search" placeholder="Search here" />
+      <br />
+      <label for="">Month</label>
+      <input type="month" />
+      <br />
+      <label for="">Week</label>
+      <input type="week" />
+      <br />
+      <label for="">Time</label>
+      <input type="time" />
+      <br />
+      <label for="">Traveling date and time</label>
+      <input type="datetime-local" />
+      <br />
+      <label for="">Course rating</label>
+      <progress min="1" max="10" value="8"></progress>
+      <label for="">Course rating</label>
+      <input type="range" min="1" max="100" value="80" />
+      <br />
+      <label for="">Upload your passport</label>
+      <input type="file" accept="image/*" />
+      <label for="">Upload your CV</label>
+      <input type="file" accept=".pdf" multiple />
+      <br />
+      <input type="image" src="../go-icon.png" />
+      <br />
+      <button type="submit">Register</button>
+      <button type="reset">Clear</button>
+      <button type="button" onclick="alert('Welcome to our website')">
+        Ordinary Button
+      </button>
+      <br />
+      <input type="submit" value="CREATE ACCOUNT" />
+      <input type="reset" value="WIPE" />
+      <input type="button" value="ORDINARY BUTTON" />
+    </form>
+  </body>
+</html>

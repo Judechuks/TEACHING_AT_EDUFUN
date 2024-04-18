@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <style>
+    div p {
+      color: red;
+    }
+    div > p {
+      color: blue;
+    }
+    * {
+      color: brown;
+      /* color: brown !important; */
+      /* font-size: 20px !important; */
+    }
+    p {
+      color: yellow;
+    }
+    .outer {
+      color: aqua;
+      font-size: 40px;
+    }
+    #outer2 {
+      color: black;
+    }
+    #outer2 {
+      color: darkorange;
+    }
+  </style>
+  <body>
+    <p>body paragraph</p>
+    <div>
+      <p>div paragraph</p>
+      <article>
+        <p>article paragraph</p>
+        <section>
+          <p>section paragraph</p>
+        </section>
+      </article>
+    </div>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <a href="">My link</a>
+    <ul>
+      <li>Lion</li>
+      <li>Goat</li>
+    </ul>
+    <p class="outer">Outer p</p>
+    <p class="outer" id="outer2">second Outer p</p>
+  </body>
+</html>

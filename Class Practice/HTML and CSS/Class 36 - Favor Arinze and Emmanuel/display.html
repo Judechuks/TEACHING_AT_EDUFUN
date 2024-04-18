@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+  </head>
+  <style>
+    h1 {
+      display: inline;
+      background: red;
+      height: 400px; /*wont work bcos its inline*/
+    }
+    p {
+      display: inline;
+    }
+    li {
+      display: inline;
+    }
+    img {
+      width: 400px;
+      display: block;
+    }
+    a {
+      display: inline-block;
+      padding: 80px;
+      background: red;
+    }
+    .first-img {
+      /* display: none; */
+      /* visibility: hidden; */
+      opacity: 0;
+    }
+  </style>
+  <body>
+    <h1>Heading 1</h1>
+    <p>Paragraph</p>
+    <ul>
+      <li>List 1</li>
+      <li>List 2</li>
+    </ul>
+    <img src="../facebook.png" alt="" class="first-img" />
+    <img src="../beauty-and-beast.jpg" width="400px" alt="" />
+    <a href="">Link</a>
+    <span>Span container</span>
+  </body>
+</html>

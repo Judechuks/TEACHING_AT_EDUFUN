@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+  </head>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      animation-delay: 0s;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: 4;
+    }
+    .box1 {
+      background: red;
+      animation-name: move;
+      animation-direction: alternate-reverse;
+      animation-fill-mode: forwards;
+    }
+    .box2 {
+      animation-name: rotate;
+      background: orange;
+      animation-fill-mode: backwards;
+      font-size: 3rem;
+    }
+    @keyframes move {
+      from {
+        background: blue;
+        margin-left: 0;
+      }
+      to {
+        background: green;
+        margin-left: 1000px;
+      }
+    }
+    @keyframes rotate {
+      0% {
+        background: blue;
+        transform: rotate(0deg);
+      }
+      100% {
+        background: green;
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <body>
+    <div class="box1"></div>
+    <div class="box2">A</div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    a:link {
+      color: aqua;
+      font-size: 1rem;
+    }
+    a:visited {
+      color: chartreuse;
+    }
+    a:active {
+      color: crimson;
+      border: 1px solid green;
+      padding: 10px;
+    }
+    a:hover {
+      background-color: gray;
+      padding: 10px;
+    }
+    a:focus {
+      background-color: lightcoral;
+      padding: 10px;
+    }
+    input:active {
+      outline: 2px solid green;
+      padding: 8px;
+    }
+    input:focus {
+      outline: 2px solid green;
+    }
+    section:target {
+      background-color: red;
+    }
+    ::selection {
+      background: red;
+    }
+    li:first-child {
+      font-size: 2rem;
+    }
+    li:last-child {
+      font-size: 0.7rem;
+    }
+    li:only-child {
+      color: blue;
+    }
+    li:nth-child(even) {
+      color: red;
+    }
+    li:not(.rat, #banana, :last-child) {
+      font-size: 2rem;
+    }
+  </style>
+  <body>
+    <a href="#a">Home</a>
+    <a href="#b">About</a>
+    <a href="#c">Services</a>
+    <a href="#d">Products</a>
+    <a href="#e">Contact</a>
+    <a href="#f">Sign in</a>
+    <a href="#g">Sign up</a>
+    <br />
+    <br />
+    <input type="text" placeholder="Enter your name" />
+    <section id="a">first section</section>
+    <section id="b">second section</section>
+    <section id="c">third section</section>
+    <ul>
+      <li>Cat</li>
+      <li class="rat">Rat</li>
+      <li>Bat</li>
+      <li>Goat</li>
+      <li>Lion</li>
+      <li>Elephant</li>
+    </ul>
+    <ol>
+      <li id="banana">Banana</li>
+    </ol>
+  </body>
+</html>

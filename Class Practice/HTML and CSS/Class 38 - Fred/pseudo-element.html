@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+  </head>
+  <style>
+    ul li::before {
+      content: "fred "; /*text or string*/
+      content: "\27A4"; /* entity */
+      content: url(../go-icon.png); /*image*/
+      content: ""; /*empty*/
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-color: red;
+      /* margin-right: 15px; */
+    }
+    p::first-letter {
+      font-size: 3rem;
+      color: blue;
+    }
+    p::first-line {
+      color: aqua;
+    }
+    ::placeholder {
+      color: cornflowerblue;
+      font-size: 16px;
+    }
+    ol li {
+      /* list-style-type: decimal;
+      list-style-image: url(../go-icon.png);
+      list-style-position: outside; */
+      list-style: lower-alpha url(../go-icon.png) outside;
+      /* list-style: lower-alpha; */
+      /* background: green; */
+    }
+    ol li::marker {
+      content: url(../icons8.png);
+    }
+  </style>
+  <body>
+    <ul>
+      <li>Nigeria</li>
+      <li>Ghana</li>
+      <li>USA</li>
+      <li>Russia</li>
+      <li>China</li>
+    </ul>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo velit,
+      ratione, totam nisi dolor similique alias earum modi, accusamus aliquid a
+      laboriosam molestiae ipsum minima voluptas! Expedita, dignissimos
+      architecto. Alias impedit maiores exercitationem illum illo maxime non
+      voluptatem delectus fugiat architecto repellat molestias optio vel
+      doloremque voluptatum tempore iusto perferendis, eius quo, odio provident
+      facilis earum minus aperiam. Consectetur, similique error! Nesciunt dolore
+      consequatur error ab facilis dolores quia, illo ad saepe eligendi
+      accusamus rem ipsum numquam nobis quibusdam doloribus. Amet aut facilis
+      laudantium quas libero illum doloremque sit suscipit culpa aliquam
+      recusandae corporis et, debitis eos fugit itaque inventore!
+    </p>
+    <ol>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ol>
+  </body>
+</html>

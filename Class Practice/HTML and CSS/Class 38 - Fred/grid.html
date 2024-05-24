@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        width: 1200px;
+        height: 800px;
+        background: gray;
+        display: grid;
+        /* grid-auto-flow: column; */
+        /* grid-template-columns: 300px 300px 300px; */
+        /* grid-template-columns: repeat(3, 200px); */
+        /* grid-template-columns: 20% 20%; */
+        /* grid-template-columns: 1fr 4fr 1fr; */
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-columns: auto auto auto; */
+        /* grid-template-columns: 0.5fr auto auto; */
+        /* grid-template-rows: 200px 200px 200px; */
+        /* row-gap: 50px;
+        column-gap: 40px; */
+        /* gap: 50px 40px; */
+        /* gap: 20px; */
+        /* justify-content: space-between; */
+        /* align-content: center; */
+
+        justify-items: space-between;
+      }
+      /* div {
+        width: 200px;
+        height: 200px;
+      } */
+      .box1 {
+        background: red;
+        /* grid-column-start: 3;
+        grid-column-end: 4; */
+
+        grid-column: 3/4;
+
+        /* grid-row-start: 2;
+        grid-row-end: 3; */
+
+        grid-row: 2/3;
+
+        /* justify-self: center; */
+      }
+      .box2 {
+        background: green;
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+        /* justify-self: center; */
+        /* align-self: center; */
+      }
+      .box3 {
+        background: blue;
+      }
+      .box4 {
+        background: yellow;
+      }
+      .box5 {
+        background: purple;
+      }
+      .box6 {
+        background: orange;
+      }
+      .box7 {
+        background: aqua;
+      }
+      .box8 {
+        background: magenta;
+      }
+      .box9 {
+        background: maroon;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="box5"></div>
+      <div class="box6"></div>
+      <div class="box7"></div>
+      <div class="box8"></div>
+      <div class="box9"></div>
+    </section>
+  </body>
+</html>

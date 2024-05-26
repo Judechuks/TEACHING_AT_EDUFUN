@@ -4,7 +4,7 @@ let a = 0,
 
 do {
   // myHeading.innerText +=  1
-  console.log(a);
+  console.log(a++);
   i--;
 } while (i > 1);
 

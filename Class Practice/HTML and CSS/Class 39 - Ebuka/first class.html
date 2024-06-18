@@ -20,6 +20,33 @@
   h2{
   font-size: 3rem;
   }
+  .second{
+  color: yellow;
+  color: rgb(255, 255, 0); /*0 to 255, a = 0 to 1*/
+  color: rgba(255, 255, 0, 1); /*0 to 255, a = 0 to 1*/
+  color: #770077; /*0, 1, 2, 3, 4, 5, 6, 7, 8, 9 a b c d e f */
+  }
+  #heading-2{
+  color: cyan;
+  }
+  .text{
+  color: red;
+  }
+  .big{
+  font-size: 2rem;
+  }
+  /* li{
+  font-size: 2rem;
+  color: green;
+  }
+  label{
+  font-size: 2rem;
+  color: green;
+  } */
+  li, label, nav{
+  font-size: 2rem;
+  color: green;
+  }
   </style>
   <body>
     <p>This is our first class in HTML</p>
@@ -35,15 +62,23 @@
       <p>The is an <em>inner</em> <strong>paragraph</strong></p>
     </p>
     <h1>Heading 1</h1>
-    <h2 style="color: red;">Heading 2</h2>
-    <h2>Heading 2</h2>
-    <h2>Heading 2</h2>
+    <!-- <h2 style="color: red;">Heading 2</h2> -->
+    <h2 class="box second">Heading 2</h2>
+    <h2 id="heading-2">Heading 2</h2>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
     <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
+    <p>text</p>
+    <p class="text">text</p>
+    <p class="text big">text</p>
+    <p class="text">text</p>
+    <p>text</p>
+    <h5 class="box">Heading 5</h5>
     <h6>Heading 6</h6>
     <p>2x<sup>2</sup> + 2x = 0</p>
     <p>101<sub>2</sub></p>
+    <li>list 1</li>
+    <label for="">A label</label>
+    <nav>A nav</nav>
   </body>
 </html>

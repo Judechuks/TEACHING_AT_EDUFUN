@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+  </head>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+    }
+    .box1 {
+      background-color: red;
+      /* transform: translateX(200px) translateY(100px); */
+      /* translate: 500px; */
+    }
+    .box1:hover {
+      transform: translate(100px);
+    }
+    .box2 {
+      background-color: green;
+      transform: scale(0.5);
+      /* transform: scale(0.5, 2); */
+      /* transform: scaleX(2.5); */
+      /* transform: scaleY(2.5); */
+    }
+    .box3 {
+      background-color: yellow;
+      /* transform: rotate(45deg); */
+      /* transition-delay: 0s;
+      transition-duration: 1s;
+      transition-property: all;
+      transition-timing-function: ease; */
+      /* transition: all 1s ease 0s; */
+      transition: 1s;
+      transition: background-color 6s, transform 1s;
+    }
+    .box3:hover {
+      /* transform: rotateX(360deg); */
+      /* transform: rotateY(360deg); */
+      transform: rotate(360deg);
+      background-color: red;
+      font-size: 3rem;
+    }
+    .box4 {
+      background-color: blue;
+      transition: 1s;
+    }
+    .box4:hover {
+      /* transform: skewX(360deg); */
+      /* transform: skewY(360deg); */
+      transform: skew(90deg, 90deg);
+    }
+  </style>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">A</div>
+    <div class="box4"></div>
+  </body>
+</html>

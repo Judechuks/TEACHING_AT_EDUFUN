@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+  </head>
+  <style>
+    .box {
+      width: 100px;
+      aspect-ratio: 1/1;
+      background: green;
+      /* animation-delay: 0s;
+      animation-duration: 6s;
+      animation-name: move;
+      animation-direction: normal;
+      animation-timing-function: ease; */
+      /* margin: 300px auto; */
+      /* animation-iteration-count: 4;
+      animation-fill-mode: both; */
+      /* animation: move 6s ease 0s 4 normal both; */
+      animation: move 6s;
+    }
+    .box2 {
+      height: 200px;
+      width: 200px;
+      animation-delay: 0s;
+      animation-duration: 60s;
+      animation-name: move;
+      animation-timing-function: ease;
+      animation-direction: reverse;
+    }
+    @keyframes move {
+      0% {
+        transform: translateX(0);
+        background-color: blue;
+      }
+      20% {
+        background-color: aqua;
+      }
+      100% {
+        transform: translateX(1200px);
+        background-color: red;
+      }
+      /* from {
+        transform: scale(0.4);
+      }
+      to {
+        transform: scale(4);
+      } */
+    }
+  </style>
+  <body>
+    <div class="box"></div>
+    <div class="box2"></div>
+  </body>
+</html>

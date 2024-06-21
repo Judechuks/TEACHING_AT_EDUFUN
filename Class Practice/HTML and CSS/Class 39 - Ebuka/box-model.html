@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+  </head>
+  <style>
+    div {
+      width: 400px;
+      height: 400px;
+      background: red;
+      /* border-width: 10px;
+      border-style: groove;
+      border-color: blue; */
+
+      /* border-top: 10px groove green;
+      border-right: 10px groove green;
+      border-left: 10px groove green;
+      border-bottom: 10px groove green; */
+
+      border: 10px groove green;
+
+      outline: 5px solid blue;
+      /* outline-offset: -30px; */
+
+      /* padding-top: 30px;
+      padding-left: 40px;
+      padding-right: 50px;
+      padding-bottom: 60px; */
+
+      padding: 50px; /*same value for all 4 sides*/
+      padding: 30px 50px; /*top & bottom, left & right*/
+      padding: 30px 50px 60px; /*top, left & right, bottom*/
+      padding: 30px 50px 60px 70px; /*top, right, bottom, left*/
+
+      margin: 50px; /*same value for all 4 sides*/
+      margin: 30px 50px; /*top & bottom, left & right*/
+      margin: 30px 50px 60px; /*top, left & right, bottom*/
+      margin: 30px 50px 60px 70px; /*top, right, bottom, left*/
+
+      /* margin-left: auto;
+      margin-right: auto; */
+      margin: 40px auto 60px;
+    }
+    p {
+      margin-left: 40px;
+      background-color: green;
+    }
+  </style>
+  <body>
+    <div>Text</div>
+    <p>paragraph</p>
+  </body>
+</html>

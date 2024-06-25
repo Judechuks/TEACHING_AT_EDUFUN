@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class</title>
+  </head>
+  <style>
+    li:not(.rat, :nth-child(3)) {
+      color: red;
+    }
+    /* li:nth-child(even) {
+      color: blue;
+    }
+    li:nth-child(odd) {
+      color: aqua;
+    } */
+    /* li:nth-child(4) {
+      font-size: 2rem;
+    }
+    li:last-child {
+      color: blue;
+    }
+    li:first-child {
+      color: red;
+    }
+    li:only-child {
+      background-color: gray;
+    } */
+    a:link {
+      color: green;
+    }
+    a:visited {
+      color: gray;
+    }
+    a:active {
+      color: yellow;
+      border: 2px solid red;
+    }
+    a:hover {
+      color: blue;
+    }
+    a:focus {
+      background-color: gray;
+      font-size: 1.5rem;
+      color: blue;
+    }
+    input:focus {
+      outline-color: green;
+    }
+    input:active {
+      outline-color: red;
+    }
+  </style>
+  <body>
+    <ol>
+      <!-- <p>Fish</p> -->
+      <li>Goat</li>
+      <li class="rat">Rat</li>
+      <li>Cat</li>
+      <li>Bat</li>
+      <li>Ant</li>
+      <li>Fly</li>
+    </ol>
+    <ul>
+      <li>Orange</li>
+    </ul>
+
+    <div>
+      <a href="#a">Home</a>
+      <a href="#b">about</a>
+      <a href="#c">products</a>
+      <a href="#d">services</a>
+      <a href="#e">contact</a>
+    </div>
+    <form action="">
+      <input type="text" />
+    </form>
+  </body>
+</html>

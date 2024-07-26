@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient</title>
+  </head>
+  <style>
+    section {
+      width: 1000px;
+      height: 400px;
+    }
+    #first {
+      background: linear-gradient(
+        to top left,
+        red 0 33.3333%,
+        blue 33.3333% 66.6666%,
+        green 66.6666% 100%
+      );
+      background: repeating-linear-gradient(
+        red 0 10%,
+        blue 10% 20%,
+        green 20% 30%
+      );
+    }
+
+    #second {
+      /* width: 400px;
+      border-radius: 50%; */
+      background-image: radial-gradient(
+        circle at center,
+        red 0 30%,
+        green 30% 50%,
+        blue 50% 100%
+      );
+      /* background: repeating-radial-gradient(
+        red 0 10%,
+        blue 10% 20%,
+        green 20% 30%
+      ); */
+    }
+    /* #third {
+      background-image: conic-gradient(
+        red 40deg,
+        green 40deg 80deg,
+        blue 80deg 270deg
+      );
+    } */
+    #third {
+      width: 400px;
+      border-radius: 50%;
+      background-image: conic-gradient(
+        from 0deg at center,
+        red 0 33.3333%,
+        green 33.3333% 66.6666%,
+        blue 66.6666% 100%
+      );
+    }
+    /* #third:hover {
+      background-image: conic-gradient(
+        at left,
+        red 0 33.3333%,
+        green 33.3333% 66.6666%,
+        blue 66.6666% 100%
+      );
+    } */
+  </style>
+  <body>
+    <section id="first"></section>
+    <section id="second"></section>
+    <section id="third"></section>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo class</title>
+  </head>
+  <style>
+    li:first-child {
+      font-size: 1.5rem;
+      text-decoration: underline;
+    }
+    li:last-child {
+      color: red;
+    }
+    li:nth-child(even) {
+      color: blue;
+    }
+    li:only-child {
+      color: blueviolet;
+    }
+    /* li:not(:nth-child(6)) { same result as the not class*/
+    li:not(.berry) {
+      color: aquamarine;
+    }
+    /* input[type="checkbox"] { */
+    /* input:checked + input { */
+    input:not(:checked) + p {
+      text-decoration: line-through;
+    }
+  </style>
+  <body>
+    <ol>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+      <li class="berry">Strawberry</li>
+      <li>Pineapple</li>
+      <li>Orange</li>
+      <li>Mango</li>
+      <li>Cashew</li>
+    </ol>
+    <ul>
+      <!-- only child -->
+      <li>Divine</li>
+    </ul>
+    <div>
+      <input type="checkbox" name="" id="" />
+      <p>agree</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo element</title>
+  </head>
+  <style>
+    /* li::after {
+      content: " fruit ";
+    } */
+    li::before {
+      content: " fruit ";
+      content: url(../icons8.png);
+      content: "\2605";
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: blueviolet;
+      margin-right: 15px;
+    }
+  </style>
+  <body>
+    <ol>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+      <li>Strawberry</li>
+      <li>Pineapple</li>
+      <li>Orange</li>
+      <li>Mango</li>
+      <li>Cashew</li>
+    </ol>
+  </body>
+</html>

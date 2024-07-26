@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+  </head>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+    }
+    .box1 {
+      background-color: aqua;
+      position: static;
+      left: 20px;
+      top: 50px;
+    }
+    .box2 {
+      background-color: red;
+      position: relative;
+      top: 100px;
+      /* left: 50%; */
+      /* left: -100px; */
+      /* right: -100px; */
+      /* bottom: 200px; */
+      z-index: 2;
+    }
+    .box3 {
+      background-color: blue;
+      position: absolute;
+      /* top: 20px; */
+      /* right: 20px; */
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+    .box4 {
+      background-color: green;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+    .box5 {
+      background-color: yellow;
+      position: sticky;
+      /* top: 20px; */
+      bottom: 0;
+      z-index: 3;
+    }
+    section {
+      width: 400px;
+      height: 400px;
+      background-color: gray;
+      position: relative;
+    }
+    nav {
+      background-color: green;
+      width: fit-content;
+      position: absolute;
+      right: 0;
+    }
+    /*img {
+       width: 100%;
+      height: 100%; 
+    }*/
+    article {
+      background-color: blueviolet;
+      position: fixed;
+      right: 100px;
+      left: 100px;
+      top: 100px;
+      bottom: 100px;
+      /* height: 100px; */
+      /* width: 200px; */
+    }
+  </style>
+  <body>
+    <div class="box1">static</div>
+    <div class="box2">relative</div>
+    <div class="box3">absolute</div>
+    <div class="box4">fixed</div>
+    <div class="box5">sticky</div>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <section>
+      <nav><h1>This is a text</h1></nav>
+      <img
+        src="../beauty-and-beast.jpg"
+        alt="beauty and the beast dancing"
+        width="200"
+        height="200" />
+    </section>
+  </body>
+</html>

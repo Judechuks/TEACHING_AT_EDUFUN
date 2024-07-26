@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Links</title>
+  </head>
+  <style>
+    /* a:link {
+      color: aqua;
+    }
+    a:visited {
+      color: chartreuse;
+    } */
+    a:active {
+      color: rgb(249, 255, 80);
+      border: 2px solid red;
+    }
+    a:hover {
+      background-color: gray;
+      color: blue;
+    }
+    a:focus {
+      background-color: chartreuse;
+    }
+    /* input:active {
+      outline: 2px solid green;
+    } */
+    input:focus {
+      outline: 2px solid blue;
+    }
+  </style>
+  <body>
+    <a href="#a">Home</a>
+    <a href="#b">About</a>
+    <a href="#c">Contact us</a>
+    <a href="#d">Sign in</a>
+    <a href="#e">Sign up</a>
+
+    <br />
+    <br />
+    <input type="text" placeholder="Name" />
+  </body>
+</html>

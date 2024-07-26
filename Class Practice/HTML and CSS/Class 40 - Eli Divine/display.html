@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Styling List</title>
+  </head>
+  <style>
+    li {
+      background-color: gray;
+      display: inline;
+    }
+    body > a {
+      display: inline-block;
+      padding: 60px;
+      background: gray;
+      /* height: 400px;
+      width: 400px; */
+    }
+    h1 {
+      display: block;
+      /* width: 300px;
+      height: 300px; */
+      background: red;
+    }
+    h2 {
+      display: none;
+      /* visibility: hidden; */
+      /* opacity: 0; */
+    }
+    nav {
+      display: none;
+    }
+    div:hover nav {
+      display: block;
+    }
+    input:checked + nav {
+      display: block;
+    }
+    input {
+      display: none;
+    }
+  </style>
+  <body>
+    <li>Apple</li>
+    <li>Banana</li>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Contact</a>
+    <p>Text</p>
+    <p>Text</p>
+
+    <!-- hover -->
+    <div>
+      <a href="">PAGES</a>
+      <nav>
+        <a href="">Team</a> <br />
+        <a href="">Team</a> <br />
+        <a href="">Team</a>
+      </nav>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- checkbox -->
+    <aside>
+      <label for="checkbox"> CLICK ME</label>
+      <input type="checkbox" id="checkbox" />
+      <nav>
+        <a href="">Team</a> <br />
+        <a href="">Team</a> <br />
+        <a href="">Team</a>
+      </nav>
+    </aside>
+  </body>
+</html>

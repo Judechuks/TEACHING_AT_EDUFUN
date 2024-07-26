@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Personal information</legend>
+        <label for="">Name</label>
+        <input type="text" />
+        <br />
+        <br />
+        <label for="">State</label>
+        <input type="text" />
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Parents information</legend>
+        <label for="">Parent's Name</label>
+        <input type="text" />
+        <br />
+        <br />
+        <label for="">Parents Occupation</label>
+        <input type="text" />
+      </fieldset>
+      <br />
+      <br />
+      <details>
+        <summary>Hidden Information</summary>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, tempore
+          illo. Quos temporibus delectus quasi magni quaerat repellendus eveniet
+          mollitia nobis! Qui explicabo beatae nihil, nobis ullam eaque facilis
+          assumenda?
+        </p>
+      </details>
+      <br />
+      <label for="">Phone Number</label>
+      <!-- <input
+        type="tel"
+        pattern="[0-9]*"
+        title="YOU ARE TO ENTER NUMBERS ONLY" /> -->
+      <input
+        type="tel"
+        pattern="[0-9]{11,}"
+        title="YOU ARE TO ENTER NUMBERS ONLY FROM 11 DIGITS AND ABOVE" />
+      <br />
+      <br />
+      <label for="">Date of Birth</label>
+      <input type="date" max="2023-01-31" min="1900-01-31" />
+      <br />
+      <label for="">Favorite Color</label>
+      <input type="color" />
+      <br />
+      <input type="image" src="../go-icon.png" />
+      <br />
+      <input type="submit" value="Register" />
+      <button type="Submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button">Button</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <input
+          type="text"
+          id="fullname"
+          required
+          autofocus
+          size="10"
+          maxlength="5"
+          placeholder="Your name"
+          value="Amanda" />
+        <br />
+        <label for="">Gender</label>
+        <br />
+        <label for="">Male</label> <input type="radio" name="gender" checked />
+        <label for="">Female</label>
+        <input type="radio" name="gender" />
+        <label for="">Prefer not to say</label>
+        <input type="radio" name="gender" />
+        <br />
+        <label for="">Date of Birth</label>
+        <input type="date" min="2001-01-01" max="2025-01-01" />
+        <br />
+        <label for="">Class</label>
+        <!-- <select name="" id="" multiple> -->
+        <select name="" id="">
+          <option value="">JSS 1</option>
+          <option value="">JSS 2</option>
+          <option value="">JSS 3</option>
+          <option value="" selected>SS 1</option>
+          <option value="">SS 2</option>
+          <option value="" disabled>SS 3</option>
+        </select>
+        <br />
+        <label for="">Age</label>
+        <input type="number" max="100" min="0" step="1" />
+        <br />
+        <label for="">Your Email</label>
+        <input type="email" />
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Parents Details</legend>
+        <label for="">Parent's name</label>
+        <input
+          type="text"
+          id="fullname"
+          required
+          autofocus
+          size="40"
+          maxlength="50"
+          pattern="[A-Za-z]*"
+          title="ONLY LETTERS ARE REQUIRED"
+          placeholder="Enter your parent name" />
+        <br />
+        <label for="">Parent's Phone Number</label>
+        <input
+          type="tel"
+          pattern="[0-9]{11,}"
+          title="ENTER NUMBERS ONLY MUST BE 11 DIGITS AND ABOVE" />
+        <br />
+        <label for="">Your Email</label>
+        <input type="email" />
+        <br />
+        <label for="">Enter your website</label>
+        <input type="url" value="https://" disabled /><input
+          type="url"
+          value="https://" />
+        <!-- <input type="text" /> -->
+        <br />
+        <!-- <button type="submit" disabled>Register</button> -->
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+        <button type="button">Ordinary Button</button>
+        <br />
+        <input type="submit" value="Sign up" />
+        <input type="reset" value="Wipe" />
+        <input
+          type="button"
+          value="Ordinary Button"
+          onclick="alert('Welcome')" />
+      </fieldset>
+      <details>
+        <summary>Hidden Information</summary>
+        <label for="">Parent's name</label>
+        <input
+          type="text"
+          id="fullname"
+          required
+          autofocus
+          size="10"
+          maxlength="50"
+          pattern="[A-Za-z]*"
+          title="ONLY LETTERS ARE REQUIRED" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          voluptas, quas obcaecati et corporis natus perspiciatis pariatur, non
+          soluta culpa excepturi suscipit sint quae. Ratione delectus eveniet
+          quaerat error odio.
+        </p>
+      </details>
+      <br />
+      <label for="">Favorite color</label>
+      <input type="color" />
+      <input type="image" src="../go-icon.png" />
+    </form>
+  </body>
+</html>

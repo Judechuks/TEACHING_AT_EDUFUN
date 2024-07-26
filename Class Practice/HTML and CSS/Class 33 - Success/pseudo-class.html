@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* a:link {
+      color: green;
+    }
+    a:visited {
+      color: cadetblue;
+    }
+    a:hover {
+      color: yellow;
+      background-color: black;
+      padding: 4px;
+    }
+    a:focus {
+      background: red;
+    } */
+    /* input:active {
+      color: greenyellow;
+      outline: 2px solid red;
+    } */
+    input:focus {
+      color: greenyellow;
+      outline: 2px solid red;
+    }
+    /* li:first-child {
+      color: blue;
+    } */
+    li:last-child {
+      color: green;
+    }
+    /* li:nth-child(even) {
+      color: brown;
+      font-size: 2rem;
+    } */
+    li:nth-child(even):not(:nth-child(4), :nth-child(6)) {
+      color: brown;
+      font-size: 2rem;
+    }
+    li:only-child {
+      border-bottom: 1px solid black;
+    }
+  </style>
+  <body>
+    <a href="#a">Home</a>
+    <br />
+    <a href="#b">About</a>
+    <br />
+    <a href="#c">Contact</a>
+    <br />
+    <a href="#d">Sign in</a>
+    <br />
+    <a href="#e">sign up</a>
+    <br />
+    <br />
+    <input type="text" placeholder="Name" />
+    <ul>
+      <li>Goat</li>
+      <li>Cat</li>
+      <li>Rat</li>
+      <li>Bat</li>
+      <li>Elephant</li>
+      <li class="tiger">Tiger</li>
+      <li>Lion</li>
+    </ul>
+    <ol>
+      <li>Only child</li>
+    </ol>
+  </body>
+</html>

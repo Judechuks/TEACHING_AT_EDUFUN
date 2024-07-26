@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo element</title>
+  </head>
+  <style>
+    li::before {
+      content: "fruit ";
+      content: url(../icons8.png);
+      content: "\2605";
+      margin-right: 15px;
+      /* content: "";
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: red;*/
+    }
+    /* li:hover::after {
+      width: 80px;
+    } */
+    /* li::after {
+      content: " fruit";
+    } */
+    p::first-line {
+      color: blue;
+      text-decoration: underline;
+    }
+    p::first-letter {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    li {
+      /* list-style-type: decimal;
+      list-style-image: url(../icons8.png);
+      list-style-position: inside; */
+      list-style: disc url(../icons8.png) inside;
+      background-color: gray;
+      display: inline;
+    }
+    li::marker {
+      content: "\2714";
+    }
+    a {
+      display: inline-block;
+      background-color: red;
+      padding: 50px;
+    }
+  </style>
+  <body>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Contact</a>
+    <a href="">Sign in</a>
+    <a href="">Sign up</a>
+    <ul>
+      <li>Mango</li>
+      <li>Orange</li>
+      <li>Pineapple</li>
+      <li>Guava</li>
+      <li>Cherry</li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sed
+      nobis necessitatibus ipsa possimus sequi nemo beatae tempora minima!
+      Iusto, laborum minus! Ex exercitationem ducimus quos facilis ad, illum id
+      expedita, eius voluptatibus, nemo nihil eum? Quia veniam repudiandae
+      molestias optio, a perspiciatis cumque iste ea facilis, provident aperiam.
+      Facilis consectetur quisquam ducimus alias repudiandae id nisi ratione
+      cumque. Nam iusto enim numquam voluptates dicta. Totam in perspiciatis
+      repudiandae ut quisquam aliquam ipsam minima? Iusto in deleniti doloribus
+      consequatur odio qui rerum eveniet omnis eius corporis, voluptatem error
+      tempora laborum, nesciunt rem, odit dolor reiciendis magni explicabo ex
+      molestiae perferendis.
+    </p>
+  </body>
+</html>

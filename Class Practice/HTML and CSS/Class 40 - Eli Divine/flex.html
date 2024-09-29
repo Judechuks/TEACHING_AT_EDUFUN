@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+  </head>
+  <style>
+    section {
+      width: 1200px;
+      height: 800px;
+      background-color: gray;
+      display: flex;
+      /* flex-direction: column; */
+      /* gap: 20px; */
+      /* flex-wrap: wrap; */
+      /* justify-content: space-between; */
+      /* align-items: center; */
+      /* flex-flow: row wrap; */
+    }
+    div {
+      width: 200px;
+      height: 200px;
+    }
+    .box1 {
+      background-color: red;
+      order: 3;
+    }
+    .box2 {
+      background-color: green;
+    }
+    .box3 {
+      background-color: blue;
+    }
+    .box4 {
+      background-color: yellow;
+    }
+    .box5 {
+      background-color: pink;
+      order: 2;
+    }
+    .box6 {
+      background-color: orangered;
+      order: 1;
+      flex-basis: 400px;
+    }
+    .box7 {
+      background-color: aqua;
+    }
+    .box8 {
+      background-color: magenta;
+      order: -1;
+    }
+    .box9 {
+      background-color: silver;
+    }
+  </style>
+  <body>
+    <section>
+      <div class="box1">A</div>
+      <div class="box2">B</div>
+      <div class="box3">C</div>
+      <div class="box4">D</div>
+      <div class="box5">E</div>
+      <div class="box6">F</div>
+      <div class="box7">G</div>
+      <div class="box8">H</div>
+      <div class="box9">I</div>
+    </section>
+  </body>
+</html>

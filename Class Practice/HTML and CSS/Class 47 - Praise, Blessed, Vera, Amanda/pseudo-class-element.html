@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class and Pseudo-element</title>
+  </head>
+  <style>
+    input::placeholder {
+      color: green;
+    }
+    input:valid {
+      border: 4px solid green;
+    }
+    input:invalid {
+      border: 4px solid red;
+    }
+    .btn {
+      display: none;
+    }
+    input:checked ~ .btn {
+      display: inline;
+    }
+    p::first-line {
+      color: blue;
+    }
+    p::first-letter {
+      font-size: 3rem;
+    }
+    /* ul li {
+      background-color: gray;
+    } */
+    ul {
+      /* list-style-type: none; */
+      /* list-style-image: url(../icons8.png); */
+      /* list-style-position: outside; */
+      /* list-style: decimal url(../icons8.png) inside; */
+      /* list-style: decimal outside; */
+      list-style: none;
+    }
+    li::before {
+      content: "\2665";
+      margin-right: 10px;
+    }
+    li::marker {
+      color: blue;
+      content: "\2665";
+    }
+  </style>
+  <body>
+    <input type="text" placeholder="Enter your name" />
+    <input type="text" />
+    <input type="email" />
+    <input type="checkbox" id="terms" />
+    <label for="terms">Agree to terms and condition?</label>
+    <button class="btn">Install</button>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+      temporibus hic placeat. Quas autem omnis accusantium mollitia cum maxime
+      provident nobis fugit, similique cupiditate veritatis illum, ad deleniti,
+      incidunt sint!
+    </p>
+    <ul>
+      <li>Orange</li>
+      <li>Mango</li>
+      <li>Cherry</li>
+    </ul>
+    <ol>
+      <li>Cat</li>
+      <li>Rat</li>
+      <li>Bat</li>
+    </ol>
+  </body>
+</html>

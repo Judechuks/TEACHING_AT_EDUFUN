@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+    <style>
+      .box {
+        background-color: blue;
+        height: 200px;
+        width: 200px;
+      }
+      #container {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+        /* border-radius: 10px / 20px; */
+        /* border-radius: 10px 5% / 20px 30px; */
+        /* border-radius: 10px 5px 2em / 20px 25px 30%; */
+        /* border-radius: 10px 5% / 20px 25em 30px 35em; */
+
+        border-radius: 1em/5em; /*same for all the 4 edges (width/height) i.e. (horizontal/vertical)*/
+        /* It is equivalent to: */
+        border-top-left-radius: 1em 5em;
+        border-top-right-radius: 1em 5em;
+        border-bottom-right-radius: 1em 5em;
+        border-bottom-left-radius: 1em 5em;
+
+        /*          |tl&br||tr&bl| |all 4 sides|    */
+        border-radius: 1em 3em / 5em;
+        /* It is equivalent to: (width/height) i.e. (horizontal/vertical)*/
+        border-top-left-radius: 1em 5em;
+        border-top-right-radius: 3em 5em;
+        border-bottom-right-radius: 1em 5em;
+        border-bottom-left-radius: 3em 5em;
+
+        border-radius: 4px 3px 6px / 2px 4px;
+        /* It is equivalent to: (width/height) i.e. (horizontal/vertical)*/
+        border-top-left-radius: 4px 2px;
+        border-top-right-radius: 3px 4px;
+        border-bottom-right-radius: 6px 2px;
+        border-bottom-left-radius: 3px 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="box"></nav>
+    <br />
+    <nav class="box"></nav>
+    <br />
+    <nav id="container"></nav>
+  </body>
+</html>

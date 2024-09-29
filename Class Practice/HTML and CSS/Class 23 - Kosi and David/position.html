@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+  </head>
+  <style>
+    div {
+      /* width: 200px; */
+      height: 200px;
+    }
+    .box1 {
+      background-color: red;
+      position: static;
+      left: 300px;
+      right: 400px; /*these properties won't work */
+    }
+    .box2 {
+      background-color: green;
+      position: relative;
+      /* right: 100px; */
+      left: 300px;
+      /* top: 200px; */
+      bottom: 300px;
+    }
+    .box3 {
+      background-color: blue;
+      position: absolute;
+      top: calc(50% - 100px); /* to center vertically */
+      right: calc(50% - 100px); /* to center horizontally */
+      left: 200px;
+      right: 20px;
+    }
+    .box4 {
+      background-color: yellow;
+      position: fixed;
+      top: 0px;
+      z-index: 10;
+    }
+    .box5 {
+      background-color: magenta;
+      position: sticky;
+      top: 10px;
+      /* bottom: 10px; */
+      z-index: 2;
+      left: 200px;
+      right: 20px;
+    }
+    section {
+      width: 1000px;
+      height: 300px;
+      background-color: gray;
+      position: relative;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      position: absolute;
+      right: -50px;
+      top: -50px;
+      border-radius: 50%;
+    }
+  </style>
+  <body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+    <p>Text</p>
+    <p>Text</p>
+    <section>
+      <div class="box"></div>
+    </section>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+    <p>Text</p>
+  </body>
+</html>

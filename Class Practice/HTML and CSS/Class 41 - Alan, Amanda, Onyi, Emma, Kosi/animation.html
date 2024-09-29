@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+  </head>
+  <style>
+    p {
+      animation-name: slider;
+      animation-delay: 0s;
+      animation-timing-function: linear;
+      animation-duration: 6s;
+      animation-iteration-count: 5;
+      animation-direction: alternate-reverse;
+      animation-fill-mode: forwards;
+    }
+    /* @keyframes slider {
+      from {
+        transform: translateY(600px);
+        background-color: red;
+      }
+      to {
+        transform: translateY(0px);
+        background-color: blue;
+      }
+    } */
+    @keyframes slider {
+      0% {
+        /* margin-left: 0; */
+        transform: translateY(600px);
+        background-color: red;
+      }
+      50% {
+        font-size: 2rem;
+      }
+      70% {
+        color: white;
+      }
+      100% {
+        /* margin-left: 1200px; */
+        transform: translateY(0px);
+        background-color: blue;
+      }
+    }
+  </style>
+  <body>
+    <!-- <marquee behavior="" direction="">Munachi</marquee> -->
+    <p>Kenechukwu</p>
+  </body>
+</html>

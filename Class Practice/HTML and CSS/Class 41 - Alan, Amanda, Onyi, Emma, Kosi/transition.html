@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+  </head>
+  <style>
+    div {
+      width: 80px;
+      height: fit-content;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: lightblue;
+      /* transition-delay: 0s; */
+      /* transition-duration: 1s; */
+      /* transition-property: all; */
+      /* transition-timing-function: ease; */
+      /* transition: all 1s ease-in 4s; */
+      /* transition: background-color 60s, width 3s, font-size 1s; */
+      transition: 1s;
+    }
+    div:hover {
+      width: 400px;
+      background-color: orange;
+      transform: translateY(20px);
+      font-size: 1.3rem;
+    }
+    section {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      /* border-radius: 50%; */
+      transition: 1s ease;
+    }
+    section:hover {
+      transform: rotate(360deg);
+    }
+  </style>
+  <body>
+    <div>
+      <p>Amanda</p>
+      <p>Onyinyechi</p>
+      <p>Ebuka</p>
+      <p>Kosi</p>
+      <p>Excel</p>
+      <p>Divine</p>
+      <p>Goodluck</p>
+      <p>Munachi</p>
+      <p>Kenechukwu</p>
+    </div>
+    <section>A</section>
+  </body>
+</html>

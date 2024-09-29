@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table {
+      border-collapse: separate;
+    }
+    tr:nth-child(even) {
+      background-color: aqua;
+    }
+    tr:nth-child(odd) {
+      background-color: aliceblue;
+    }
+    #first {
+      background-color: green;
+    }
+    tr:not(.second):hover {
+      background-color: gray;
+    }
+    /* tr:not(.first) {
+      background-color: aliceblue;
+    } */
+    span {
+      color: red;
+    }
+    p::first-letter {
+      color: green;
+      font-size: 3rem;
+    }
+    p::first-line {
+      text-decoration: underline;
+    }
+    ::placeholder {
+      color: blue;
+    }
+    label {
+      text-decoration: line-through;
+    }
+    :checked + label {
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <table border="1" cellpadding="20">
+      <tr id="first">
+        <td>Name</td>
+        <td>Age</td>
+      </tr>
+      <tr class="second">
+        <td>John</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Philip</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>Ada</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>Ada</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>Ada</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>Ada</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>Ada</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>Ada</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>Ada</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>Ada</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>Ada</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>Ada</td>
+        <td>13</td>
+      </tr>
+    </table>
+    <span>L</span>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+      possimus cum fuga voluptas facilis nobis corrupti animi eos nisi, illo
+      veniam porro ratione similique saepe repudiandae voluptatibus facere
+      libero ex?
+    </p>
+    <input type="text" placeholder="ENTER YOUR NAME" />
+    <div>
+      <input type="checkbox" />
+      <label class="firstlabel">I aggree to the terms and condition</label>
+    </div>
+  </body>
+</html>

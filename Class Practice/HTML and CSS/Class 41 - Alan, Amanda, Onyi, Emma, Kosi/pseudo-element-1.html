@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    li {
+    }
+    li::before {
+      /* content: " animal "; */
+      content: url(../go-icon.png);
+      content: "";
+      content: "\2663";
+      color: red;
+      margin-right: 15px;
+      font-size: 4rem;
+      /* display: block;
+      width: 40px;
+      height: 3px;
+      background-color: brown; */
+    }
+    /* li::after {
+      content: " animal ";
+    } */
+  </style>
+
+  <body>
+    <ul>
+      <li>Lion</li>
+      <li>Goat</li>
+      <li>Cat</li>
+      <li>Dog</li>
+      <li>Rat</li>
+    </ul>
+  </body>
+</html>

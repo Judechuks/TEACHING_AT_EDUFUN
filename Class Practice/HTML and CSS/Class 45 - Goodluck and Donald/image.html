@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+  </head>
+  <body>
+    <img src="location/name.extension" />
+    <p>[ -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, ]</p>
+    <code>
+      const arrayNum = [ -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+      13, ];
+      <br />
+
+      function isPrime(num) { <br />
+      for (let i = 2; num > i; i++) { <br />
+      if (num % i === 0) { <br />
+      console.log(`'in the if' [i = ${i}] [num = ${num}]`); <br />
+      return false; <br />
+      } <br />
+      console.log(`'in the for' [i = ${i}] [num = ${num}]`); <br />
+      } <br />
+      console.log(`${"in the function"} [num = ${num}]`); <br />
+      console.log(`'end of element ${counter++} \n\n\n`); <br />
+      return num > 1; <br />
+      } <br />
+      console.log(arrayNum.filter(isPrime)); // [2, 3, 5, 7, 11, 13]
+    </code>
+    <script>
+      // Example 2: To get prime numbers
+      const arrayNum = [
+        -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+      ];
+
+      let counter = 1;
+      function isPrime(num) {
+        for (let i = 2; num > i; i++) {
+          if (num % i === 0) {
+            console.log(`'in the if' [i = ${i}] [num = ${num}]`);
+            return false;
+          }
+          console.log(`'in the for' [i = ${i}] [num = ${num}]`);
+        }
+        console.log(`${"in the function"} [num = ${num}]`);
+        console.log(`'end of element ${counter++} \n\n\n`);
+        return num > 1;
+      }
+      console.log(arrayNum.filter(isPrime)); // [2, 3, 5, 7, 11, 13]
+    </script>
+  </body>
+</html>

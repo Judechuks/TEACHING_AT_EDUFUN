@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-class</title>
+  </head>
+  <style>
+    li:first-child {
+      color: blue;
+    }
+    li:last-child {
+      color: greenyellow;
+    }
+    li:nth-child(7) {
+      /*odd, even*/
+      color: red;
+    }
+    li:only-child {
+      color: aqua;
+      font-size: 2rem;
+    }
+    p:not(.p2, p:first-child, p:nth-child(3)) {
+      font-size: 2rem;
+    }
+    p::before {
+      /* display: block; */
+      /* content: "my "; */
+      /* content: url(../go-icon.png); */
+      /* content: "\2605"; */
+      content: "";
+      display: block;
+      height: 2px;
+      width: 20px;
+      background-color: aqua;
+    }
+    /* p::after {
+      content: " example";
+    } */
+    h4::first-line {
+      color: blue;
+    }
+    h4::first-letter {
+      font-size: 4rem;
+    }
+  </style>
+  <body>
+    <!-- ol = parent container-->
+    <ol>
+      <li>Lion</li>
+      <li>Dog</li>
+      <li>Cat</li>
+      <li>Rat</li>
+      <li>Bat</li>
+      <li>Goat</li>
+      <li>ELephant</li>
+    </ol>
+
+    <ol>
+      <li>Mango</li>
+    </ol>
+
+    <div>
+      <p>paragraph1</p>
+      <p class="p2">paragraph2</p>
+      <p>paragraph3</p>
+      <p>paragraph4</p>
+      <p>paragraph5</p>
+      <p>paragraph6</p>
+    </div>
+    <h4>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, eligendi!
+      Facilis velit praesentium eos recusandae delectus ea vel aliquid eius
+      tempora eaque deleniti, qui, amet quas assumenda. Labore, blanditiis
+      repudiandae iste odit fugit quaerat maiores tempora debitis sequi
+      perspiciatis officiis veniam ratione assumenda numquam sed inventore
+      repellendus a architecto dicta incidunt. Sed molestiae quaerat, in nostrum
+      itaque dolores est libero!
+    </h4>
+  </body>
+</html>

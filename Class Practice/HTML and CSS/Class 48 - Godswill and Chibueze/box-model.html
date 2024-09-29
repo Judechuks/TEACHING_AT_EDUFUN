@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      .first-container,
+      .second-container {
+        width: 200px;
+        height: 200px;
+      }
+      .first-container {
+        background-color: blue;
+        /* padding-top: 20px;
+          padding-right: 30px;
+          padding-bottom: 40px;
+          padding-left: 50px; */
+
+        padding: 20px 30px 40px 50px; /*top, right, bottom, left*/
+        padding: 20px 30px 50px; /*top, left and right, bottom */
+        padding: 20px 50px; /* top and bottom, left and right*/
+        padding: 20px; /*all four sides*/
+
+        /* margin - similarly procedure with padding*/
+        /* margin-bottom: 50px;
+        margin: 20px 30px 40px 50px;
+        margin: 20px 30px 40px;
+        margin: 20px 30px; */
+        margin-left: auto;
+        margin-right: auto;
+
+        /* border-width: 20px;
+          border-style: double;
+          border-color: red; */
+        /* border: 20px solid red; */
+        border-top: 20px solid red;
+        border-bottom: 20px solid yellow;
+        border-left: 20px solid red;
+        border-right: 20px solid green;
+
+        outline: 10px solid black;
+        outline-offset: -30px;
+
+        border-top-left-radius: 30px;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 120px;
+
+        border-radius: 50px 90px 140px 190px;
+        border-radius: 50px 0px 140px;
+        border-radius: 50px 0px;
+        border-radius: 50px;
+        /* border-radius: 140px; */
+        border-radius: 50%;
+      }
+      .second-container {
+        background-color: red;
+        border-radius: 100px; /*half or more of the width and height*/
+        border-radius: 50%;
+      }
+      article {
+        width: 200px;
+        height: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: blue;
+        box-sizing: border-box;
+        padding: 50px;
+        border: 5px solid red;
+        /* box-shadow: x y blur spread color; */
+        /* box-shadow: -50px -50px 5px 10px black; */
+        box-shadow: -50px -50px 5px 10px black, 50px 50px 5px 10px red,
+          20px 20px 5px 10px green, -20px -20px 5px 10px yellow;
+      }
+      a {
+        display: inline-block;
+      }
+      img {
+        /* display: none; */
+        /* visibility: hidden; */
+        opacity: 1;
+      }
+      main {
+        width: 600px;
+        height: 600px;
+      }
+      nav {
+        background-color: purple;
+        width: 50vw;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="parent-container">
+      <div class="first-container">
+        <p>This is the content</p>
+      </div>
+      <div class="second-container">
+        <p>This is the content</p>
+      </div>
+    </section>
+    <article>Text</article>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <a href="" style="background-color: gray; padding: 50px">Text</a>
+    <a href="" style="background-color: gray; padding: 50px">Text</a>
+    <p style="background-color: red; padding: 50px">Text</p>
+    <img src="../facebook.png" alt="" />
+    <p>Text</p>
+
+    <nav></nav>
+    <br />
+    <nav></nav>
+    <br />
+    <nav></nav>
+  </body>
+</html>

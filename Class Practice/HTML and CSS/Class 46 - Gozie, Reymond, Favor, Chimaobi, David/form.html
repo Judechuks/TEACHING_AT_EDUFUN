@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <form action="" id="myform">
+      <fieldset>
+        <legend>Student details</legend>
+        <label for="fullname">Full Name</label>
+        <input
+          type="text"
+          id="fullname"
+          size="20"
+          value="Azuka"
+          name="fullname"
+          autofocus />
+        <br /><br />
+        <label for="">Password</label>
+        <input type="password" maxlength="4" required name="password" />
+        <br /><br />
+        <label for="">Feedback</label> <br />
+        <textarea
+          name=""
+          id="feedback"
+          cols="30"
+          rows="10"
+          minlength="30"></textarea>
+        <br /><br />
+        <label for="">Age</label>
+        <input type="number" name="" id="" step="" min="10" max="50" />
+        <br /><br />
+        <input type="color" id="color" />
+        <br /><br />
+        <label for="">Email Address</label>
+        <input type="email" />
+        <br />
+        <br />
+        <input type="submit" value="Register" />
+        <input type="reset" />
+        <input
+          type="button"
+          value="ordinary button"
+          onclick="alert('Welcome to our website')"
+          form="myform" />
+        <br />
+        <br />
+        <button type="submit">Send</button>
+        <button type="reset">Clear</button>
+        <button type="button">Ordinary button</button>
+      </fieldset>
+      <details open name="questions">
+        <summary>What is HTML?</summary>
+        <p>
+          HTML is Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          quo necessitatibus explicabo error ducimus, quae, aspernatur
+          voluptates incidunt vero unde, in voluptatem earum? Nostrum
+          repudiandae nesciunt qui dicta obcaecati ut quidem ullam tenetur
+          dolorum. Corrupti, quis quae inventore iusto blanditiis animi aliquam
+          illo ad dolor ipsa quibusdam qui numquam reiciendis dolores eum autem
+          perferendis repellendus? Exercitationem culpa sapiente tenetur est
+          dolor aliquam ipsum cum dolorum nemo dolore aut ex voluptates, modi
+          magnam voluptate deleniti blanditiis quae, consequatur aspernatur
+          assumenda, atque minus ducimus a consectetur? Dolor quod possimus
+          magnam et illum. Perspiciatis repellendus voluptate nihil odio dolores
+          quia officia eligendi quod?
+        </p>
+      </details>
+      <details name="questions">
+        <summary>What is CSS?</summary>
+        <p>
+          CSS is Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          quo necessitatibus explicabo error ducimus, quae, aspernatur
+          voluptates incidunt vero unde, in voluptatem earum? Nostrum
+          repudiandae nesciunt qui dicta obcaecati ut quidem ullam tenetur
+          dolorum. Corrupti, quis quae inventore iusto blanditiis animi aliquam
+          illo ad dolor ipsa quibusdam qui numquam reiciendis dolores eum autem
+          perferendis repellendus? Exercitationem culpa sapiente tenetur est
+          dolor aliquam ipsum cum dolorum nemo dolore aut ex voluptates, modi
+          magnam voluptate deleniti blanditiis quae, consequatur aspernatur
+          assumenda, atque minus ducimus a consectetur? Dolor quod possimus
+          magnam et illum. Perspiciatis repellendus voluptate nihil odio dolores
+          quia officia eligendi quod?
+        </p>
+      </details>
+      <details name="questions">
+        <summary>What is JS?</summary>
+        <p>
+          JS is Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          quo necessitatibus explicabo error ducimus, quae, aspernatur
+          voluptates incidunt vero unde, in voluptatem earum? Nostrum
+          repudiandae nesciunt qui dicta obcaecati ut quidem ullam tenetur
+          dolorum. Corrupti, quis quae inventore iusto blanditiis animi aliquam
+          illo ad dolor ipsa quibusdam qui numquam reiciendis dolores eum autem
+          perferendis repellendus? Exercitationem culpa sapiente tenetur est
+          dolor aliquam ipsum cum dolorum nemo dolore aut ex voluptates, modi
+          magnam voluptate deleniti blanditiis quae, consequatur aspernatur
+          assumenda, atque minus ducimus a consectetur? Dolor quod possimus
+          magnam et illum. Perspiciatis repellendus voluptate nihil odio dolores
+          quia officia eligendi quod?
+        </p>
+      </details>
+      <label for="" title="This is the gender label">Gender</label>
+      <br />
+      <label for="favor">Male</label>
+      <input type="radio" name="gender" id="favor" />
+      <label for="">Female</label>
+      <input type="radio" name="gender" />
+      <label for="">Others</label>
+      <input type="radio" name="gender" checked />
+      <br /><br />
+      <label for="">Favorite Food</label>
+      <br />
+      <label for="">Beans</label> <input type="checkbox" />
+      <label for="">Jellof Rice</label> <input type="checkbox" />
+      <label for="">Fried Rice</label> <input type="checkbox" checked />
+      <label for="">Spaghetti</label> <input type="checkbox" />
+      <label for="">Fufu and Oha</label> <input type="checkbox" />
+      <label for="">Yam and Egg Sauce</label> <input type="checkbox" />
+      <label for="">Pounded Pepper Soup</label>
+      <input type="checkbox" disabled /> <br /><br />
+      <label for="">Phone Number</label>
+      <input
+        type="tel"
+        pattern="[+][0-9]{11,}"
+        title="START WITH A + SIGN AND ENSURE YOUR CHARACTERS ARE UP TO 11 DIGITS" />
+      <br /><br />
+      <label for="">Class</label>
+      <select name="class" id="" size="1" multiple>
+        <option value="" selected disabled>Choose your class</option>
+        <optgroup label="Junior Class">
+          <option value="jss 1">JSS 1</option>
+          <option value="jss 2">JSS 2</option>
+          <option value="">JSS 3</option>
+        </optgroup>
+        <optgroup label="Senior Class">
+          <option value="">SS 1</option>
+          <option value="">SS 2</option>
+          <option value="" disabled>SS 3</option>
+        </optgroup>
+      </select>
+      <br /><br />
+      <label for="">State of Origin</label>
+      <input type="text" list="state" />
+      <datalist id="state">
+        <option value="Abia"></option>
+        <option value="Anambra"></option>
+        <option value="Ebony"></option>
+        <option value="Enugu"></option>
+        <option value="Imo"></option>
+      </datalist>
+      <br /><br />
+      <label for="">Date of Birth</label>
+      <input type="date" min="1990-01-01" max="2024-01-01" />
+      <br /><br />
+      <label for="">Your Website</label>
+      <input type="url" placeholder="https://" id="url" />
+      <br /><br />
+      <label for="">Favorite Color</label>
+      <input type="color" name="" id="" />
+      <br /><br />
+      <input type="image" src="../go-icon.png" />
+      <br /><br />
+      <input type="search" placeholder="Search here" />
+      <br /><br />
+      <label for="">Graduation Month</label>
+      <input type="month" />
+      <br /><br />
+      <label for="">Graduation Week</label>
+      <input type="week" />
+      <br /><br />
+      <label for="">Traveling Time</label>
+      <input type="time" />
+      <br /><br />
+      <label for="">Traveling Time and Month</label>
+      <input type="datetime-local" />
+      <br /><br />
+      <label for="">Duration</label>
+      <progress min="0" max="100" value="20"></progress>
+      <br /><br />
+      <label for="">Duration</label>
+      <input type="range" min="0" max="100" value="80" />
+      <br /><br />
+      <label for="">Meter</label>
+      <meter
+        min="0"
+        max="100"
+        value="51"
+        low="30"
+        high="60"
+        optimum="70"></meter>
+      <br /><br />
+      <label for="">Upload your passport</label>
+      <!-- <input type="file" name="" id="" accept="audio/*" multiple/> -->
+      <input type="file" name="" id="" accept=".docx" multiple />
+      <br /><br />
+      <input type="submit" value="Register" />
+      <input type="reset" value="Clear" />
+      <input type="button" value="Ordinary Button" />
+      <br /><br />
+      <button type="submit">Login</button>
+      <button type="reset">Wipe</button>
+      <button type="button" onclick="alert('Welcome to our website')">
+        Click Me
+      </button>
+    </form>
+  </body>
+</html>

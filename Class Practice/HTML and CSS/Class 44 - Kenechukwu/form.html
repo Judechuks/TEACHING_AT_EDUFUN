@@ -4,23 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
   </head>
   <body>
     <form action="" method="">
       <fieldset>
         <legend>Students Details</legend>
         <label for="fullname">Name</label>
-        <input type="text" id="fullname" required autofocus />
+        <input type="text" id="fullname" required autofocus class="fullname" />
         <br /><br />
         <label for="password">Password</label>
-        <input type="password" id="password" maxlength="6" />
+        <input type="password" id="password" maxlength="6" class="password" />
         <br /><br />
         <label for="">Add your comment</label>
         <br />
-        <textarea name="" id="" rows="10" cols="30"></textarea>
+        <textarea
+          name=""
+          rows="10"
+          cols="30"
+          id="amanda"
+          class="comment feedback"></textarea>
         <br /><br />
         <label for="">Age</label>
-        <input type="number" min="0" max="50" step="1" />
+        <input type="number" min="0" max="50" step="1" id="age" />
         <br /><br />
         <label>Email</label>
         <input type="email" />

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Property</title>
+  </head>
+  <style>
+    li {
+      /* list-style-type: lower-alpha;
+      list-style-image: url(../go-icon.png);
+      list-style-position: outside; */
+      /* list-style: lower-alpha url(../go-icon.png) outside; */
+      list-style: lower-alpha;
+      /* background-color: gray; */
+    }
+    li::marker {
+      content: "\2714";
+      color: red;
+    }
+    li {
+      background-color: gray;
+      margin-bottom: 10px;
+      height: 100px;
+      display: block;
+    }
+    a {
+      background-color: lightgray;
+      padding: 40px;
+      /* height: 100px; */
+      width: fit-content;
+      display: inline-block;
+    }
+    span {
+      background-color: gray;
+      padding: 40px;
+      display: inline-block;
+    }
+    .span1 {
+      /* display: none; */
+      /* visibility: hidden; */
+      opacity: 0;
+    }
+    .link3,
+    .link4 {
+      padding: 5px;
+      display: none;
+    }
+    div {
+      background-color: red;
+    }
+    div:hover a {
+      display: block;
+    }
+    input {
+      display: none;
+    }
+    input:checked ~ a {
+      display: block;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>Goat</li>
+      <li>Bat</li>
+      <li>Cat</li>
+      <li>Rat</li>
+      <li>Ant</li>
+      <a href="" class="link1">Home</a>
+      <a href="" class="link2">About</a>
+      <span class="span1">This is a span container 1</span>
+      <span class="span2">This is a span container 2</span>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+        error?
+      </p>
+      <!-- hover -->
+      <div>
+        hover me
+        <a href="" class="link3">Home</a>
+        <a href="" class="link4">About</a>
+      </div>
+      <!-- checked -->
+      <nav>
+        <label for="click">click me</label>
+        <input type="radio" id="click" name="open-and-close" />
+        <a href="" class="link3">Home</a>
+        <a href="" class="link4">About</a>
+        <label for="close">close</label>
+        <input type="radio" id="close" name="open-and-close" />
+      </nav>
+    </ul>
+  </body>
+</html>

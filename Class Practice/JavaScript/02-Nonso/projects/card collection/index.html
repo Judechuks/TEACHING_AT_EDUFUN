@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <script type="module" src="index.js"></script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #main {
+      max-width: 1200px;
+      margin: auto;
+      font-family: sans-serif;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    #main .card {
+      padding: 5px;
+      border-radius: 5px;
+      border: 2px solid gray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      border-radius: 5px;
+    }
+    .card h3 {
+      font-size: 1.2rem;
+      margin-block: 10px;
+      text-transform: uppercase;
+    }
+    .btn-container {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      align-content: center;
+    }
+    .btn-container .btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 5px 10px;
+      background-color: blue;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      border: 1px solid blue;
+    }
+    .btn-container .btn:hover {
+      background-color: blue;
+      color: white;
+    }
+    .btn-container .download-btn {
+      background-color: transparent;
+      color: blue;
+    }
+  </style>
+  <body>
+    <header></header>
+    <main id="main"></main>
+    <footer></footer>
+  </body>
+</html>

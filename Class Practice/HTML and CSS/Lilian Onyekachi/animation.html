@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+      }
+      .box {
+        background-color: aqua;
+        animation-name: slide;
+        animation-duration: 1s;
+        /* animation-delay: 3s; */
+        animation-timing-function: ease;
+        animation-iteration-count: 6;
+        animation-fill-mode: both;
+        border-radius: 10px;
+        /* animation-direction: alternate-reverse; */
+        /* -moz-animation-direction: normal;
+        -o-animation-direction: normal;
+        -webkit-animation-direction: normal; */
+        /* position: relative; */
+      }
+      .box1 {
+        background-color: green;
+      }
+      @keyframes slide {
+        from {
+          /* transform: translateX(0); */
+          /* margin-left: 0; */
+          /* left: 0; */
+        }
+        to {
+          /* transform: translateX(1100px); */
+          /* margin-left: 1100px; */
+          /* left: 1100px; */
+        }
+      }
+      @keyframes slide {
+        0% {
+          transform: translateX(0px) rotate(0deg);
+          /* margin-left: 0; */
+          /* left: 0; */
+          background-color: yellow;
+        }
+        50% {
+          background-color: brown;
+        }
+        100% {
+          transform: translateX(1100px) rotate(360deg);
+          background-color: blue;
+          /* margin-left: 1100px; */
+          /* left: 1100px; */
+          border-radius: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box1"></div>
+  </body>
+</html>

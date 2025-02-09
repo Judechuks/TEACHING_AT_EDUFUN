@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    section {
+      width: 1000px;
+      height: 400px;
+    }
+    .box1 {
+      /* background: linear-gradient(
+        to right bottom,
+        red 0 33.33%,
+        green 33.33% 66.66%,
+        blue 66% 100%
+      ); */
+      background: repeating-linear-gradient(
+        to right bottom,
+        red 0 10%,
+        green 10% 20%,
+        blue 20% 30%
+      );
+    }
+    .box2 {
+      width: 400px;
+      border-radius: 50%;
+      background-image: radial-gradient(
+        circle at center,
+        cyan 0 25%,
+        magenta 25% 50%,
+        yellow 50% 75%,
+        brown 75% 100%
+      );
+      background-image: repeating-radial-gradient(
+        circle at center,
+        cyan 0 10%,
+        magenta 20% 30%,
+        yellow 30% 40%,
+        brown 40% 50%
+      );
+    }
+    .box3 {
+      /* width: 400px;
+    border-radius: 50%; */
+      background: conic-gradient(
+        from 0deg,
+        purple 0 25%,
+        green 25% 50%,
+        orange 50% 75%,
+        aqua 75% 100%
+      );
+
+      /* background: conic-gradient(
+        purple 0 45deg,
+        green 45deg 180deg,
+        orange 180deg 270deg,
+        aqua 270deg 360deg
+      ); */
+    }
+  </style>
+  <body>
+    <section class="box1"></section>
+    <section class="box2"></section>
+    <section class="box3"></section>
+  </body>
+</html>

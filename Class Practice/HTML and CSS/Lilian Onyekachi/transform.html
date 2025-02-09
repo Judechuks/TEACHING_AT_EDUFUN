@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+      }
+      .translate {
+        background-color: blue;
+        /*position: absolute;*/ /*centering a box with a position absolute*/
+        /* left: calc(50% - 150px); */
+        /* left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); */
+        /* transform: translateX(100%); */
+        /*transform: translateY(200px); */
+        /* transform: translate(100%, -200px); */
+        /* transition: 1s; */
+      }
+      .translate:hover {
+        transform: translateX(200px);
+      }
+      .scale {
+        background-color: red;
+        margin: auto;
+        /* transform: scaleX(2);
+        transform: scaleY(1); */
+        /* transition-property: transform; */
+        /* transition-duration: 1s; */
+        /* transition-delay: 5s; */
+        /* transition-timing-function: ease-in-out; */
+        transition: transform 1s ease 2s;
+      }
+      .scale:hover {
+        transform: scale(0);
+      }
+      .rotate {
+        background-color: green;
+        transform: rotateX(90deg);
+        transform: rotateY(90deg);
+        transform: rotateX(360deg) translateX(50px);
+      }
+      .skew {
+        background-color: yellow;
+      }
+      .skew:hover {
+        transform: skewX(45deg);
+        transform: skewY(45deg);
+        transform: skew(45deg);
+      }
+      .transition {
+        background-color: purple;
+        /* transition-property: transform, background-color, font-size,
+          border-radius; */
+        /* transition-property: all;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+        transition-delay: 0s; */
+        /* shorthand */
+        /* transition: all 1s ease 0s; */
+        /* You can transition more than one property */
+        /* transition: transform ease-in 6s, background-color linear 1s; */
+      }
+      .transition:hover {
+        transition: 1s;
+        background-color: green;
+        transform: rotate(360deg);
+        font-size: 2rem;
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="translate"></div>
+    <div class="scale">A</div>
+    <div class="rotate">B</div>
+    <div class="skew"></div>
+    <div class="transition">text</div>
+  </body>
+</html>

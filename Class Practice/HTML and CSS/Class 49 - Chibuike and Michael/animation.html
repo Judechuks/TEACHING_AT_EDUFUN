@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      margin: 100px auto;
+      background-color: aqua;
+      animation-name: sliding;
+      animation-delay: 0s;
+      animation-duration: 3s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
+      /* -webkit-animation-direction: normal;
+      -o-animation-direction: normal;
+      -moz-animation-direction: normal; */
+      /* animation-direction: alternate-reverse; */
+      animation-direction: normal;
+      /* animation: 3s ease 0s infinite normal backwards drop; */
+    }
+    @keyframes slidin {
+      from {
+        /* height: 400px;
+        width: 400px; */
+        transform: scale(1);
+      }
+      to {
+        /* height: 50px;
+        width: 50px; */
+        transform: scale(2);
+      }
+    }
+    @keyframes sliding {
+      0%,
+      100% {
+        transform: scale(1);
+      }
+      50% {
+        border-radius: 50%;
+        transform: scale(2);
+      }
+      70% {
+        transform: translate(200px);
+      }
+    }
+    @keyframes drop {
+      0% {
+        transform: translateY(-400px);
+      }
+      100% {
+        transform: translateY(200px);
+      }
+    }
+    article {
+      width: 200px;
+      height: 200px;
+      margin: 100px auto;
+      background-color: green;
+      animation: 3s infinite drop;
+    }
+  </style>
+  <body>
+    <div></div>
+    <article></article>
+  </body>
+</html>

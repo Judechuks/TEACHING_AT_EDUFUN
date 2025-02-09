@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient</title>
+  </head>
+  <style>
+    section {
+      height: 400px;
+      width: 100%;
+    }
+    .box1 {
+      background: linear-gradient(to top left, red 0 50%, blue 50% 100%);
+      background: repeating-linear-gradient(
+        to top left,
+        red 0 30%,
+        blue 30% 60%
+      );
+    }
+    .box2 {
+      width: 400px;
+      background: radial-gradient(
+        circle at bottom right,
+        red 0 20%,
+        green 20% 50%,
+        blue 50% 70%,
+        yellow 70%
+      );
+      background: repeating-radial-gradient(
+        red 0 10%,
+        green 10% 20%,
+        blue 20% 30%,
+        yellow 30% 40%
+      );
+      /* border-radius: 50%; */
+    }
+    .box3 {
+      width: 400px;
+      background-image: conic-gradient(
+        from 0deg at center,
+        green 0 144deg,
+        /* 40% of 360degrees = 144 degrees */ black 40% 50%,
+        blue 50% 70%,
+        aqua 70% 100%
+      );
+    }
+  </style>
+  <body>
+    <section class="box1"></section>
+    <section class="box2"></section>
+    <section class="box3"></section>
+  </body>
+</html>

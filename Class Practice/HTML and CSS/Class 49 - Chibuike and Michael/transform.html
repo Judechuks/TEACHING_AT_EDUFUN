@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+  </head>
+  <style>
+    div {
+      height: 200px;
+      width: 200px;
+    }
+    .box1 {
+      background-color: red;
+      /* transition: 0.5s; */
+    }
+    .box1:hover {
+      /* transform: translateX(100px); */
+      /* transform: translateY(-100px); */
+      transform: translate(100px, 100px);
+    }
+    .box2 {
+      margin: auto;
+      background-color: blue;
+      /* transform: scaleX(1.5);
+      transform: scaleY(1.5); */
+      /* scale: ; */
+    }
+    .box2:hover {
+      transform: scale(2);
+    }
+    .box3 {
+      background-color: green;
+    }
+    .box3:hover {
+      /* transform: rotateX(360deg);
+      transform: rotateY(360deg); */
+      transform: rotate(360deg);
+      transition: 1s;
+      /* transform: rotateX(260deg) translate(180px) scale(0.5); */ /*You can combine more than one transform properties*/
+    }
+    .box4 {
+      background-color: yellow;
+      transition: 1s;
+    }
+    .box4:hover {
+      transform: skewX(180deg);
+      transform: skewY(180deg);
+      transform: skew(360deg, 360deg);
+    }
+  </style>
+  <body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+  </body>
+</html>

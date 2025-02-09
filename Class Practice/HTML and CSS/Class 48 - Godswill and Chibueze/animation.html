@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+  </head>
+  <style>
+    .box {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      /* animation-name: moving; */
+      /* animation-delay: 0s; */
+      /* animation-duration: 3s; */
+      margin-bottom: 10px;
+      /* animation-timing-function: linear; */
+      /* animation-iteration-count: 4; */
+      /* animation-iteration-count: infinite; */
+      /* animation-direction: alternate-reverse; */
+      /* animation-fill-mode: forwards; */
+      /* animation: 3s linear 0s 4 normal forwards moving; */
+      animation: 3s linear 4 forwards moving;
+    }
+    /* .box1 {
+      animation-timing-function: linear;
+    } */
+    /* .box2 {
+      animation-timing-function: ease;
+    }
+    .box3 {
+      animation-timing-function: ease-in;
+    }
+    .box4 {
+      animation-timing-function: ease-out;
+    }
+    .box5 {
+      animation-timing-function: ease-in-out;
+    } */
+    /* @keyframes moving {
+      0% {
+        margin-left: 0px;
+      }
+      25% {
+        margin-left: 100%;
+        background-color: blue;
+        border-radius: 50%;
+      }
+      100% {
+        margin-left: 0px;
+      }
+    } */
+    @keyframes moving {
+      from {
+        /* margin-left: 0px; */
+        transform: rotate(0deg);
+      }
+      to {
+        /* margin-left: 1000px; */
+        transform: rotate(360deg);
+        background-color: blue;
+        font-size: 3rem;
+      }
+    }
+  </style>
+  <body>
+    <div class="box box1">A</div>
+    <!-- <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div> -->
+  </body>
+</html>

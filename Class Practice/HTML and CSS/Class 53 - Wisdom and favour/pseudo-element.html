@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+  </head>
+  <style>
+    li::before {
+      /* content: " HI "; */
+      /* content: "\265E"; */
+      /* content: url(../go-icon.png); */
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      border-radius: 40px;
+      background-color: red;
+    }
+    /* li::after {
+      content: "\265E";
+    } */
+    p::first-letter {
+      color: blue;
+      font-size: 4rem;
+    }
+    p::first-line {
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <ul>
+      <li>Lion</li>
+      <li>Elephant</li>
+      <li>Tiger</li>
+      <li>Hippopotamus</li>
+      <li>Bat</li>
+      &copy; &#64;
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+      deleniti ipsum dolore vero ut incidunt impedit fuga repellendus,
+      reprehenderit natus cum repellat voluptas exercitationem aliquid quod
+      commodi sunt voluptatibus aspernatur nobis est quisquam? Similique ea
+      quibusdam placeat praesentium maiores consequuntur dolores itaque porro
+      labore magni explicabo hic alias, obcaecati id veniam iusto distinctio.
+      Impedit odit tempore debitis eveniet ab. Voluptatum rem iste itaque cumque
+      esse dolorem inventore placeat? Quidem omnis numquam corporis fugit
+      distinctio, illum molestiae aliquid? Minima doloribus optio eum iusto iste
+      corporis adipisci facilis velit, autem voluptatum, deleniti suscipit
+      delectus quod beatae sit dignissimos et error fugiat aperiam?
+    </p>
+  </body>
+</html>
+
+table{ color: 10; }

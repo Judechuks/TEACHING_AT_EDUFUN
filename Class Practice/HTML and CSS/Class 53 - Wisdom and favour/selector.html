@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selector</title>
+  </head>
+  <style>
+    .parent > p {
+      color: red;
+      color: rgba(155, 55, 155, 0.3); /* 0 to 255 */ /* 0 to 1 */
+      color: #ccc7; /* 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F */
+      color: rgba(78, 83, 145, 0.562);
+    }
+    input[type="number"] {
+      background-color: gray;
+    }
+    input + p {
+      /*adjacent*/
+      color: blue;
+    }
+    input ~ p {
+      /*general*/
+      color: blue !important;
+    }
+    /* p {
+      color: green !important;
+    } */
+    [class="cont"] {
+      color: yellow;
+    }
+  </style>
+  <body style="background-color: darkgrey">
+    <div class="parent">
+      <p>I'm inside the parent container</p>
+      <div class="child">
+        <p>I'm inside the the child container</p>
+      </div>
+    </div>
+    <p>paragraph Before input</p>
+    <input type="text" />
+    <input type="number" />
+    <p>sibling paragraph 1</p>
+    <p>sibling paragraph 2</p>
+    <p>sibling paragraph 3</p>
+
+    <p class="cont">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, molestias
+      cum architecto a in dolores unde, totam dicta, ipsum asperiores
+      repellendus. Ex ad ipsa consequuntur illo doloribus quas tempore ipsam.
+    </p>
+  </body>
+</html>
